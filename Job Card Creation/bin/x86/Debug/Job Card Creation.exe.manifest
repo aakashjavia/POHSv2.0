@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Z/9NPo3zBfBYttc60qtZk09guRa2wGc+ygoly4Rj9EA=</dsig:DigestValue>
+        <dsig:DigestValue>4P0pLv/GFrNOMLoBZV4hOGtFRCz1Ln3XSAZTBl3elJY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -77,13 +77,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Database1.mdf" size="8388608">
+  <file name="Database1.mdf" size="8388608" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>w22TON4o2OuY/x82yqBH59ZtAZu6Lu59I93vLIn99dw=</dsig:DigestValue>
+      <dsig:DigestValue>1rszu4WStLAhfUb6y+9ajIfhP3pB6gqeeeNNY0Y4GSU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Database1_log.ldf" size="8388608" writeableType="applicationData">
@@ -92,7 +92,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>9v0aom5iGkmpe20SJ2EbAhiW5cJK2wAQLAzrdJXFJto=</dsig:DigestValue>
+      <dsig:DigestValue>BRtm9mb206rjWqcK3/mEBO70pEn71RYtuT3MJ4Jywos=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Job Card Creation.exe.config" size="844">

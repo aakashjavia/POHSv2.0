@@ -80,7 +80,7 @@ namespace Job_Card_Creation
                  con = new MySqlConnection(connectionString);
                  MySqlCommand cmd = new MySqlCommand();*/
                 SqlCommand cmd = new SqlCommand();
-                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\Database1.mdf;Integrated Security=True";
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
 
                 SqlConnection con = new SqlConnection(connectionString);
                 cmd.CommandType = System.Data.CommandType.Text;
@@ -208,7 +208,7 @@ namespace Job_Card_Creation
                 cmd.CommandType = System.Data.CommandType.Text;
             */
                 SqlCommand cmd = new SqlCommand();
-                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\Database1.mdf;Integrated Security=True";
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
                 SqlConnection con = new SqlConnection(connectionString);
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.CommandText = "select * from job_card order by sr_no desc";
@@ -266,7 +266,7 @@ namespace Job_Card_Creation
                 cmd.CommandType = System.Data.CommandType.Text;
                 */
                 SqlCommand cmd = new SqlCommand();
-                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\Database1.mdf;Integrated Security=True";
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
                 SqlConnection con = new SqlConnection(connectionString);
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.CommandText = "select * from job_card order by sr_no desc";

@@ -5,7 +5,7 @@ using System.Drawing.Imaging;
 using System.Drawing.Printing;
 using System.Drawing;
 using System.Globalization;
-using MySql.Data.MySqlClient;
+
 using System.Data.SqlClient;
 
 
@@ -71,16 +71,9 @@ namespace Job_Card_Creation
             try
             {
                 int sr = 0;
-                /* string server = "localhost";
-                 string database = "job card database";
-                 string uid = "root";
-                 string password = "root";
-                 string connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
-                 MySqlConnection con;
-                 con = new MySqlConnection(connectionString);
-                 MySqlCommand cmd = new MySqlCommand();*/
+                
                 SqlCommand cmd = new SqlCommand();
-                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\Database1.mdf;Integrated Security=True";
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
 
                 SqlConnection con = new SqlConnection(connectionString);
                 cmd.CommandType = System.Data.CommandType.Text;
@@ -197,18 +190,9 @@ namespace Job_Card_Creation
             try
             {
                 int r_affected;
-                /*string server = "localhost";
-                string database = "job card database";
-                string uid = "root";
-                string password = "root";
-                string connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
-                MySqlConnection con;
-                con = new MySqlConnection(connectionString);
-                MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandType = System.Data.CommandType.Text;
-            */
+              
                 SqlCommand cmd = new SqlCommand();
-                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\Database1.mdf;Integrated Security=True";
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
                 SqlConnection con = new SqlConnection(connectionString);
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.CommandText = "select * from job_card order by sr_no desc";
@@ -254,19 +238,9 @@ namespace Job_Card_Creation
         {
             try
             {
-                /*
-                MySqlConnection con;
-                string server = "localhost";
-                string database = "job card database";
-                string uid = "root";
-                string password = "root";
-                string connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
-                con = new MySqlConnection(connectionString);
-                MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandType = System.Data.CommandType.Text;
-                */
+              
                 SqlCommand cmd = new SqlCommand();
-                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\Database1.mdf;Integrated Security=True";
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
                 SqlConnection con = new SqlConnection(connectionString);
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.CommandText = "select * from job_card order by sr_no desc";
