@@ -77,7 +77,7 @@ namespace Job_Card_Creation
 
                 SqlConnection con = new SqlConnection(connectionString);
                 cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "select * from job_card order by sr_no desc";
+                
                 cmd.Connection = con;
                 con.Open();
                 //For AutoComplete
@@ -96,7 +96,7 @@ namespace Job_Card_Creation
                         collection.Add(read["item_code"].ToString());
                     }
                 }
-
+                cmd.CommandText = "select * from job_card order by sr_no desc";
                 item_code.AutoCompleteCustomSource = collection;
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())

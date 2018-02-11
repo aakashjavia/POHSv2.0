@@ -28,7 +28,7 @@ namespace Job_Card_Creation
                     string password = "root";
                     string connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
                     */
-                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\Database1.mdf;Integrated Security=True";
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
 
                 SqlConnection con;
                 con = new SqlConnection(connectionString);
@@ -71,7 +71,7 @@ namespace Job_Card_Creation
                 string password = "root";
                 string connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
                */
-                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\Database1.mdf;Integrated Security=True";
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
 
                 SqlConnection con;
                 con = new SqlConnection(connectionString);
