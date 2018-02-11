@@ -5,7 +5,7 @@ using System.Drawing.Imaging;
 using System.Drawing.Printing;
 using System.Drawing;
 using System.Globalization;
-using MySql.Data.MySqlClient;
+
 using System.Data.SqlClient;
 
 
@@ -71,14 +71,7 @@ namespace Job_Card_Creation
             try
             {
                 int sr = 0;
-                /* string server = "localhost";
-                 string database = "job card database";
-                 string uid = "root";
-                 string password = "root";
-                 string connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
-                 MySqlConnection con;
-                 con = new MySqlConnection(connectionString);
-                 MySqlCommand cmd = new MySqlCommand();*/
+                
                 SqlCommand cmd = new SqlCommand();
                 string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
 
@@ -87,6 +80,24 @@ namespace Job_Card_Creation
                 cmd.CommandText = "select * from job_card order by sr_no desc";
                 cmd.Connection = con;
                 con.Open();
+                //For AutoComplete
+                item_code.AutoCompleteMode = AutoCompleteMode.Suggest;
+                item_code.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
+
+                // Retrieve all rows
+                cmd.CommandText = "SELECT * FROM job_info";
+                
+                
+                using (var read = cmd.ExecuteReader())
+                {
+                    while (read.Read())
+                    {
+                        collection.Add(read["item_code"].ToString());
+                    }
+                }
+
+                item_code.AutoCompleteCustomSource = collection;
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
@@ -197,16 +208,7 @@ namespace Job_Card_Creation
             try
             {
                 int r_affected;
-                /*string server = "localhost";
-                string database = "job card database";
-                string uid = "root";
-                string password = "root";
-                string connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
-                MySqlConnection con;
-                con = new MySqlConnection(connectionString);
-                MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandType = System.Data.CommandType.Text;
-            */
+              
                 SqlCommand cmd = new SqlCommand();
                 string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
                 SqlConnection con = new SqlConnection(connectionString);
@@ -254,44 +256,18 @@ namespace Job_Card_Creation
         {
             try
             {
-                /*
-                MySqlConnection con;
-                string server = "localhost";
-                string database = "job card database";
-                string uid = "root";
-                string password = "root";
-                string connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
-                con = new MySqlConnection(connectionString);
-                MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandType = System.Data.CommandType.Text;
-                */
+              
                 SqlCommand cmd = new SqlCommand();
                 string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
                 SqlConnection con = new SqlConnection(connectionString);
                 cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "select * from job_card order by sr_no desc";
                 cmd.Connection = con;
                
-                //For AutoComplete
-                item_code.AutoCompleteMode = AutoCompleteMode.Suggest;
-                item_code.AutoCompleteSource = AutoCompleteSource.CustomSource;
-                AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
+               
                 
-                // Retrieve all rows
-                cmd.CommandText = "SELECT * FROM job_info";
-                cmd.Connection = con;
-                con.Open();
-                using (var read = cmd.ExecuteReader())
-                {
-                    while (read.Read())
-                    {
-                        collection.Add(read["item_code"].ToString());
-                    }
-                }
-
-                item_code.AutoCompleteCustomSource = collection;
+             
                 cmd.CommandText = "select * from job_info where item_code = '" + this.item_code.Text + "'";
-
+                con.Open();
 
 
                

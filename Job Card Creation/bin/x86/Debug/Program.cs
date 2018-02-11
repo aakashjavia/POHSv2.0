@@ -21,9 +21,10 @@ namespace Job_Card_Creation
 
             }
 
-            catch (Exception err)
+            catch (Exception e)
+             
             {
-                
+                System.Console.WriteLine(e.Message);
             }
         }
     }

@@ -80,6 +80,24 @@ namespace Job_Card_Creation
                 cmd.CommandText = "select * from job_card order by sr_no desc";
                 cmd.Connection = con;
                 con.Open();
+                //For AutoComplete
+                item_code.AutoCompleteMode = AutoCompleteMode.Suggest;
+                item_code.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
+
+                // Retrieve all rows
+                cmd.CommandText = "SELECT * FROM job_info";
+                
+                
+                using (var read = cmd.ExecuteReader())
+                {
+                    while (read.Read())
+                    {
+                        collection.Add(read["item_code"].ToString());
+                    }
+                }
+
+                item_code.AutoCompleteCustomSource = collection;
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
@@ -243,29 +261,13 @@ namespace Job_Card_Creation
                 string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
                 SqlConnection con = new SqlConnection(connectionString);
                 cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "select * from job_card order by sr_no desc";
                 cmd.Connection = con;
                
-                //For AutoComplete
-                item_code.AutoCompleteMode = AutoCompleteMode.Suggest;
-                item_code.AutoCompleteSource = AutoCompleteSource.CustomSource;
-                AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
+               
                 
-                // Retrieve all rows
-                cmd.CommandText = "SELECT * FROM job_info";
-                cmd.Connection = con;
-                con.Open();
-                using (var read = cmd.ExecuteReader())
-                {
-                    while (read.Read())
-                    {
-                        collection.Add(read["item_code"].ToString());
-                    }
-                }
-
-                item_code.AutoCompleteCustomSource = collection;
+             
                 cmd.CommandText = "select * from job_info where item_code = '" + this.item_code.Text + "'";
-
+                con.Open();
 
 
                
