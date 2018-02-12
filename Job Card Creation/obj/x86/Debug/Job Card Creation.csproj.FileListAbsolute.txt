@@ -35,3 +35,39 @@ G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.exe
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.pdb
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csprojResolveAssemblyReference.cache
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csprojResolveAssemblyReference.cache
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Inventory.resources
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.JobCard.resources
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Main_Page.resources
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.NewJob.resources
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Properties.Resources.resources
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csproj.GenerateResource.Cache
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.exe
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.pdb
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Database1.mdf
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Database1_log.ldf
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Inventory.resx
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Form.resx
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Main Page.resx
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\New Job.resx
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Inventory.cs
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Inventory.Designer.cs
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Form.cs
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Form.Designer.cs
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Main Page.cs
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Main Page.Designer.cs
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\New Job.cs
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\New Job.Designer.cs
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Program.cs
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\App.config
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.exe.config
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.exe.manifest
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.application
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.exe
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.pdb
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\MySql.Data.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Microsoft.VisualBasic.PowerPacks.xml
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\MySql.Data.xml
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csproj.CoreCompileInputs.cache
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.exe.manifest
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.application
