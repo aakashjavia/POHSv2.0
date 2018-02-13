@@ -28,19 +28,157 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.PaperTypeLabel = new System.Windows.Forms.Label();
+            this.paper_type = new System.Windows.Forms.TextBox();
+            this.lblPaperSize = new System.Windows.Forms.Label();
+            this.lblPackets = new System.Windows.Forms.Label();
+            this.lblSheets = new System.Windows.Forms.Label();
+            this.txtpapersize = new System.Windows.Forms.TextBox();
+            this.txtPackets = new System.Windows.Forms.TextBox();
+            this.txtSheets = new System.Windows.Forms.TextBox();
+            this.lblSrNo = new System.Windows.Forms.Label();
+            this.txtSrNo = new System.Windows.Forms.TextBox();
+            this.btnSumit = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // PaperTypeLabel
+            // 
+            this.PaperTypeLabel.AutoSize = true;
+            this.PaperTypeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.PaperTypeLabel.Location = new System.Drawing.Point(6, 95);
+            this.PaperTypeLabel.Name = "PaperTypeLabel";
+            this.PaperTypeLabel.Size = new System.Drawing.Size(183, 29);
+            this.PaperTypeLabel.TabIndex = 77;
+            this.PaperTypeLabel.Text = "Type Of Paper";
+            // 
+            // paper_type
+            // 
+            this.paper_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.paper_type.Location = new System.Drawing.Point(243, 95);
+            this.paper_type.Name = "paper_type";
+            this.paper_type.Size = new System.Drawing.Size(743, 34);
+            this.paper_type.TabIndex = 79;
+            // 
+            // lblPaperSize
+            // 
+            this.lblPaperSize.AutoSize = true;
+            this.lblPaperSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.lblPaperSize.Location = new System.Drawing.Point(6, 135);
+            this.lblPaperSize.Name = "lblPaperSize";
+            this.lblPaperSize.Size = new System.Drawing.Size(141, 29);
+            this.lblPaperSize.TabIndex = 80;
+            this.lblPaperSize.Text = "Paper Size";
+            // 
+            // lblPackets
+            // 
+            this.lblPackets.AutoSize = true;
+            this.lblPackets.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.lblPackets.Location = new System.Drawing.Point(6, 175);
+            this.lblPackets.Name = "lblPackets";
+            this.lblPackets.Size = new System.Drawing.Size(105, 29);
+            this.lblPackets.TabIndex = 81;
+            this.lblPackets.Text = "Packets";
+            this.lblPackets.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // lblSheets
+            // 
+            this.lblSheets.AutoSize = true;
+            this.lblSheets.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.lblSheets.Location = new System.Drawing.Point(6, 215);
+            this.lblSheets.Name = "lblSheets";
+            this.lblSheets.Size = new System.Drawing.Size(94, 29);
+            this.lblSheets.TabIndex = 82;
+            this.lblSheets.Text = "Sheets";
+            // 
+            // txtpapersize
+            // 
+            this.txtpapersize.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.txtpapersize.Location = new System.Drawing.Point(243, 135);
+            this.txtpapersize.Name = "txtpapersize";
+            this.txtpapersize.Size = new System.Drawing.Size(743, 34);
+            this.txtpapersize.TabIndex = 83;
+            // 
+            // txtPackets
+            // 
+            this.txtPackets.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.txtPackets.Location = new System.Drawing.Point(243, 175);
+            this.txtPackets.Name = "txtPackets";
+            this.txtPackets.Size = new System.Drawing.Size(743, 34);
+            this.txtPackets.TabIndex = 84;
+            // 
+            // txtSheets
+            // 
+            this.txtSheets.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.txtSheets.Location = new System.Drawing.Point(243, 215);
+            this.txtSheets.Name = "txtSheets";
+            this.txtSheets.Size = new System.Drawing.Size(743, 34);
+            this.txtSheets.TabIndex = 85;
+            // 
+            // lblSrNo
+            // 
+            this.lblSrNo.AutoSize = true;
+            this.lblSrNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.lblSrNo.Location = new System.Drawing.Point(6, 55);
+            this.lblSrNo.Name = "lblSrNo";
+            this.lblSrNo.Size = new System.Drawing.Size(80, 29);
+            this.lblSrNo.TabIndex = 86;
+            this.lblSrNo.Text = "Sr No";
+            this.lblSrNo.Click += new System.EventHandler(this.lblSrNo_Click);
+            // 
+            // txtSrNo
+            // 
+            this.txtSrNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.txtSrNo.Location = new System.Drawing.Point(243, 55);
+            this.txtSrNo.Name = "txtSrNo";
+            this.txtSrNo.Size = new System.Drawing.Size(743, 34);
+            this.txtSrNo.TabIndex = 87;
+            // 
+            // btnSumit
+            // 
+            this.btnSumit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnSumit.Location = new System.Drawing.Point(36, 375);
+            this.btnSumit.Name = "btnSumit";
+            this.btnSumit.Size = new System.Drawing.Size(75, 29);
+            this.btnSumit.TabIndex = 88;
+            this.btnSumit.Text = "Submit";
+            this.btnSumit.UseVisualStyleBackColor = true;
             // 
             // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(563, 738);
+            this.ClientSize = new System.Drawing.Size(1182, 738);
+            this.Controls.Add(this.btnSumit);
+            this.Controls.Add(this.txtSrNo);
+            this.Controls.Add(this.lblSrNo);
+            this.Controls.Add(this.txtSheets);
+            this.Controls.Add(this.txtPackets);
+            this.Controls.Add(this.txtpapersize);
+            this.Controls.Add(this.lblSheets);
+            this.Controls.Add(this.lblPackets);
+            this.Controls.Add(this.lblPaperSize);
+            this.Controls.Add(this.paper_type);
+            this.Controls.Add(this.PaperTypeLabel);
             this.Name = "Inventory";
             this.Text = "Inventory";
+            this.Load += new System.EventHandler(this.Inventory_Load_1);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label PaperTypeLabel;
+        private System.Windows.Forms.TextBox paper_type;
+        private System.Windows.Forms.Label lblPaperSize;
+        private System.Windows.Forms.Label lblPackets;
+        private System.Windows.Forms.Label lblSheets;
+        private System.Windows.Forms.TextBox txtpapersize;
+        private System.Windows.Forms.TextBox txtPackets;
+        private System.Windows.Forms.TextBox txtSheets;
+        private System.Windows.Forms.Label lblSrNo;
+        private System.Windows.Forms.TextBox txtSrNo;
+        private System.Windows.Forms.Button btnSumit;
     }
 }

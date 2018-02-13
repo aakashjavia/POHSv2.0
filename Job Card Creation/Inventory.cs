@@ -21,5 +21,20 @@ namespace Job_Card_Creation
         {
 
         }
+
+        private void Inventory_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSrNo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
