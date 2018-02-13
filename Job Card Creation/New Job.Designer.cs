@@ -312,11 +312,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(250, 9);
+            this.label1.Location = new System.Drawing.Point(287, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(507, 51);
+            this.label1.Size = new System.Drawing.Size(386, 51);
             this.label1.TabIndex = 93;
-            this.label1.Text = "PERFECT PACKAGING";
+            this.label1.Text = "XYZ PACKAGING";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 

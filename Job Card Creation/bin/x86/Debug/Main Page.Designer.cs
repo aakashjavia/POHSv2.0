@@ -43,7 +43,7 @@
             this.title1.Name = "title1";
             this.title1.Size = new System.Drawing.Size(988, 1031);
             this.title1.TabIndex = 1;
-            this.title1.Text = "PERFECT PACKAGING";
+            this.title1.Text = "XYZ PACKAGING";
             this.title1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.title1.Click += new System.EventHandler(this.title1_Click);
             // 
