@@ -113,5 +113,10 @@ namespace Job_Card_Creation
         {
 
         }
+
+        private void SheetCuttingLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

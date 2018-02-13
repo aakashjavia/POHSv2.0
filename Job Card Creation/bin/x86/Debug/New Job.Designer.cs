@@ -159,6 +159,7 @@
             this.SheetCuttingLabel.Size = new System.Drawing.Size(228, 29);
             this.SheetCuttingLabel.TabIndex = 82;
             this.SheetCuttingLabel.Text = "Sheet Cutting Size";
+            this.SheetCuttingLabel.Click += new System.EventHandler(this.SheetCuttingLabel_Click);
             // 
             // PaperDetails
             // 

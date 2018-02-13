@@ -39,6 +39,9 @@
             this.lblSrNo = new System.Windows.Forms.Label();
             this.txtSrNo = new System.Windows.Forms.TextBox();
             this.btnSumit = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.StatusLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // PaperTypeLabel
@@ -143,11 +146,33 @@
             this.btnSumit.Text = "Submit";
             this.btnSumit.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(275, 533);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 89;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // StatusLabel
+            // 
+            this.StatusLabel.AutoSize = true;
+            this.StatusLabel.Location = new System.Drawing.Point(369, 712);
+            this.StatusLabel.Name = "StatusLabel";
+            this.StatusLabel.Size = new System.Drawing.Size(46, 17);
+            this.StatusLabel.TabIndex = 90;
+            this.StatusLabel.Text = "status";
+            this.StatusLabel.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 738);
+            this.Controls.Add(this.StatusLabel);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSumit);
             this.Controls.Add(this.txtSrNo);
             this.Controls.Add(this.lblSrNo);
@@ -162,6 +187,7 @@
             this.Name = "Inventory";
             this.Text = "Inventory";
             this.Load += new System.EventHandler(this.Inventory_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,5 +206,7 @@
         private System.Windows.Forms.Label lblSrNo;
         private System.Windows.Forms.TextBox txtSrNo;
         private System.Windows.Forms.Button btnSumit;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label StatusLabel;
     }
 }
