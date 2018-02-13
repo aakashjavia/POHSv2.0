@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Job Card Creation.exe" size="37888">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Job Card Creation.exe" size="85504">
       <assemblyIdentity name="Job Card Creation" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MFjPUfnD0gJXmiCl2l9HtCjtd0w7RirB+144rC6cwQ4=</dsig:DigestValue>
+        <dsig:DigestValue>Ylg8s3AiRo57MtoN7A2FdKybcsC0ZQYLfone2rrC6+k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -67,13 +67,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="396800">
-      <assemblyIdentity name="MySql.Data" version="6.10.5.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="MySql.Data" version="6.10.6.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7GG9vjGoGk+pgbcrEbntq07RZOioUQQnvZfk1TLxw3A=</dsig:DigestValue>
+        <dsig:DigestValue>CBQzax127Dbs/Y6bFlOJ+Z/LE1u5dqPy2WJ5azqJAUw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -83,7 +83,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>OllzUMC1barJemt13Wav4o3ZX+ecShq3PJcJf1Xy9KY=</dsig:DigestValue>
+      <dsig:DigestValue>gUR/rHrN28LMgEFzkxanQBK/WNphbiTBBQ15+3+BjNY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Database1_log.ldf" size="8388608" writeableType="applicationData">
@@ -92,16 +92,16 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>QoGyH7yzntDu6brX/woE9lBEzxxEeavjDxxuTuAFeLc=</dsig:DigestValue>
+      <dsig:DigestValue>jNy6stq8Fv3g0j4bUK0FpWEleEaELGjG40UIUKI8i+o=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Job Card Creation.exe.config" size="659">
+  <file name="Job Card Creation.exe.config" size="969">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>TmH50BDdqPMr67M04iNFkrUKovZZRTU2MA9tqySvV+o=</dsig:DigestValue>
+      <dsig:DigestValue>Jb5nUhg2aJZYHYeh7FDDPrILquRNeHLVfKjxrJX65jM=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

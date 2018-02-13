@@ -32,6 +32,7 @@
             this.toJobCardForm = new System.Windows.Forms.Button();
             this.toNewJobForm = new System.Windows.Forms.Button();
             this.ToInventory = new System.Windows.Forms.Button();
+            this.toOrderStatus = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // title1
@@ -79,11 +80,23 @@
             this.ToInventory.UseVisualStyleBackColor = true;
             this.ToInventory.Click += new System.EventHandler(this.toInventory_Click);
             // 
+            // toOrderStatus
+            // 
+            this.toOrderStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toOrderStatus.Location = new System.Drawing.Point(584, 476);
+            this.toOrderStatus.Name = "toOrderStatus";
+            this.toOrderStatus.Size = new System.Drawing.Size(392, 108);
+            this.toOrderStatus.TabIndex = 6;
+            this.toOrderStatus.Text = "Order Status";
+            this.toOrderStatus.UseVisualStyleBackColor = true;
+            this.toOrderStatus.Click += new System.EventHandler(this.toOrderStatus_Click);
+            // 
             // Main_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(988, 1031);
+            this.Controls.Add(this.toOrderStatus);
             this.Controls.Add(this.ToInventory);
             this.Controls.Add(this.toNewJobForm);
             this.Controls.Add(this.toJobCardForm);
@@ -100,5 +113,6 @@
         private System.Windows.Forms.Button toJobCardForm;
         private System.Windows.Forms.Button toNewJobForm;
         private System.Windows.Forms.Button ToInventory;
+        private System.Windows.Forms.Button toOrderStatus;
     }
 }
