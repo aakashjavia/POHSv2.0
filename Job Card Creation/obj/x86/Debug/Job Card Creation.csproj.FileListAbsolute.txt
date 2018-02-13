@@ -1,40 +1,3 @@
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Database1.mdf
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Database1_log.ldf
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Inventory.resx
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Form.resx
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Main Page.resx
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\New Job.resx
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Inventory.cs
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Inventory.Designer.cs
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Form.cs
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Form.Designer.cs
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Main Page.cs
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Main Page.Designer.cs
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\New Job.cs
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\New Job.Designer.cs
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Program.cs
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\App.config
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.exe.config
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.exe.manifest
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.application
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.exe
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.pdb
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Microsoft.VisualBasic.PowerPacks.dll
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\MySql.Data.dll
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Microsoft.VisualBasic.PowerPacks.xml
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\MySql.Data.xml
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Inventory.resources
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.JobCard.resources
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Main_Page.resources
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.NewJob.resources
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Properties.Resources.resources
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csproj.GenerateResource.Cache
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csproj.CoreCompileInputs.cache
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.exe.manifest
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.application
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.exe
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.pdb
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csprojResolveAssemblyReference.cache
 F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csprojResolveAssemblyReference.cache
 F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Inventory.resources
 F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.JobCard.resources
@@ -71,3 +34,41 @@ F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\MySql.Data.xml
 F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csproj.CoreCompileInputs.cache
 F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.exe.manifest
 F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.application
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Database1.mdf
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Database1_log.ldf
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Inventory.resx
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Form.resx
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Main Page.resx
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\New Job.resx
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Inventory.cs
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Inventory.Designer.cs
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Form.cs
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Form.Designer.cs
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Main Page.cs
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Main Page.Designer.cs
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\New Job.cs
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\New Job.Designer.cs
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Program.cs
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\App.config
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.exe.config
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.exe.manifest
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.application
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.exe
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.pdb
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Microsoft.VisualBasic.PowerPacks.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\MySql.Data.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Microsoft.VisualBasic.PowerPacks.xml
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\MySql.Data.xml
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csprojResolveAssemblyReference.cache
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Inventory.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.JobCard.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Main_Page.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.NewJob.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.OrderStatus.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Properties.Resources.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csproj.GenerateResource.Cache
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csproj.CoreCompileInputs.cache
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.exe.manifest
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.application
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.exe
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.pdb
