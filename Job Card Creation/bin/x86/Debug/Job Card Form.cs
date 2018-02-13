@@ -207,13 +207,14 @@ namespace Job_Card_Creation
 
             try
             {
-                int r_affected;
+                int r_affected,sr;
               
                 SqlCommand cmd = new SqlCommand();
                 string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
                 SqlConnection con = new SqlConnection(connectionString);
+
                 cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "select * from job_card order by sr_no desc";
+              
                 cmd.Connection = con;
                 
                 cmd.CommandText = "INSERT INTO job_card VALUES ('"
@@ -240,7 +241,35 @@ namespace Job_Card_Creation
                 cmd.Connection = con;
                 con.Open();
                r_affected=cmd.ExecuteNonQuery();
+                con.Close();
                 
+                //Filling order_status table here
+                    //Getting Sr NO
+                cmd.CommandText = "select * from order_status order by sr_no desc";
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();                
+                sr = reader.GetInt32(0) + 1;
+                con.Close();
+
+                
+                //Fills Current date automatically    
+                DateTime today = DateTime.Today;
+                string s = today.ToString("dd/M/yyyy", CultureInfo.InvariantCulture);
+
+                //Filling Data
+                
+                cmd.CommandText = "INSERT INTO order_status VALUES ('"
+                    + sr.ToString() + "','"
+                    + item_code.Text + "','"
+                    + name.Text + "','"
+                    + party_name.Text + "','"
+                    + date.Text + "','"
+                    + s + "', NULL, NULL, NULL)";
+                
+                con.Open();
+                cmd.ExecuteNonQuery();
+
                 con.Close();
                 StatusLabel.Text = "STATUS(button1_Click):- Data Accepted (" +r_affected.ToString()+ ") ";
             }
@@ -374,10 +403,7 @@ namespace Job_Card_Creation
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             //Fills date time Manually
-            DateTime dt = DateTime.ParseExact(date.ToString(), "MM/dd/yyyy hh:mm:ss tt", CultureInfo.InvariantCulture);
-
-            string s = dt.ToString("dd/M/yyyy", CultureInfo.InvariantCulture);
-            date.Text = s;
+            date.Text = dateTimePicker1.Text;
         }
 
         private void date_TextChanged(object sender, EventArgs e)
