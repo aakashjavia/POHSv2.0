@@ -20,20 +20,13 @@ namespace Job_Card_Creation
         private void button1_Click(object sender, EventArgs e)
         {
             try
-            {
-                /*
-                    string server = "localhost";
-                    string database = "job card database";
-                    string uid = "root";
-                    string password = "root";
-                    string connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
-                    */
+            {              
                 string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
-
+                //Database Connection and insertion
                 SqlConnection con;
                 con = new SqlConnection(connectionString);
                 SqlCommand cmd = new SqlCommand();
-                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandType = CommandType.Text;
 
                 cmd.CommandText = "INSERT INTO job_info VALUES ('"
                     + sr_no.Text + "','"
@@ -64,13 +57,7 @@ namespace Job_Card_Creation
             try
             {
                 int sr = 0;
-                /*
-                string server = "localhost";
-                string database = "job card database";
-                string uid = "root";
-                string password = "root";
-                string connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
-               */
+                //AutoFill Sr. No
                 string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
 
                 SqlConnection con;

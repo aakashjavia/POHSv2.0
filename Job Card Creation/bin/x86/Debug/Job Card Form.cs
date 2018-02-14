@@ -5,7 +5,6 @@ using System.Drawing.Imaging;
 using System.Drawing.Printing;
 using System.Drawing;
 using System.Globalization;
-
 using System.Data.SqlClient;
 
 
@@ -113,92 +112,6 @@ namespace Job_Card_Creation
             {
                 StatusLabel.Text = "STATUS(Form1_Load):-" + err.Message;
             }
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PrinterName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PartyName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click_3(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PartyLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void InputDate_Click(object sender, EventArgs e)
-        {
-            
 
         }
 
@@ -321,9 +234,7 @@ namespace Job_Card_Creation
                 StatusLabel.Text = "STATUS(JobCode_TextChanged):-" + err.Message;
             }
         }
-      
-            
-        private void button3_Click(object sender, EventArgs e)
+      public void label2_Click_(object sender, EventArgs e)
         {
 
         }
@@ -362,9 +273,6 @@ namespace Job_Card_Creation
             {
                 StatusLabel.Text = "STATUS(button2_Click):-" + err.Message;
             }
-        
-
-          
         }
         public void StartPrint(Stream streamToPrint, string streamType)
         {
@@ -383,16 +291,6 @@ namespace Job_Card_Creation
             }
         }
 
-        private void label5_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void date_onclick(object sender, EventArgs e)
-        {
-          
-        }
-
         private void DateLabel_Click(object sender, EventArgs e)
         {
             //Fills Current date automatically, and makes date picker visible
@@ -404,21 +302,6 @@ namespace Job_Card_Creation
         {
             //Fills date time Manually
             date.Text = dateTimePicker1.Text;
-        }
-
-        private void date_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void JobSheetNo_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
