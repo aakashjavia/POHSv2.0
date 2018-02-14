@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
 using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Job_Card_Creation
@@ -27,22 +22,10 @@ namespace Job_Card_Creation
                 DateTime today = DateTime.Today;
                 string s = today.ToString("dd MMMM yyyy", CultureInfo.InvariantCulture);
                 date.Text = s;
-                updatedata();
-                /*
-                SqlCommand cmd = new SqlCommand();
-                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
-                SqlConnection con = new SqlConnection(connectionString);
-                cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "select * from order_status order by date desc";
-                cmd.Connection = con;
-                SqlDataAdapter sda = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
-                con.Close();
-                dataGridView1.DataSource = dt;
-                */
+                updatedata();            
             }
-            catch (Exception err)
+
+               catch (Exception err)
             {
                 StatusLabel.Text = "STATUS(OrderStatus_Load):-" + err.Message;
             }
