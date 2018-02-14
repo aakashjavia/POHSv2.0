@@ -79,13 +79,13 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 65);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1029, 192);
+            this.dataGridView1.Size = new System.Drawing.Size(1127, 192);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
@@ -108,7 +108,7 @@
             // 
             this.Info1.AutoSize = true;
             this.Info1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Info1.Location = new System.Drawing.Point(7, 207);
+            this.Info1.Location = new System.Drawing.Point(7, 260);
             this.Info1.Name = "Info1";
             this.Info1.Size = new System.Drawing.Size(292, 25);
             this.Info1.TabIndex = 1;
@@ -116,7 +116,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(787, 472);
+            this.dateTimePicker1.Location = new System.Drawing.Point(787, 525);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(170, 22);
             this.dateTimePicker1.TabIndex = 74;
@@ -126,7 +126,7 @@
             // date
             // 
             this.date.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date.Location = new System.Drawing.Point(787, 500);
+            this.date.Location = new System.Drawing.Point(787, 553);
             this.date.Name = "date";
             this.date.ReadOnly = true;
             this.date.Size = new System.Drawing.Size(230, 34);
@@ -137,7 +137,7 @@
             // 
             this.DateLabel.AutoSize = true;
             this.DateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateLabel.Location = new System.Drawing.Point(553, 505);
+            this.DateLabel.Location = new System.Drawing.Point(553, 558);
             this.DateLabel.Name = "DateLabel";
             this.DateLabel.Size = new System.Drawing.Size(203, 25);
             this.DateLabel.TabIndex = 72;
@@ -148,7 +148,7 @@
             // 
             this.item_code.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.item_code.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.item_code.Location = new System.Drawing.Point(225, 235);
+            this.item_code.Location = new System.Drawing.Point(225, 288);
             this.item_code.Name = "item_code";
             this.item_code.Size = new System.Drawing.Size(545, 34);
             this.item_code.TabIndex = 71;
@@ -156,7 +156,7 @@
             // name
             // 
             this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.name.Location = new System.Drawing.Point(225, 275);
+            this.name.Location = new System.Drawing.Point(225, 328);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(545, 34);
             this.name.TabIndex = 70;
@@ -164,7 +164,7 @@
             // party_name
             // 
             this.party_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.party_name.Location = new System.Drawing.Point(225, 315);
+            this.party_name.Location = new System.Drawing.Point(225, 368);
             this.party_name.Name = "party_name";
             this.party_name.Size = new System.Drawing.Size(545, 34);
             this.party_name.TabIndex = 69;
@@ -173,7 +173,7 @@
             // 
             this.JobLabel.AutoSize = true;
             this.JobLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.JobLabel.Location = new System.Drawing.Point(15, 238);
+            this.JobLabel.Location = new System.Drawing.Point(15, 291);
             this.JobLabel.Name = "JobLabel";
             this.JobLabel.Size = new System.Drawing.Size(126, 29);
             this.JobLabel.TabIndex = 68;
@@ -183,7 +183,7 @@
             // 
             this.ProductLabel.AutoSize = true;
             this.ProductLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.ProductLabel.Location = new System.Drawing.Point(15, 278);
+            this.ProductLabel.Location = new System.Drawing.Point(15, 331);
             this.ProductLabel.Name = "ProductLabel";
             this.ProductLabel.Size = new System.Drawing.Size(179, 29);
             this.ProductLabel.TabIndex = 67;
@@ -193,7 +193,7 @@
             // 
             this.PartyLabel.AutoSize = true;
             this.PartyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PartyLabel.Location = new System.Drawing.Point(15, 318);
+            this.PartyLabel.Location = new System.Drawing.Point(15, 371);
             this.PartyLabel.Name = "PartyLabel";
             this.PartyLabel.Size = new System.Drawing.Size(182, 29);
             this.PartyLabel.TabIndex = 66;
@@ -273,7 +273,7 @@
             this.PriorityGroup.Controls.Add(this.PriorityLow);
             this.PriorityGroup.Controls.Add(this.PriorityMedium);
             this.PriorityGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PriorityGroup.Location = new System.Drawing.Point(12, 447);
+            this.PriorityGroup.Location = new System.Drawing.Point(12, 500);
             this.PriorityGroup.Name = "PriorityGroup";
             this.PriorityGroup.Size = new System.Drawing.Size(489, 83);
             this.PriorityGroup.TabIndex = 83;
@@ -289,7 +289,7 @@
             this.StatusGroup.Controls.Add(this.StatusConfirmed);
             this.StatusGroup.Controls.Add(this.StatusReceived);
             this.StatusGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusGroup.Location = new System.Drawing.Point(12, 355);
+            this.StatusGroup.Location = new System.Drawing.Point(12, 408);
             this.StatusGroup.Name = "StatusGroup";
             this.StatusGroup.Size = new System.Drawing.Size(677, 86);
             this.StatusGroup.TabIndex = 84;
@@ -383,7 +383,7 @@
             // 
             this.CommentsLabel.AutoSize = true;
             this.CommentsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CommentsLabel.Location = new System.Drawing.Point(12, 533);
+            this.CommentsLabel.Location = new System.Drawing.Point(12, 586);
             this.CommentsLabel.Name = "CommentsLabel";
             this.CommentsLabel.Size = new System.Drawing.Size(137, 29);
             this.CommentsLabel.TabIndex = 86;
@@ -392,7 +392,7 @@
             // 
             // Comments
             // 
-            this.Comments.Location = new System.Drawing.Point(12, 566);
+            this.Comments.Location = new System.Drawing.Point(12, 619);
             this.Comments.Multiline = true;
             this.Comments.Name = "Comments";
             this.Comments.Size = new System.Drawing.Size(786, 124);
@@ -400,7 +400,7 @@
             // 
             // UpdateButton
             // 
-            this.UpdateButton.Location = new System.Drawing.Point(12, 721);
+            this.UpdateButton.Location = new System.Drawing.Point(12, 774);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(183, 31);
             this.UpdateButton.TabIndex = 90;
@@ -410,7 +410,7 @@
             // 
             // ClearButton
             // 
-            this.ClearButton.Location = new System.Drawing.Point(225, 721);
+            this.ClearButton.Location = new System.Drawing.Point(225, 774);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(183, 31);
             this.ClearButton.TabIndex = 91;
@@ -422,7 +422,7 @@
             // 
             this.StatusLabel.AutoSize = true;
             this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(7, 764);
+            this.StatusLabel.Location = new System.Drawing.Point(7, 817);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(101, 29);
             this.StatusLabel.TabIndex = 92;
@@ -431,7 +431,7 @@
             // var_priority
             // 
             this.var_priority.AutoSize = true;
-            this.var_priority.Location = new System.Drawing.Point(865, 332);
+            this.var_priority.Location = new System.Drawing.Point(865, 385);
             this.var_priority.Name = "var_priority";
             this.var_priority.Size = new System.Drawing.Size(79, 17);
             this.var_priority.TabIndex = 94;
@@ -442,7 +442,7 @@
             // var_status
             // 
             this.var_status.AutoSize = true;
-            this.var_status.Location = new System.Drawing.Point(865, 315);
+            this.var_status.Location = new System.Drawing.Point(865, 368);
             this.var_status.Name = "var_status";
             this.var_status.Size = new System.Drawing.Size(74, 17);
             this.var_status.TabIndex = 95;
@@ -453,7 +453,7 @@
             // 
             this.sr_no.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.sr_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.sr_no.Location = new System.Drawing.Point(880, 233);
+            this.sr_no.Location = new System.Drawing.Point(880, 286);
             this.sr_no.Name = "sr_no";
             this.sr_no.ReadOnly = true;
             this.sr_no.Size = new System.Drawing.Size(108, 34);
@@ -463,7 +463,7 @@
             // 
             this.SrNoLabel.AutoSize = true;
             this.SrNoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.SrNoLabel.Location = new System.Drawing.Point(787, 236);
+            this.SrNoLabel.Location = new System.Drawing.Point(787, 289);
             this.SrNoLabel.Name = "SrNoLabel";
             this.SrNoLabel.Size = new System.Drawing.Size(87, 29);
             this.SrNoLabel.TabIndex = 97;
@@ -473,7 +473,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1053, 803);
+            this.ClientSize = new System.Drawing.Size(1151, 856);
             this.Controls.Add(this.SrNoLabel);
             this.Controls.Add(this.sr_no);
             this.Controls.Add(this.var_status);

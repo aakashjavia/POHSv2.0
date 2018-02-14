@@ -21,19 +21,19 @@ namespace Job_Card_Creation
 
         private void Inventory_Load(object sender, EventArgs e)
         {
-            try
-            {
-                updatedata();
-            }
-            catch(Exception err)
-            {
-                StatusLabel.Text = "status" + err.Message;
-            }
+       
         }
 
         private void Inventory_Load_1(object sender, EventArgs e)
         {
-
+            try
+            {
+                updatedata();
+            }
+            catch (Exception err)
+            {
+                StatusLabel.Text = "Status(Inventory_Load_1)" + err.Message;
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
