@@ -14,11 +14,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-<<<<<<< HEAD
-        <dsig:DigestValue>SCIS+BODV/rEP6IjXcbPGyN/BdEg0i1RfrAtBNctPfc=</dsig:DigestValue>
-=======
-        <dsig:DigestValue>GYKRb896qcFlU01k++GymTaJJXYQqndyfQw+bYbKVpI=</dsig:DigestValue>
->>>>>>> Aakash-Experimental
+        <dsig:DigestValue>jp/tTrHS2yiEJGWrLsNfBs6Uud1vD8gd4G0HqfEl9jM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

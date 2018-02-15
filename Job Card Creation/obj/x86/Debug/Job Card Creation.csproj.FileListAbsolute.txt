@@ -33,6 +33,7 @@ F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\MySql.Data.xml
 F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csproj.CoreCompileInputs.cache
 F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.exe.manifest
 F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.application
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.OrderStatus.resources
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Inventory.resx
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Form.resx
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Main Page.resx
@@ -56,7 +57,6 @@ G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\MySql.Data.dll
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Microsoft.VisualBasic.PowerPacks.xml
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\MySql.Data.xml
-G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csprojResolveAssemblyReference.cache
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Inventory.resources
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.JobCard.resources
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Main_Page.resources
@@ -69,4 +69,3 @@ G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.application
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.exe
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.pdb
-F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.OrderStatus.resources

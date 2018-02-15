@@ -49,11 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-<<<<<<< HEAD
-        <dsig:DigestValue>bcIJHqo8xfZ+VAq+YeEeWfFq7CE1WXiMuXMZxhpW/bE=</dsig:DigestValue>
-=======
-        <dsig:DigestValue>pjxAe8NzIPWtkkxCecMfSoxqmRHIQec2VkwxK5F0RdI=</dsig:DigestValue>
->>>>>>> Aakash-Experimental
+        <dsig:DigestValue>i2vrxB+pRaM3arfb0UUG9sSNjPnOlTsmWo/RSeb3tAc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
