@@ -28,19 +28,7 @@ namespace Job_Card_Creation
                 string s = today.ToString("dd MMMM yyyy", CultureInfo.InvariantCulture);
                 date.Text = s;
                 updatedata();
-                /*
-                SqlCommand cmd = new SqlCommand();
-                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
-                SqlConnection con = new SqlConnection(connectionString);
-                cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "select * from order_status order by date desc";
-                cmd.Connection = con;
-                SqlDataAdapter sda = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
-                con.Close();
-                dataGridView1.DataSource = dt;
-                */
+        
             }
             catch (Exception err)
             {

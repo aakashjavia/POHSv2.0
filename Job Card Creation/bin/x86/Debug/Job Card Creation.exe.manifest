@@ -42,14 +42,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Job Card Creation.exe" size="85504">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Job Card Creation.exe" size="91136">
       <assemblyIdentity name="Job Card Creation" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+<<<<<<< HEAD
         <dsig:DigestValue>bcIJHqo8xfZ+VAq+YeEeWfFq7CE1WXiMuXMZxhpW/bE=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>pjxAe8NzIPWtkkxCecMfSoxqmRHIQec2VkwxK5F0RdI=</dsig:DigestValue>
+>>>>>>> Aakash-Experimental
       </hash>
     </dependentAssembly>
   </dependency>
@@ -83,7 +87,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>gUR/rHrN28LMgEFzkxanQBK/WNphbiTBBQ15+3+BjNY=</dsig:DigestValue>
+      <dsig:DigestValue>t44KV2GQO5+VL/c6WQIR2N/6cD4rHmosvTbKqLzvd+Y=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Database1_log.ldf" size="8388608" writeableType="applicationData">
@@ -92,7 +96,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>jNy6stq8Fv3g0j4bUK0FpWEleEaELGjG40UIUKI8i+o=</dsig:DigestValue>
+      <dsig:DigestValue>R94K+A/9YawByq64l/si9Oq1D7elyKN1dsfByOu1sko=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Job Card Creation.exe.config" size="969">

@@ -64,7 +64,7 @@
             // 
             this.StatusLabel.AutoSize = true;
             this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(16, 783);
+            this.StatusLabel.Location = new System.Drawing.Point(8, 774);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(101, 29);
             this.StatusLabel.TabIndex = 92;
@@ -83,7 +83,7 @@
             // HorizontalBar4
             // 
             this.HorizontalBar4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.HorizontalBar4.Location = new System.Drawing.Point(14, 755);
+            this.HorizontalBar4.Location = new System.Drawing.Point(6, 746);
             this.HorizontalBar4.Name = "HorizontalBar4";
             this.HorizontalBar4.Size = new System.Drawing.Size(961, 174);
             this.HorizontalBar4.TabIndex = 90;
@@ -159,6 +159,7 @@
             this.SheetCuttingLabel.Size = new System.Drawing.Size(228, 29);
             this.SheetCuttingLabel.TabIndex = 82;
             this.SheetCuttingLabel.Text = "Sheet Cutting Size";
+            this.SheetCuttingLabel.Click += new System.EventHandler(this.SheetCuttingLabel_Click);
             // 
             // PaperDetails
             // 
@@ -343,7 +344,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(988, 933);
+            this.ClientSize = new System.Drawing.Size(988, 837);
             this.Controls.Add(this.sr_no);
             this.Controls.Add(this.JobSheetNo);
             this.Controls.Add(this.label1);

@@ -97,7 +97,6 @@
             this.PartyLabel.Size = new System.Drawing.Size(182, 29);
             this.PartyLabel.TabIndex = 3;
             this.PartyLabel.Text = "Name Of Party";
-            this.PartyLabel.Click += new System.EventHandler(this.PartyLabel_Click);
             // 
             // ProductLabel
             // 
@@ -118,7 +117,6 @@
             this.JobLabel.Size = new System.Drawing.Size(126, 29);
             this.JobLabel.TabIndex = 5;
             this.JobLabel.Text = "Job Code";
-            this.JobLabel.Click += new System.EventHandler(this.label3_Click);
             // 
             // BoxSizeLabel
             // 
@@ -129,7 +127,6 @@
             this.BoxSizeLabel.Size = new System.Drawing.Size(115, 29);
             this.BoxSizeLabel.TabIndex = 6;
             this.BoxSizeLabel.Text = "Box Size";
-            this.BoxSizeLabel.Click += new System.EventHandler(this.label4_Click);
             // 
             // party_name
             // 
@@ -138,7 +135,6 @@
             this.party_name.Name = "party_name";
             this.party_name.Size = new System.Drawing.Size(545, 34);
             this.party_name.TabIndex = 7;
-            this.party_name.TextChanged += new System.EventHandler(this.PartyName_TextChanged);
             // 
             // name
             // 
@@ -191,7 +187,6 @@
             this.JobDetails.Size = new System.Drawing.Size(173, 36);
             this.JobDetails.TabIndex = 14;
             this.JobDetails.Text = "Job Details";
-            this.JobDetails.Click += new System.EventHandler(this.label3_Click_1);
             // 
             // PrinterDetails
             // 
@@ -210,7 +205,6 @@
             this.printer_name.Name = "printer_name";
             this.printer_name.Size = new System.Drawing.Size(487, 34);
             this.printer_name.TabIndex = 17;
-            this.printer_name.TextChanged += new System.EventHandler(this.PrinterName_TextChanged);
             // 
             // PrinterNameLabel
             // 
@@ -285,7 +279,6 @@
             this.PaperTypeLabel.Size = new System.Drawing.Size(183, 29);
             this.PaperTypeLabel.TabIndex = 19;
             this.PaperTypeLabel.Text = "Type Of Paper";
-            this.PaperTypeLabel.Click += new System.EventHandler(this.label6_Click);
             // 
             // PaperDetails
             // 
@@ -304,7 +297,6 @@
             this.gross_packets.Name = "gross_packets";
             this.gross_packets.Size = new System.Drawing.Size(500, 34);
             this.gross_packets.TabIndex = 31;
-            this.gross_packets.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // no_of_sheets
             // 
@@ -478,12 +470,13 @@
             // 
             // HorizontalBar4
             // 
+            
             this.HorizontalBar4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.HorizontalBar4.Location = new System.Drawing.Point(63, 892);
             this.HorizontalBar4.Name = "HorizontalBar4";
             this.HorizontalBar4.Size = new System.Drawing.Size(736, 2);
             this.HorizontalBar4.TabIndex = 58;
-            this.HorizontalBar4.Click += new System.EventHandler(this.label5_Click);
+            //this.HorizontalBar4.Click += new System.EventHandler(this.label5_Click);
             // 
             // SubmitButton
             // 
@@ -523,7 +516,6 @@
             this.date.Name = "date";
             this.date.Size = new System.Drawing.Size(230, 34);
             this.date.TabIndex = 63;
-            this.date.TextChanged += new System.EventHandler(this.date_TextChanged);
             // 
             // StatusLabel
             // 
@@ -534,7 +526,6 @@
             this.StatusLabel.Size = new System.Drawing.Size(101, 29);
             this.StatusLabel.TabIndex = 64;
             this.StatusLabel.Text = "Status:-";
-            this.StatusLabel.Click += new System.EventHandler(this.label5_Click_1);
             // 
             // dateTimePicker1
             // 
@@ -550,7 +541,8 @@
             this.printDialog1.UseEXDialog = true;
             // 
             // label2
-            // 
+            //
+            /*
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopRight;
@@ -560,6 +552,7 @@
             this.label2.TabIndex = 67;
             this.label2.Text = "XYZ PACKAGING";
             this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            */
             // 
             // printForm1
             // 
@@ -576,7 +569,6 @@
             this.sr_no.Name = "sr_no";
             this.sr_no.Size = new System.Drawing.Size(173, 34);
             this.sr_no.TabIndex = 2;
-            this.sr_no.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // JobSheetNo
             // 
@@ -587,7 +579,6 @@
             this.JobSheetNo.Size = new System.Drawing.Size(179, 29);
             this.JobSheetNo.TabIndex = 1;
             this.JobSheetNo.Text = "Job Sheet No.";
-            this.JobSheetNo.Click += new System.EventHandler(this.JobSheetNo_Click);
             // 
             // JobCard
             // 

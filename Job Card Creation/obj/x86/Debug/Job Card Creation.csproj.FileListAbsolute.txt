@@ -28,7 +28,6 @@ F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.exe.manifes
 F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.application
 F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.exe
 F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.pdb
-F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\MySql.Data.dll
 F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Microsoft.VisualBasic.PowerPacks.xml
 F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\MySql.Data.xml
 F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csproj.CoreCompileInputs.cache
@@ -70,3 +69,4 @@ G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.application
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.exe
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.pdb
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.OrderStatus.resources
