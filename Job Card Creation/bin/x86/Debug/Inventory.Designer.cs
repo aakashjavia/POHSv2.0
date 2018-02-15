@@ -46,6 +46,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Info1 = new System.Windows.Forms.Label();
             this.SubmitButton = new System.Windows.Forms.Button();
+            this.threshold = new System.Windows.Forms.TextBox();
+            this.ThresholdLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -228,11 +230,31 @@
             this.SubmitButton.UseVisualStyleBackColor = true;
             this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
+            // threshold
+            // 
+            this.threshold.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.threshold.Location = new System.Drawing.Point(243, 466);
+            this.threshold.Name = "threshold";
+            this.threshold.Size = new System.Drawing.Size(495, 34);
+            this.threshold.TabIndex = 99;
+            // 
+            // ThresholdLabel
+            // 
+            this.ThresholdLabel.AutoSize = true;
+            this.ThresholdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.ThresholdLabel.Location = new System.Drawing.Point(6, 466);
+            this.ThresholdLabel.Name = "ThresholdLabel";
+            this.ThresholdLabel.Size = new System.Drawing.Size(132, 29);
+            this.ThresholdLabel.TabIndex = 98;
+            this.ThresholdLabel.Text = "Threshold";
+            // 
             // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(753, 738);
+            this.Controls.Add(this.threshold);
+            this.Controls.Add(this.ThresholdLabel);
             this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.Info1);
             this.Controls.Add(this.label4);
@@ -280,5 +302,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label Info1;
         private System.Windows.Forms.Button SubmitButton;
+        private System.Windows.Forms.TextBox threshold;
+        private System.Windows.Forms.Label ThresholdLabel;
     }
 }
