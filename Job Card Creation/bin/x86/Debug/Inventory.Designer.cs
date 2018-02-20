@@ -43,11 +43,14 @@
             this.StatusLabel = new System.Windows.Forms.Label();
             this.HorizontalBar4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.Info1 = new System.Windows.Forms.Label();
             this.SubmitButton = new System.Windows.Forms.Button();
             this.threshold = new System.Windows.Forms.TextBox();
             this.ThresholdLabel = new System.Windows.Forms.Label();
+            this.OrderLabel = new System.Windows.Forms.Label();
+            this.InventoryLabel = new System.Windows.Forms.Label();
+            this.JobCardLabel = new System.Windows.Forms.Label();
+            this.NewJobLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -146,10 +149,11 @@
             // 
             // UpdateButton
             // 
-            this.UpdateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.UpdateButton.Location = new System.Drawing.Point(173, 596);
+            this.UpdateButton.AutoSize = true;
+            this.UpdateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.UpdateButton.Location = new System.Drawing.Point(206, 596);
             this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(131, 43);
+            this.UpdateButton.Size = new System.Drawing.Size(183, 35);
             this.UpdateButton.TabIndex = 88;
             this.UpdateButton.Text = "Update";
             this.UpdateButton.UseVisualStyleBackColor = true;
@@ -178,16 +182,16 @@
             this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StatusLabel.Location = new System.Drawing.Point(12, 700);
             this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(101, 29);
+            this.StatusLabel.Size = new System.Drawing.Size(131, 29);
             this.StatusLabel.TabIndex = 92;
-            this.StatusLabel.Text = "Status:-";
+            this.StatusLabel.Text = "STATUS:-";
             // 
             // HorizontalBar4
             // 
             this.HorizontalBar4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.HorizontalBar4.Location = new System.Drawing.Point(11, 686);
+            this.HorizontalBar4.Location = new System.Drawing.Point(4, 698);
             this.HorizontalBar4.Name = "HorizontalBar4";
-            this.HorizontalBar4.Size = new System.Drawing.Size(991, 2);
+            this.HorizontalBar4.Size = new System.Drawing.Size(734, 2);
             this.HorizontalBar4.TabIndex = 91;
             // 
             // label2
@@ -197,17 +201,6 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(991, 2);
             this.label2.TabIndex = 93;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.label4.Location = new System.Drawing.Point(252, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(244, 32);
-            this.label4.TabIndex = 95;
-            this.label4.Text = "XYZ PACKAGING";
             // 
             // Info1
             // 
@@ -221,10 +214,11 @@
             // 
             // SubmitButton
             // 
-            this.SubmitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.SubmitButton.AutoSize = true;
+            this.SubmitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.SubmitButton.Location = new System.Drawing.Point(17, 596);
             this.SubmitButton.Name = "SubmitButton";
-            this.SubmitButton.Size = new System.Drawing.Size(131, 43);
+            this.SubmitButton.Size = new System.Drawing.Size(183, 35);
             this.SubmitButton.TabIndex = 97;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = true;
@@ -248,16 +242,67 @@
             this.ThresholdLabel.TabIndex = 98;
             this.ThresholdLabel.Text = "Threshold";
             // 
+            // OrderLabel
+            // 
+            this.OrderLabel.AutoSize = true;
+            this.OrderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.OrderLabel.Location = new System.Drawing.Point(499, 9);
+            this.OrderLabel.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.OrderLabel.Name = "OrderLabel";
+            this.OrderLabel.Size = new System.Drawing.Size(160, 29);
+            this.OrderLabel.TabIndex = 103;
+            this.OrderLabel.Text = "Order Status";
+            this.OrderLabel.Click += new System.EventHandler(this.OrderLabel_Click);
+            // 
+            // InventoryLabel
+            // 
+            this.InventoryLabel.AutoSize = true;
+            this.InventoryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.InventoryLabel.Location = new System.Drawing.Point(341, 9);
+            this.InventoryLabel.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.InventoryLabel.Name = "InventoryLabel";
+            this.InventoryLabel.Size = new System.Drawing.Size(118, 29);
+            this.InventoryLabel.TabIndex = 102;
+            this.InventoryLabel.Text = "Inventory";
+            this.InventoryLabel.Click += new System.EventHandler(this.InventoryLabel_Click);
+            // 
+            // JobCardLabel
+            // 
+            this.JobCardLabel.AutoSize = true;
+            this.JobCardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.JobCardLabel.Location = new System.Drawing.Point(169, 9);
+            this.JobCardLabel.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.JobCardLabel.Name = "JobCardLabel";
+            this.JobCardLabel.Size = new System.Drawing.Size(132, 29);
+            this.JobCardLabel.TabIndex = 101;
+            this.JobCardLabel.Text = "Job Cards";
+            this.JobCardLabel.Click += new System.EventHandler(this.JobCardLabel_Click);
+            // 
+            // NewJobLabel
+            // 
+            this.NewJobLabel.AutoSize = true;
+            this.NewJobLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.NewJobLabel.Location = new System.Drawing.Point(13, 9);
+            this.NewJobLabel.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.NewJobLabel.Name = "NewJobLabel";
+            this.NewJobLabel.Size = new System.Drawing.Size(116, 29);
+            this.NewJobLabel.TabIndex = 100;
+            this.NewJobLabel.Text = "New Job";
+            this.NewJobLabel.Click += new System.EventHandler(this.NewJob_Click);
+            // 
             // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(753, 738);
+            this.Controls.Add(this.OrderLabel);
+            this.Controls.Add(this.InventoryLabel);
+            this.Controls.Add(this.JobCardLabel);
+            this.Controls.Add(this.NewJobLabel);
             this.Controls.Add(this.threshold);
             this.Controls.Add(this.ThresholdLabel);
             this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.Info1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.StatusLabel);
             this.Controls.Add(this.HorizontalBar4);
@@ -273,6 +318,7 @@
             this.Controls.Add(this.lblPaperSize);
             this.Controls.Add(this.paper_type);
             this.Controls.Add(this.PaperTypeLabel);
+            this.Location = new System.Drawing.Point(30, 30);
             this.Name = "Inventory";
             this.Text = "Inventory";
             this.Load += new System.EventHandler(this.Inventory_Load);
@@ -299,10 +345,13 @@
         private System.Windows.Forms.Label StatusLabel;
         private System.Windows.Forms.Label HorizontalBar4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label Info1;
         private System.Windows.Forms.Button SubmitButton;
         private System.Windows.Forms.TextBox threshold;
         private System.Windows.Forms.Label ThresholdLabel;
+        private System.Windows.Forms.Label OrderLabel;
+        private System.Windows.Forms.Label InventoryLabel;
+        private System.Windows.Forms.Label JobCardLabel;
+        private System.Windows.Forms.Label NewJobLabel;
     }
 }

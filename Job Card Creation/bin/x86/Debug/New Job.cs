@@ -15,6 +15,7 @@ namespace Job_Card_Creation
         public NewJob()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -44,22 +45,78 @@ namespace Job_Card_Creation
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
-                StatusLabel.Text = "STATUS(button1_Click):- Data Accepted";
+                StatusLabel.Text = "STATUS:- Data Accepted";
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS(button1_Click):-" + err.Message;
+                StatusLabel.Text = "STATUS:-" + err.Message;
             }
         }
 
         private void NewJob_Load(object sender, EventArgs e)
         {
+           
             try
             {
-                int sr = 0;
-                //AutoFill Sr. No
-                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
+               
+                fill_sr_no();
+                fillComboBox();
+            }
+            catch (Exception err)
+            {
+                StatusLabel.Text = "STATUS:-" + err.Message;
+            }
+        }
+        //ComboBoxItem
+        public class ComboboxItem
+        {
+            public string Text { get; set; }
+            public object Value { get; set; }
 
+            public override string ToString()
+            {
+                return Text;
+            }
+        }
+        public void fillComboBox()
+        {
+            try
+            {
+                ComboboxItem item = new ComboboxItem();
+
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
+                SqlConnection con;
+                con = new SqlConnection(connectionString);
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandText = "select * from Inventory";
+                cmd.Connection = con;
+                con.Open();
+                using (var read = cmd.ExecuteReader())
+                {
+                    int count = 0;
+                    while (read.Read())
+                    {
+                        count = count + 1;
+                        item.Text = read["paper_type"].ToString();
+                        item.Value = read["paper_type"].ToString();
+                        paper_type.Items.Add(item);
+                    }
+                    paper_type.SelectedIndex = 0;
+                }
+                con.Close();
+            }
+            catch (Exception err)
+            {
+                StatusLabel.Text = "STATUS: -" + err.Message;
+            }
+        }
+        public void fill_sr_no()
+        {
+            try
+            {
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
+                int sr;
                 SqlConnection con;
                 con = new SqlConnection(connectionString);
                 SqlCommand cmd = new SqlCommand();
@@ -72,15 +129,15 @@ namespace Job_Card_Creation
                 {
                     sr = reader.GetInt32(0) + 1;
                     sr_no.Text = sr.ToString();
-                    StatusLabel.Text = "STATUS(Form1_Load):-Number Filled";
+                    StatusLabel.Text = "STATUS:-Number Filled";
                 }
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS(Form1_Load):-" + err.Message;
+                StatusLabel.Text = "STATUS: -" + err.Message;
             }
-        }
 
+        }
         private void sr_no_TextChanged(object sender, EventArgs e)
         {
 
@@ -102,6 +159,42 @@ namespace Job_Card_Creation
         }
 
         private void SheetCuttingLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void paper_type_SelectedIndexChanged(object sender, EventArgs e)
+        {
+      
+        }
+
+        private void NewJob_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void JobCardLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            JobCard frm1 = new JobCard();
+            frm1.Show();
+        }
+
+        private void InventoryLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Inventory frm3 = new Inventory();
+            frm3.Show();
+        }
+
+        private void OrderLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OrderStatus frm4 = new OrderStatus();
+            frm4.Show();
+        }
+
+        private void n(object sender, EventArgs e)
         {
 
         }

@@ -101,6 +101,7 @@
             this.Controls.Add(this.toNewJobForm);
             this.Controls.Add(this.toJobCardForm);
             this.Controls.Add(this.title1);
+            this.Location = new System.Drawing.Point(30, 30);
             this.Name = "Main_Page";
             this.Text = "Job Card Application";
             this.ResumeLayout(false);

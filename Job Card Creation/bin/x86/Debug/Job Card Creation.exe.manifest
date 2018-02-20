@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Job Card Creation.exe" size="91136">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Job Card Creation.exe" size="104960">
       <assemblyIdentity name="Job Card Creation" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>i2vrxB+pRaM3arfb0UUG9sSNjPnOlTsmWo/RSeb3tAc=</dsig:DigestValue>
+        <dsig:DigestValue>mTW70IdjQ0xYEJI8DAY9CqHN8QDFJj0nAOpV4KP0ynI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
