@@ -18,51 +18,9 @@ namespace Job_Card_Creation
         public JobCard()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
           
-        }
-
-        //for converting to image
-        
-        private System.IO.Stream streamToPrint;
-        string streamType;
-        [System.Runtime.InteropServices.DllImport("gdi32.dll")]
-
-        private static extern bool BitBlt
-        (
-            IntPtr hdcDest, // handle to destination DC
-            int nXDest, // x-coord of destination upper-left corner
-            int nYDest, // y-coord of destination upper-left corner
-            int nWidth, // width of destination rectangle
-            int nHeight, // height of destination rectangle
-            IntPtr hdcSrc, // handle to source DC
-            int nXSrc, // x-coordinate of source upper-left corner
-            int nYSrc, // y-coordinate of source upper-left corner
-            System.Int32 dwRop // raster operation code
-        );
-
-
-        
-        private void printDocument1_PrintPage(System.Object sender,
-               System.Drawing.Printing.PrintPageEventArgs e)
-        {
-            System.Drawing.Image image = System.Drawing.Image.FromStream(this.streamToPrint);
-            int x = e.MarginBounds.X;
-            int y = e.MarginBounds.Y;
-            int width = image.Width;
-            int height = image.Height;
-            if ((width / e.MarginBounds.Width) > (height / e.MarginBounds.Height))
-            {
-                width = e.MarginBounds.Width;
-                height = image.Height * e.MarginBounds.Width / image.Width;
-            }
-            else
-            {
-                height = e.MarginBounds.Height;
-                width = image.Width * e.MarginBounds.Height / image.Height;
-            }
-            System.Drawing.Rectangle destRect = new System.Drawing.Rectangle(x, y, width, height);
-            e.Graphics.DrawImage(image, destRect, 0, 0, image.Width, image.Height, System.Drawing.GraphicsUnit.Pixel);
-        }
+        }      
         
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -102,7 +60,7 @@ namespace Job_Card_Creation
                 {
                     sr = reader.GetInt32(0) + 1;
                     sr_no.Text = sr.ToString();
-                    StatusLabel.Text = "STATUS(Form1_Load):-Number Filled";
+                    StatusLabel.Text = "STATUS:-Number Filled";
                 }
                 con.Close();
             }
@@ -110,7 +68,7 @@ namespace Job_Card_Creation
             
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS(Form1_Load):-" + err.Message;
+                StatusLabel.Text = "STATUS:-" + err.Message;
             }
 
         }
@@ -184,11 +142,11 @@ namespace Job_Card_Creation
                 cmd.ExecuteNonQuery();
 
                 con.Close();
-                StatusLabel.Text = "STATUS(button1_Click):- Data Accepted (" +r_affected.ToString()+ ") ";
+                StatusLabel.Text = "STATUS:- Data Accepted (" +r_affected.ToString()+ ") ";
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS(button1_Click):-" + err.Message;
+                StatusLabel.Text = "STATUS:-" + err.Message;
             }
             
          
@@ -225,13 +183,13 @@ namespace Job_Card_Creation
                     this.num_of_colors.Text = reader.GetString(8);
                     this.color_shades.Text = reader.GetString(9);
                     this.varnish.Text = reader.GetString(10);
-                    StatusLabel.Text = "STATUS(JobCode_TextChanged):- Data Filled";
+                    StatusLabel.Text = "STATUS:- Data Filled";
                 }
                 con.Close();
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS(JobCode_TextChanged):-" + err.Message;
+                StatusLabel.Text = "STATUS:-" + err.Message;
             }
         }
       public void label2_Click_(object sender, EventArgs e)
@@ -239,57 +197,7 @@ namespace Job_Card_Creation
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            StatusLabel.Text = "";
-            dateTimePicker1.Visible = false;
-            SubmitButton.Visible = false;
-            printButton.Visible = false;
-            try { 
-                        Graphics g1 = this.CreateGraphics();
-                        Image MyImage = new Bitmap(this.ClientRectangle.Width, this.ClientRectangle.Height, g1);
-                        Graphics g2 = Graphics.FromImage(MyImage);
-                        IntPtr dc1 = g1.GetHdc();
-                        IntPtr dc2 = g2.GetHdc();
-                        BitBlt(dc2, 0, 0, ClientRectangle.Width, ClientRectangle.Height, dc1, 0, 0, 13369376);
-                        //backed up above line: - BitBlt(dc2, 0, 0, this.ClientRectangle.Width, this.ClientRectangle.Height, dc1, 0, 0, 13369376);
-                        g1.ReleaseHdc(dc1);
-                        g2.ReleaseHdc(dc2);
-                saveFileDialog1.FileName = item_code.Text+"-"+date.Text;
-                saveFileDialog1.Filter = "Image Files| *.jpg;";
-
-                saveFileDialog1.ShowDialog();
-
-
-                        MyImage.Save(saveFileDialog1.FileName, ImageFormat.Jpeg);
-                StatusLabel.Text = "File Stored at..."+ saveFileDialog1.FileName.ToString();
-
-                SubmitButton.Visible = true;
-                printButton.Visible = true;
-
-            }
-
-            catch (Exception err)
-            {
-                StatusLabel.Text = "STATUS(button2_Click):-" + err.Message;
-            }
-        }
-        public void StartPrint(Stream streamToPrint, string streamType)
-        {
-            this.printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
-            this.streamToPrint = streamToPrint;
-            this.streamType = streamType;
-            System.Windows.Forms.PrintDialog PrintDialog1 = new PrintDialog();
-            PrintDialog1.AllowSomePages = true;
-            PrintDialog1.ShowHelp = true;
-            PrintDialog1.Document = printDocument1;
-            DialogResult result = PrintDialog1.ShowDialog();
-            if (result == DialogResult.OK)
-            {
-                printDocument1.Print();
-                //docToPrint.Print();
-            }
-        }
+      
 
         private void DateLabel_Click(object sender, EventArgs e)
         {
@@ -302,6 +210,47 @@ namespace Job_Card_Creation
         {
             //Fills date time Manually
             date.Text = dateTimePicker1.Text;
+        }
+
+        private void navigationBar1_Load(object sender, EventArgs e)
+        {
+
+        }  
+
+        private void NewJob_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            NewJob frm2 = new NewJob();
+            frm2.Show();
+        }
+
+        private void JobCardLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void InventoryLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Inventory frm3 = new Inventory();
+            frm3.Show();
+        }
+
+        private void OrderLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OrderStatus frm4 = new OrderStatus();
+            frm4.Show();
+        }
+
+        private void StatusLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrontPrintLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

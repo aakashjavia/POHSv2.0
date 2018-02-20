@@ -65,6 +65,11 @@
             this.var_status = new System.Windows.Forms.Label();
             this.sr_no = new System.Windows.Forms.TextBox();
             this.SrNoLabel = new System.Windows.Forms.Label();
+            this.OrderLabel = new System.Windows.Forms.Label();
+            this.InventoryLabel = new System.Windows.Forms.Label();
+            this.JobCardLabel = new System.Windows.Forms.Label();
+            this.NewJobLabel = new System.Windows.Forms.Label();
+            this.HorizontalBar4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderstatusBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
@@ -76,7 +81,7 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 65);
@@ -400,9 +405,11 @@
             // 
             // UpdateButton
             // 
+            this.UpdateButton.AutoSize = true;
+            this.UpdateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.UpdateButton.Location = new System.Drawing.Point(12, 774);
             this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(183, 31);
+            this.UpdateButton.Size = new System.Drawing.Size(183, 35);
             this.UpdateButton.TabIndex = 90;
             this.UpdateButton.Text = "Update";
             this.UpdateButton.UseVisualStyleBackColor = true;
@@ -410,9 +417,11 @@
             // 
             // ClearButton
             // 
+            this.ClearButton.AutoSize = true;
+            this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.ClearButton.Location = new System.Drawing.Point(225, 774);
             this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(183, 31);
+            this.ClearButton.Size = new System.Drawing.Size(183, 35);
             this.ClearButton.TabIndex = 91;
             this.ClearButton.Text = "Clear";
             this.ClearButton.UseVisualStyleBackColor = true;
@@ -424,9 +433,9 @@
             this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StatusLabel.Location = new System.Drawing.Point(7, 817);
             this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(101, 29);
+            this.StatusLabel.Size = new System.Drawing.Size(138, 29);
             this.StatusLabel.TabIndex = 92;
-            this.StatusLabel.Text = "Status:-";
+            this.StatusLabel.Text = "STATUS: -";
             // 
             // var_priority
             // 
@@ -469,11 +478,72 @@
             this.SrNoLabel.TabIndex = 97;
             this.SrNoLabel.Text = "Sr. No";
             // 
+            // OrderLabel
+            // 
+            this.OrderLabel.AutoSize = true;
+            this.OrderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.OrderLabel.Location = new System.Drawing.Point(499, 9);
+            this.OrderLabel.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.OrderLabel.Name = "OrderLabel";
+            this.OrderLabel.Size = new System.Drawing.Size(160, 29);
+            this.OrderLabel.TabIndex = 101;
+            this.OrderLabel.Text = "Order Status";
+            this.OrderLabel.Click += new System.EventHandler(this.OrderLabel_Click);
+            // 
+            // InventoryLabel
+            // 
+            this.InventoryLabel.AutoSize = true;
+            this.InventoryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.InventoryLabel.Location = new System.Drawing.Point(341, 9);
+            this.InventoryLabel.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.InventoryLabel.Name = "InventoryLabel";
+            this.InventoryLabel.Size = new System.Drawing.Size(118, 29);
+            this.InventoryLabel.TabIndex = 100;
+            this.InventoryLabel.Text = "Inventory";
+            this.InventoryLabel.Click += new System.EventHandler(this.InventoryLabel_Click);
+            // 
+            // JobCardLabel
+            // 
+            this.JobCardLabel.AutoSize = true;
+            this.JobCardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.JobCardLabel.Location = new System.Drawing.Point(169, 9);
+            this.JobCardLabel.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.JobCardLabel.Name = "JobCardLabel";
+            this.JobCardLabel.Size = new System.Drawing.Size(132, 29);
+            this.JobCardLabel.TabIndex = 99;
+            this.JobCardLabel.Text = "Job Cards";
+            this.JobCardLabel.Click += new System.EventHandler(this.JobCardLabel_Click);
+            // 
+            // NewJobLabel
+            // 
+            this.NewJobLabel.AutoSize = true;
+            this.NewJobLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.NewJobLabel.Location = new System.Drawing.Point(13, 9);
+            this.NewJobLabel.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.NewJobLabel.Name = "NewJobLabel";
+            this.NewJobLabel.Size = new System.Drawing.Size(116, 29);
+            this.NewJobLabel.TabIndex = 98;
+            this.NewJobLabel.Text = "New Job";
+            this.NewJobLabel.Click += new System.EventHandler(this.NewJob_Click);
+            // 
+            // HorizontalBar4
+            // 
+            this.HorizontalBar4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.HorizontalBar4.Location = new System.Drawing.Point(12, 815);
+            this.HorizontalBar4.Name = "HorizontalBar4";
+            this.HorizontalBar4.Size = new System.Drawing.Size(1132, 2);
+            this.HorizontalBar4.TabIndex = 102;
+            // 
             // OrderStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1151, 856);
+            this.Controls.Add(this.HorizontalBar4);
+            this.Controls.Add(this.OrderLabel);
+            this.Controls.Add(this.InventoryLabel);
+            this.Controls.Add(this.JobCardLabel);
+            this.Controls.Add(this.NewJobLabel);
             this.Controls.Add(this.SrNoLabel);
             this.Controls.Add(this.sr_no);
             this.Controls.Add(this.var_status);
@@ -496,6 +566,7 @@
             this.Controls.Add(this.PartyLabel);
             this.Controls.Add(this.Info1);
             this.Controls.Add(this.dataGridView1);
+            this.Location = new System.Drawing.Point(30, 30);
             this.Name = "OrderStatus";
             this.Text = "Order Status";
             this.Load += new System.EventHandler(this.OrderStatus_Load);
@@ -549,5 +620,10 @@
         private System.Windows.Forms.Label var_status;
         private System.Windows.Forms.TextBox sr_no;
         private System.Windows.Forms.Label SrNoLabel;
+        private System.Windows.Forms.Label OrderLabel;
+        private System.Windows.Forms.Label InventoryLabel;
+        private System.Windows.Forms.Label JobCardLabel;
+        private System.Windows.Forms.Label NewJobLabel;
+        private System.Windows.Forms.Label HorizontalBar4;
     }
 }

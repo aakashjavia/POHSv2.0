@@ -17,6 +17,7 @@ namespace Job_Card_Creation
         public Inventory()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
         }
         private void Inventory_Load(object sender, EventArgs e)
         {
@@ -27,7 +28,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "Status(Inventory_Load_1)" + err.Message;
+                StatusLabel.Text = "STATUS" + err.Message;
             }
         }
         public void updatedata()
@@ -43,6 +44,22 @@ namespace Job_Card_Creation
             sda.Fill(dt);
             con.Close();
             dataGridView1.DataSource = dt;
+        }
+        public void update_sr_no()
+        {
+            SqlCommand cmd = new SqlCommand();
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
+            SqlConnection con = new SqlConnection(connectionString);
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.Connection = con;
+
+            cmd.CommandText = "select * from inventory order by sr_no desc";
+            con.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            int sr = reader.GetInt32(0) + 1;
+            sr_no.Text = sr.ToString();
+            con.Close();
         }
         public void inventoryCheck()
         {
@@ -73,7 +90,7 @@ namespace Job_Card_Creation
         {
             try
             {
-                StatusLabel.Text = "STATUS(dataGridView1_RowHeaderMouseClick):- Clicked";
+                StatusLabel.Text = "STATUS:- Clicked";
                 foreach (DataGridViewRow row in dataGridView1.SelectedRows)
                 {
                     sr_no.Text = row.Cells[0].Value.ToString();
@@ -86,7 +103,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS(dataGridView1_RowHeaderMouseClick):-" + err.Message;
+                StatusLabel.Text = "STATUS:-" + err.Message;
             }
         }
                 private void paper_type_TextChanged(object sender, EventArgs e)
@@ -122,13 +139,13 @@ namespace Job_Card_Creation
 
             con.Open();
             rows = cmd.ExecuteNonQuery();
-            StatusLabel.Text = "STATUS(UpdateButton_Click) Rows Affected: -" + rows.ToString();
+            StatusLabel.Text = "STATUS Rows Affected: -" + rows.ToString();
             updatedata();
             inventoryCheck();
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS(btnSumit_Click):-" + err.Message;
+                StatusLabel.Text = "STATUS:-" + err.Message;
             }
 
 
@@ -137,8 +154,9 @@ namespace Job_Card_Creation
         private void SubmitButton_Click(object sender, EventArgs e)
         {
             try
-            {           
-              SqlCommand cmd = new SqlCommand();
+            {
+                update_sr_no();
+                SqlCommand cmd = new SqlCommand();
               string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
               SqlConnection con = new SqlConnection(connectionString);
               cmd.CommandType = System.Data.CommandType.Text;
@@ -154,37 +172,53 @@ namespace Job_Card_Creation
 
                 con.Open();
               int rows = cmd.ExecuteNonQuery();
-              StatusLabel.Text = "STATUS(UpdateButton_Click) Rows Affected: -" + rows.ToString();
+              StatusLabel.Text = "STATUS Rows Affected: -" + rows.ToString();
               con.Close();
               updatedata();
               inventoryCheck();
+               
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS(SubmitButton_Click):-" + err.Message;
+                StatusLabel.Text = "STATUS:-" + err.Message;
             }
 
         }
 
         private void txtSrNo_OnClick(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand();
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
-            SqlConnection con = new SqlConnection(connectionString);
-            cmd.CommandType = System.Data.CommandType.Text;
-            cmd.Connection = con;
-
-            cmd.CommandText = "select * from inventory order by sr_no desc";
-            con.Open();
-            SqlDataReader reader = cmd.ExecuteReader();
-            reader.Read();
-            int sr = reader.GetInt32(0) + 1;
-            con.Close();
+           
         }
 
         private void sr_no_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void NewJob_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            NewJob frm2 = new NewJob();
+            frm2.Show();
+        }
+
+        private void JobCardLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            JobCard frm1 = new JobCard();
+            frm1.Show();
+        }
+
+        private void InventoryLabel_Click(object sender, EventArgs e)
+        {
+      
+        }
+
+        private void OrderLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OrderStatus frm4 = new OrderStatus();
+            frm4.Show();
         }
     }
 }

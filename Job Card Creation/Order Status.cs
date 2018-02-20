@@ -17,6 +17,7 @@ namespace Job_Card_Creation
         public OrderStatus()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
         }
 
         private void OrderStatus_Load(object sender, EventArgs e)
@@ -32,7 +33,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS(OrderStatus_Load):-" + err.Message;
+                StatusLabel.Text = "STATUS:-" + err.Message;
             }
         }
         public void updatedata()
@@ -126,12 +127,12 @@ namespace Job_Card_Creation
                             rdo.Checked = true;
                         }
                     }
-                    StatusLabel.Text = "STATUS(dataGridView1_RowHeaderMouseClick):- Filled";
+                    StatusLabel.Text = "STATUS:- Filled";
                 }
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS(dataGridView1_RowHeaderMouseClick):-" + err.Message;
+                StatusLabel.Text = "STATUS:-" + err.Message;
             }
         }
 
@@ -207,12 +208,12 @@ namespace Job_Card_Creation
 
                 con.Open();
                 rows = cmd.ExecuteNonQuery();
-                StatusLabel.Text = "STATUS(UpdateButton_Click) Rows Affected: -" + rows.ToString();
+                StatusLabel.Text = "STATUS: - Rows Affected (" + rows.ToString()+")";
                 updatedata();
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS(UpdateButton_Click):-" + err.Message;
+                StatusLabel.Text = "STATUS:-" + err.Message;
             }
         }
 
@@ -246,6 +247,31 @@ namespace Job_Card_Creation
                 Comments.Text = "";
             }
 
+        }
+        private void NewJob_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            NewJob frm2 = new NewJob();
+            frm2.Show();
+        }
+
+        private void JobCardLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            JobCard frm1 = new JobCard();
+            frm1.Show();
+        }
+
+        private void InventoryLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Inventory frm3 = new Inventory();
+            frm3.Show();
+        }
+
+        private void OrderLabel_Click(object sender, EventArgs e)
+        {            
+          
         }
     }
 }
