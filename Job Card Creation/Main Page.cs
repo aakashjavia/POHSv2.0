@@ -22,7 +22,7 @@ namespace Job_Card_Creation
         {
             
             JobCard frm1 = new JobCard();
-            frm1.StartPosition = FormStartPosition.Manual;
+            
             frm1.Show();
         }
 
@@ -30,7 +30,7 @@ namespace Job_Card_Creation
         {
             
             NewJob frm2 = new NewJob();
-            frm2.StartPosition = FormStartPosition.Manual;
+           
             frm2.Show();
         }
 
@@ -38,7 +38,7 @@ namespace Job_Card_Creation
         {
             
             Inventory frm3 = new Inventory();
-            frm3.StartPosition = FormStartPosition.Manual;
+          
             frm3.Show();
         }
 
@@ -46,7 +46,7 @@ namespace Job_Card_Creation
         {
            
             OrderStatus frm4 = new OrderStatus();
-            frm4.StartPosition = FormStartPosition.Manual;
+           
             frm4.Show();
         }
         private void title1_Click(object sender, EventArgs e)
@@ -54,6 +54,10 @@ namespace Job_Card_Creation
 
         }
 
-      
+        private void button1_Click(object sender, EventArgs e)
+        {
+            metroTest form4 = new metroTest();
+            form4.Show();
+        }
     }
 }

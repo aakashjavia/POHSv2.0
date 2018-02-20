@@ -12,12 +12,12 @@ using System.Data.SqlClient;
 
 namespace Job_Card_Creation
 {
-    public partial class Inventory : Form
+    public partial class Inventory : UserControl
     {
         public Inventory()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.Manual;
+            
         }
         private void Inventory_Load(object sender, EventArgs e)
         {
@@ -219,6 +219,16 @@ namespace Job_Card_Creation
             this.Hide();
             OrderStatus frm4 = new OrderStatus();
             frm4.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

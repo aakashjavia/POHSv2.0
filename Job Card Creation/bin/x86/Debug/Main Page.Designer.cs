@@ -33,6 +33,7 @@
             this.toNewJobForm = new System.Windows.Forms.Button();
             this.ToInventory = new System.Windows.Forms.Button();
             this.toOrderStatus = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // title1
@@ -91,11 +92,23 @@
             this.toOrderStatus.UseVisualStyleBackColor = true;
             this.toOrderStatus.Click += new System.EventHandler(this.toOrderStatus_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(12, 636);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(392, 108);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "MetroTest";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Main_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(988, 1031);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.toOrderStatus);
             this.Controls.Add(this.ToInventory);
             this.Controls.Add(this.toNewJobForm);
@@ -115,5 +128,6 @@
         private System.Windows.Forms.Button toNewJobForm;
         private System.Windows.Forms.Button ToInventory;
         private System.Windows.Forms.Button toOrderStatus;
+        private System.Windows.Forms.Button button1;
     }
 }

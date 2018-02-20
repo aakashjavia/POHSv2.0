@@ -53,6 +53,9 @@ G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.application
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.exe
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.pdb
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\MetroFramework.Design.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\MetroFramework.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\MetroFramework.Fonts.dll
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Microsoft.VisualBasic.PowerPacks.dll
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\MySql.Data.dll
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Microsoft.VisualBasic.PowerPacks.xml
@@ -60,6 +63,7 @@ G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Inventory.resources
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.JobCard.resources
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Main_Page.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.metroTest.resources
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.NewJob.resources
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.OrderStatus.resources
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Properties.Resources.resources

@@ -10,12 +10,12 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace Job_Card_Creation
 {
-    public partial class NewJob : Form
+    public partial class NewJob : UserControl
     {
         public NewJob()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.Manual;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

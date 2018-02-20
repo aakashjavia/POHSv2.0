@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace Job_Card_Creation
 {
-    public partial class OrderStatus : Form
+    public partial class OrderStatus : UserControl
     {
         public OrderStatus()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.Manual;
+           
         }
 
         private void OrderStatus_Load(object sender, EventArgs e)
