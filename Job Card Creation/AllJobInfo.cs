@@ -24,13 +24,14 @@ namespace Job_Card_Creation
             string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
             SqlConnection con = new SqlConnection(connectionString);
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "select * from job_info";
+            cmd.CommandText = "select item_code, name, party_name, paper_type from job_info";
             cmd.Connection = con;
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             con.Close();
             dataGridView1.DataSource = dt;
+            dataGridView1.Font = new Font("Seguo UI", 8F, GraphicsUnit.Point);
         }
 
         private void AllJobInfo_Load(object sender, EventArgs e)
@@ -38,6 +39,7 @@ namespace Job_Card_Creation
             try
             {
                 updatedata();
+                dataGridView1.BackgroundColor = this.BackColor;
             }
             catch(Exception err)
             {

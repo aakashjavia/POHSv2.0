@@ -48,6 +48,8 @@ namespace Job_Card_Creation
             sda.Fill(dt);
             con.Close();
             dataGridView1.DataSource = dt;
+            dataGridView1.Font = new Font("Seguo UI", 8F, GraphicsUnit.Point);
+
         }
         public void update_sr_no()
         {

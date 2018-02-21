@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PaperTypeLabel = new System.Windows.Forms.Label();
             this.paper_type = new System.Windows.Forms.TextBox();
             this.lblPaperSize = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@
             this.PaperTypeLabel.AutoSize = true;
             this.PaperTypeLabel.BackColor = System.Drawing.Color.Transparent;
             this.PaperTypeLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PaperTypeLabel.Location = new System.Drawing.Point(-2, 254);
+            this.PaperTypeLabel.Location = new System.Drawing.Point(-2, 266);
             this.PaperTypeLabel.Name = "PaperTypeLabel";
             this.PaperTypeLabel.Size = new System.Drawing.Size(165, 32);
             this.PaperTypeLabel.TabIndex = 77;
@@ -64,9 +64,9 @@
             // paper_type
             // 
             this.paper_type.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.paper_type.Location = new System.Drawing.Point(235, 254);
+            this.paper_type.Location = new System.Drawing.Point(235, 263);
             this.paper_type.Name = "paper_type";
-            this.paper_type.Size = new System.Drawing.Size(495, 38);
+            this.paper_type.Size = new System.Drawing.Size(523, 38);
             this.paper_type.TabIndex = 79;
             this.paper_type.TextChanged += new System.EventHandler(this.paper_type_TextChanged);
             // 
@@ -75,7 +75,7 @@
             this.lblPaperSize.AutoSize = true;
             this.lblPaperSize.BackColor = System.Drawing.Color.Transparent;
             this.lblPaperSize.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPaperSize.Location = new System.Drawing.Point(-2, 294);
+            this.lblPaperSize.Location = new System.Drawing.Point(-2, 310);
             this.lblPaperSize.Name = "lblPaperSize";
             this.lblPaperSize.Size = new System.Drawing.Size(124, 32);
             this.lblPaperSize.TabIndex = 80;
@@ -86,7 +86,7 @@
             this.lblPackets.AutoSize = true;
             this.lblPackets.BackColor = System.Drawing.Color.Transparent;
             this.lblPackets.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPackets.Location = new System.Drawing.Point(-2, 334);
+            this.lblPackets.Location = new System.Drawing.Point(-2, 354);
             this.lblPackets.Name = "lblPackets";
             this.lblPackets.Size = new System.Drawing.Size(93, 32);
             this.lblPackets.TabIndex = 81;
@@ -97,7 +97,7 @@
             this.lblSheets.AutoSize = true;
             this.lblSheets.BackColor = System.Drawing.Color.Transparent;
             this.lblSheets.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSheets.Location = new System.Drawing.Point(-2, 374);
+            this.lblSheets.Location = new System.Drawing.Point(-2, 398);
             this.lblSheets.Name = "lblSheets";
             this.lblSheets.Size = new System.Drawing.Size(86, 32);
             this.lblSheets.TabIndex = 82;
@@ -106,25 +106,25 @@
             // paper_size
             // 
             this.paper_size.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.paper_size.Location = new System.Drawing.Point(235, 294);
+            this.paper_size.Location = new System.Drawing.Point(235, 307);
             this.paper_size.Name = "paper_size";
-            this.paper_size.Size = new System.Drawing.Size(495, 38);
+            this.paper_size.Size = new System.Drawing.Size(523, 38);
             this.paper_size.TabIndex = 83;
             // 
             // packets
             // 
             this.packets.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.packets.Location = new System.Drawing.Point(235, 334);
+            this.packets.Location = new System.Drawing.Point(235, 351);
             this.packets.Name = "packets";
-            this.packets.Size = new System.Drawing.Size(495, 38);
+            this.packets.Size = new System.Drawing.Size(523, 38);
             this.packets.TabIndex = 84;
             // 
             // sheets
             // 
             this.sheets.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sheets.Location = new System.Drawing.Point(235, 374);
+            this.sheets.Location = new System.Drawing.Point(235, 395);
             this.sheets.Name = "sheets";
-            this.sheets.Size = new System.Drawing.Size(495, 38);
+            this.sheets.Size = new System.Drawing.Size(523, 38);
             this.sheets.TabIndex = 85;
             // 
             // lblSrNo
@@ -132,7 +132,7 @@
             this.lblSrNo.AutoSize = true;
             this.lblSrNo.BackColor = System.Drawing.Color.Transparent;
             this.lblSrNo.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSrNo.Location = new System.Drawing.Point(-2, 214);
+            this.lblSrNo.Location = new System.Drawing.Point(-2, 222);
             this.lblSrNo.Name = "lblSrNo";
             this.lblSrNo.Size = new System.Drawing.Size(75, 32);
             this.lblSrNo.TabIndex = 86;
@@ -141,9 +141,9 @@
             // sr_no
             // 
             this.sr_no.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sr_no.Location = new System.Drawing.Point(235, 214);
+            this.sr_no.Location = new System.Drawing.Point(235, 219);
             this.sr_no.Name = "sr_no";
-            this.sr_no.Size = new System.Drawing.Size(495, 38);
+            this.sr_no.Size = new System.Drawing.Size(523, 38);
             this.sr_no.TabIndex = 87;
             this.sr_no.Click += new System.EventHandler(this.txtSrNo_OnClick);
             this.sr_no.TextChanged += new System.EventHandler(this.sr_no_TextChanged);
@@ -154,7 +154,7 @@
             this.UpdateButton.BackColor = System.Drawing.Color.White;
             this.UpdateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdateButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateButton.Location = new System.Drawing.Point(393, 458);
+            this.UpdateButton.Location = new System.Drawing.Point(399, 509);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(183, 44);
             this.UpdateButton.TabIndex = 88;
@@ -171,14 +171,14 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
@@ -226,7 +226,7 @@
             this.SubmitButton.BackColor = System.Drawing.Color.White;
             this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SubmitButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubmitButton.Location = new System.Drawing.Point(184, 458);
+            this.SubmitButton.Location = new System.Drawing.Point(190, 509);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(183, 44);
             this.SubmitButton.TabIndex = 97;
@@ -237,9 +237,9 @@
             // threshold
             // 
             this.threshold.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.threshold.Location = new System.Drawing.Point(235, 414);
+            this.threshold.Location = new System.Drawing.Point(235, 439);
             this.threshold.Name = "threshold";
-            this.threshold.Size = new System.Drawing.Size(495, 38);
+            this.threshold.Size = new System.Drawing.Size(523, 38);
             this.threshold.TabIndex = 99;
             // 
             // ThresholdLabel
@@ -247,7 +247,7 @@
             this.ThresholdLabel.AutoSize = true;
             this.ThresholdLabel.BackColor = System.Drawing.Color.Transparent;
             this.ThresholdLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThresholdLabel.Location = new System.Drawing.Point(-2, 414);
+            this.ThresholdLabel.Location = new System.Drawing.Point(-2, 442);
             this.ThresholdLabel.Name = "ThresholdLabel";
             this.ThresholdLabel.Size = new System.Drawing.Size(121, 32);
             this.ThresholdLabel.TabIndex = 98;

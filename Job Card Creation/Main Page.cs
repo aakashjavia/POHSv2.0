@@ -47,5 +47,11 @@ namespace Job_Card_Creation
             MetroApp form4 = new MetroApp();
             form4.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AllJobInfo form1 = new AllJobInfo();
+            form1.Show();
+        }
     }
 }

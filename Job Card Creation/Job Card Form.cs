@@ -53,8 +53,10 @@ namespace Job_Card_Creation
                         collection.Add(read["item_code"].ToString());
                     }
                 }
-                cmd.CommandText = "select * from job_card order by sr_no desc";
                 item_code.AutoCompleteCustomSource = collection;
+
+
+                cmd.CommandText = "select * from job_card order by sr_no desc";                
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {

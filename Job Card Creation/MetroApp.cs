@@ -51,7 +51,7 @@ namespace Job_Card_Creation
             this.metroTabControl1.Size = new Size(740, 1080);
 
             //Coloring Block
-            metroTabControl1.SelectedTab.BackColor = backcolor;
+            metroTabControl1.SelectedTab.BackColor =backcolor;
             uc1.BackColor = backcolor;
             uc2.BackColor = backcolor;
             uc3.BackColor = backcolor;
@@ -60,8 +60,7 @@ namespace Job_Card_Creation
             metroTabControl1.TabPages[1].BackColor =backcolor;
             metroTabControl1.TabPages[2].BackColor =backcolor;
             metroTabControl1.TabPages[3].BackColor =backcolor;
-            
-            
+           
             //    this.Size = new Size(300, 300);
             this.Controls.Add(metroTabControl1);
         }
@@ -72,6 +71,11 @@ namespace Job_Card_Creation
         }
 
         private void metroTabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

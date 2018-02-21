@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.orderstatusBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database1DataSet = new Job_Card_Creation.Database1DataSet();
@@ -81,16 +82,24 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 8F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 3);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -159,33 +168,34 @@
             // item_code
             // 
             this.item_code.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.item_code.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.item_code.Location = new System.Drawing.Point(226, 268);
+            this.item_code.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.item_code.Location = new System.Drawing.Point(226, 260);
             this.item_code.Name = "item_code";
-            this.item_code.Size = new System.Drawing.Size(523, 34);
+            this.item_code.Size = new System.Drawing.Size(523, 38);
             this.item_code.TabIndex = 71;
+            this.item_code.TextChanged += new System.EventHandler(this.item_code_TextChanged);
             // 
             // name
             // 
-            this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.name.Location = new System.Drawing.Point(226, 308);
+            this.name.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.name.Location = new System.Drawing.Point(226, 304);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(523, 34);
+            this.name.Size = new System.Drawing.Size(523, 38);
             this.name.TabIndex = 70;
             // 
             // party_name
             // 
-            this.party_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.party_name.Font = new System.Drawing.Font("Segoe UI", 13.8F);
             this.party_name.Location = new System.Drawing.Point(226, 348);
             this.party_name.Name = "party_name";
-            this.party_name.Size = new System.Drawing.Size(523, 34);
+            this.party_name.Size = new System.Drawing.Size(523, 38);
             this.party_name.TabIndex = 69;
             // 
             // JobLabel
             // 
             this.JobLabel.AutoSize = true;
             this.JobLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JobLabel.Location = new System.Drawing.Point(16, 271);
+            this.JobLabel.Location = new System.Drawing.Point(16, 263);
             this.JobLabel.Name = "JobLabel";
             this.JobLabel.Size = new System.Drawing.Size(115, 32);
             this.JobLabel.TabIndex = 68;
@@ -195,7 +205,7 @@
             // 
             this.ProductLabel.AutoSize = true;
             this.ProductLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductLabel.Location = new System.Drawing.Point(16, 311);
+            this.ProductLabel.Location = new System.Drawing.Point(16, 307);
             this.ProductLabel.Name = "ProductLabel";
             this.ProductLabel.Size = new System.Drawing.Size(168, 32);
             this.ProductLabel.TabIndex = 67;
