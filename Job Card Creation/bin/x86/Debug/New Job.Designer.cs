@@ -61,7 +61,7 @@
             // 
             this.paper_type.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.paper_type.FormattingEnabled = true;
-            this.paper_type.Location = new System.Drawing.Point(223, 295);
+            this.paper_type.Location = new System.Drawing.Point(222, 295);
             this.paper_type.Name = "paper_type";
             this.paper_type.Size = new System.Drawing.Size(517, 39);
             this.paper_type.TabIndex = 151;
@@ -101,8 +101,8 @@
             this.button1.AutoSize = true;
             this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button1.Location = new System.Drawing.Point(4, 539);
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.button1.Location = new System.Drawing.Point(289, 539);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(183, 44);
             this.button1.TabIndex = 147;
@@ -120,7 +120,7 @@
             // varnish
             // 
             this.varnish.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.varnish.Location = new System.Drawing.Point(222, 498);
+            this.varnish.Location = new System.Drawing.Point(222, 496);
             this.varnish.Name = "varnish";
             this.varnish.Size = new System.Drawing.Size(517, 38);
             this.varnish.TabIndex = 145;
@@ -128,7 +128,7 @@
             // color_shades
             // 
             this.color_shades.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.color_shades.Location = new System.Drawing.Point(223, 458);
+            this.color_shades.Location = new System.Drawing.Point(222, 456);
             this.color_shades.Name = "color_shades";
             this.color_shades.Size = new System.Drawing.Size(517, 38);
             this.color_shades.TabIndex = 144;
@@ -158,7 +158,7 @@
             // num_of_colors
             // 
             this.num_of_colors.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num_of_colors.Location = new System.Drawing.Point(224, 418);
+            this.num_of_colors.Location = new System.Drawing.Point(222, 416);
             this.num_of_colors.Name = "num_of_colors";
             this.num_of_colors.Size = new System.Drawing.Size(517, 38);
             this.num_of_colors.TabIndex = 141;
@@ -177,7 +177,7 @@
             // cutting_size
             // 
             this.cutting_size.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cutting_size.Location = new System.Drawing.Point(224, 378);
+            this.cutting_size.Location = new System.Drawing.Point(222, 376);
             this.cutting_size.Name = "cutting_size";
             this.cutting_size.Size = new System.Drawing.Size(517, 38);
             this.cutting_size.TabIndex = 139;
@@ -207,7 +207,7 @@
             // sheet_size
             // 
             this.sheet_size.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sheet_size.Location = new System.Drawing.Point(223, 338);
+            this.sheet_size.Location = new System.Drawing.Point(222, 336);
             this.sheet_size.Name = "sheet_size";
             this.sheet_size.Size = new System.Drawing.Size(517, 38);
             this.sheet_size.TabIndex = 136;
@@ -351,7 +351,7 @@
             this.Controls.Add(this.PartyLabel);
             this.Location = new System.Drawing.Point(1, 1);
             this.Name = "NewJob";
-            this.Size = new System.Drawing.Size(760, 677);
+            this.Size = new System.Drawing.Size(760, 635);
             this.Load += new System.EventHandler(this.NewJob_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

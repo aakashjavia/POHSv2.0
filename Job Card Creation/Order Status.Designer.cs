@@ -58,14 +58,14 @@
             this.StatusReceived = new System.Windows.Forms.RadioButton();
             this.CommentsLabel = new System.Windows.Forms.Label();
             this.Comments = new System.Windows.Forms.TextBox();
-            this.UpdateButton = new System.Windows.Forms.Button();
-            this.ClearButton = new System.Windows.Forms.Button();
             this.StatusLabel = new System.Windows.Forms.Label();
             this.var_priority = new System.Windows.Forms.Label();
             this.var_status = new System.Windows.Forms.Label();
             this.sr_no = new System.Windows.Forms.TextBox();
             this.SrNoLabel = new System.Windows.Forms.Label();
             this.HorizontalBar4 = new System.Windows.Forms.Label();
+            this.UpdateButton = new System.Windows.Forms.Button();
+            this.ClearButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderstatusBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
@@ -400,37 +400,13 @@
             this.Comments.Size = new System.Drawing.Size(736, 38);
             this.Comments.TabIndex = 87;
             // 
-            // UpdateButton
-            // 
-            this.UpdateButton.AutoSize = true;
-            this.UpdateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.UpdateButton.Location = new System.Drawing.Point(13, 678);
-            this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(183, 35);
-            this.UpdateButton.TabIndex = 90;
-            this.UpdateButton.Text = "Update";
-            this.UpdateButton.UseVisualStyleBackColor = true;
-            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
-            // 
-            // ClearButton
-            // 
-            this.ClearButton.AutoSize = true;
-            this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.ClearButton.Location = new System.Drawing.Point(226, 678);
-            this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(183, 35);
-            this.ClearButton.TabIndex = 91;
-            this.ClearButton.Text = "Clear";
-            this.ClearButton.UseVisualStyleBackColor = true;
-            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
-            // 
             // StatusLabel
             // 
             this.StatusLabel.AutoSize = true;
-            this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(8, 721);
+            this.StatusLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatusLabel.Location = new System.Drawing.Point(2, 736);
             this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(138, 29);
+            this.StatusLabel.Size = new System.Drawing.Size(116, 32);
             this.StatusLabel.TabIndex = 92;
             this.StatusLabel.Text = "STATUS: -";
             // 
@@ -478,10 +454,38 @@
             // HorizontalBar4
             // 
             this.HorizontalBar4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.HorizontalBar4.Location = new System.Drawing.Point(13, 719);
+            this.HorizontalBar4.Location = new System.Drawing.Point(8, 734);
             this.HorizontalBar4.Name = "HorizontalBar4";
             this.HorizontalBar4.Size = new System.Drawing.Size(743, 2);
             this.HorizontalBar4.TabIndex = 102;
+            // 
+            // UpdateButton
+            // 
+            this.UpdateButton.AutoSize = true;
+            this.UpdateButton.BackColor = System.Drawing.Color.White;
+            this.UpdateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UpdateButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdateButton.Location = new System.Drawing.Point(179, 678);
+            this.UpdateButton.Name = "UpdateButton";
+            this.UpdateButton.Size = new System.Drawing.Size(183, 44);
+            this.UpdateButton.TabIndex = 90;
+            this.UpdateButton.Text = "Update";
+            this.UpdateButton.UseVisualStyleBackColor = false;
+            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
+            // 
+            // ClearButton
+            // 
+            this.ClearButton.AutoSize = true;
+            this.ClearButton.BackColor = System.Drawing.Color.White;
+            this.ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ClearButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClearButton.Location = new System.Drawing.Point(397, 678);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(183, 44);
+            this.ClearButton.TabIndex = 91;
+            this.ClearButton.Text = "Clear";
+            this.ClearButton.UseVisualStyleBackColor = false;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // OrderStatus
             // 
@@ -513,7 +517,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Location = new System.Drawing.Point(1, 1);
             this.Name = "OrderStatus";
-            this.Size = new System.Drawing.Size(760, 753);
+            this.Size = new System.Drawing.Size(760, 768);
             this.Load += new System.EventHandler(this.OrderStatus_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderstatusBindingSource)).EndInit();
@@ -558,13 +562,13 @@
         private System.Windows.Forms.RadioButton StatusDelayed;
         private System.Windows.Forms.Label CommentsLabel;
         private System.Windows.Forms.TextBox Comments;
-        private System.Windows.Forms.Button UpdateButton;
-        private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.Label StatusLabel;
         private System.Windows.Forms.Label var_priority;
         private System.Windows.Forms.Label var_status;
         private System.Windows.Forms.TextBox sr_no;
         private System.Windows.Forms.Label SrNoLabel;
         private System.Windows.Forms.Label HorizontalBar4;
+        private System.Windows.Forms.Button UpdateButton;
+        private System.Windows.Forms.Button ClearButton;
     }
 }

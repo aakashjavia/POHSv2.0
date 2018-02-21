@@ -48,6 +48,3 @@ namespace Job_Card_Creation
         }
     }
     }
-
-    
-

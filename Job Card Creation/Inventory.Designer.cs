@@ -145,10 +145,11 @@
             // UpdateButton
             // 
             this.UpdateButton.AutoSize = true;
+            this.UpdateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdateButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateButton.Location = new System.Drawing.Point(198, 544);
+            this.UpdateButton.Location = new System.Drawing.Point(393, 458);
             this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(183, 42);
+            this.UpdateButton.Size = new System.Drawing.Size(183, 44);
             this.UpdateButton.TabIndex = 88;
             this.UpdateButton.Text = "Update";
             this.UpdateButton.UseVisualStyleBackColor = true;
@@ -167,7 +168,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(727, 166);
+            this.dataGridView1.Size = new System.Drawing.Size(521, 166);
             this.dataGridView1.TabIndex = 89;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
@@ -176,7 +177,7 @@
             // 
             this.StatusLabel.AutoSize = true;
             this.StatusLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(4, 648);
+            this.StatusLabel.Location = new System.Drawing.Point(13, 518);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(109, 32);
             this.StatusLabel.TabIndex = 92;
@@ -185,7 +186,7 @@
             // HorizontalBar4
             // 
             this.HorizontalBar4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.HorizontalBar4.Location = new System.Drawing.Point(-4, 646);
+            this.HorizontalBar4.Location = new System.Drawing.Point(18, 507);
             this.HorizontalBar4.Name = "HorizontalBar4";
             this.HorizontalBar4.Size = new System.Drawing.Size(734, 2);
             this.HorizontalBar4.TabIndex = 91;
@@ -203,10 +204,11 @@
             // SubmitButton
             // 
             this.SubmitButton.AutoSize = true;
+            this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SubmitButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubmitButton.Location = new System.Drawing.Point(9, 544);
+            this.SubmitButton.Location = new System.Drawing.Point(184, 458);
             this.SubmitButton.Name = "SubmitButton";
-            this.SubmitButton.Size = new System.Drawing.Size(183, 42);
+            this.SubmitButton.Size = new System.Drawing.Size(183, 44);
             this.SubmitButton.TabIndex = 97;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = true;
@@ -254,7 +256,7 @@
             this.Controls.Add(this.PaperTypeLabel);
             this.Location = new System.Drawing.Point(1, 1);
             this.Name = "Inventory";
-            this.Size = new System.Drawing.Size(760, 683);
+            this.Size = new System.Drawing.Size(760, 559);
             this.Load += new System.EventHandler(this.Inventory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
