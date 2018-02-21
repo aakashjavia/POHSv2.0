@@ -61,12 +61,15 @@ namespace Job_Card_Creation
                
                 fill_sr_no();
                 fillComboBox();
+             
+            
             }
             catch (Exception err)
             {
                 StatusLabel.Text = "STATUS:-" + err.Message;
             }
         }
+  
         //ComboBoxItem
         public class ComboboxItem
         {
@@ -192,9 +195,14 @@ namespace Job_Card_Creation
             this.Hide();
             OrderStatus frm4 = new OrderStatus();
             frm4.Show();
+        }       
+
+        private void metroTabPage2_Click(object sender, EventArgs e)
+        {
+
         }
 
-        private void n(object sender, EventArgs e)
+        private void metroTabPage1_Click(object sender, EventArgs e)
         {
 
         }

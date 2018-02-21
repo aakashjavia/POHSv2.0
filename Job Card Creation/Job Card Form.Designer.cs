@@ -578,7 +578,7 @@
             this.Controls.Add(this.JobSheetNo);
             this.Location = new System.Drawing.Point(1, 1);
             this.Name = "JobCard";
-            this.Size = new System.Drawing.Size(731, 790);
+            this.Size = new System.Drawing.Size(770, 790);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -397,14 +397,14 @@
             this.Comments.Location = new System.Drawing.Point(13, 634);
             this.Comments.Multiline = true;
             this.Comments.Name = "Comments";
-            this.Comments.Size = new System.Drawing.Size(736, 124);
+            this.Comments.Size = new System.Drawing.Size(736, 38);
             this.Comments.TabIndex = 87;
             // 
             // UpdateButton
             // 
             this.UpdateButton.AutoSize = true;
             this.UpdateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.UpdateButton.Location = new System.Drawing.Point(13, 789);
+            this.UpdateButton.Location = new System.Drawing.Point(13, 678);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(183, 35);
             this.UpdateButton.TabIndex = 90;
@@ -416,7 +416,7 @@
             // 
             this.ClearButton.AutoSize = true;
             this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.ClearButton.Location = new System.Drawing.Point(226, 789);
+            this.ClearButton.Location = new System.Drawing.Point(226, 678);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(183, 35);
             this.ClearButton.TabIndex = 91;
@@ -428,7 +428,7 @@
             // 
             this.StatusLabel.AutoSize = true;
             this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(8, 832);
+            this.StatusLabel.Location = new System.Drawing.Point(8, 721);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(138, 29);
             this.StatusLabel.TabIndex = 92;
@@ -478,9 +478,9 @@
             // HorizontalBar4
             // 
             this.HorizontalBar4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.HorizontalBar4.Location = new System.Drawing.Point(13, 830);
+            this.HorizontalBar4.Location = new System.Drawing.Point(13, 719);
             this.HorizontalBar4.Name = "HorizontalBar4";
-            this.HorizontalBar4.Size = new System.Drawing.Size(1132, 2);
+            this.HorizontalBar4.Size = new System.Drawing.Size(743, 2);
             this.HorizontalBar4.TabIndex = 102;
             // 
             // OrderStatus
@@ -513,7 +513,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Location = new System.Drawing.Point(1, 1);
             this.Name = "OrderStatus";
-            this.Size = new System.Drawing.Size(760, 867);
+            this.Size = new System.Drawing.Size(760, 753);
             this.Load += new System.EventHandler(this.OrderStatus_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderstatusBindingSource)).EndInit();

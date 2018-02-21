@@ -19,35 +19,23 @@ namespace Job_Card_Creation
         }
 
         private void toJobCardForm_Click(object sender, EventArgs e)
-        {
-            
-            JobCard frm1 = new JobCard();
-            
-            frm1.Show();
+        {            
+          
         }
 
         private void toNewJobForm_Click(object sender, EventArgs e)
         {
-            
-            NewJob frm2 = new NewJob();
-           
-            frm2.Show();
+          
         }
 
         private void toInventory_Click(object sender, EventArgs e)
         {
-            
-            Inventory frm3 = new Inventory();
-          
-            frm3.Show();
+           
         }
 
         private void toOrderStatus_Click(object sender, EventArgs e)
         {
            
-            OrderStatus frm4 = new OrderStatus();
-           
-            frm4.Show();
         }
         private void title1_Click(object sender, EventArgs e)
         {
@@ -56,7 +44,7 @@ namespace Job_Card_Creation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            metroTest form4 = new metroTest();
+            MetroApp form4 = new MetroApp();
             form4.Show();
         }
     }
