@@ -456,7 +456,7 @@
             // 
             this.StatusLabel.AutoSize = true;
             this.StatusLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(2, 894);
+            this.StatusLabel.Location = new System.Drawing.Point(3, 900);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(94, 32);
             this.StatusLabel.TabIndex = 64;
@@ -513,7 +513,7 @@
             // label2
             // 
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(3, 892);
+            this.label2.Location = new System.Drawing.Point(4, 898);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(765, 2);
             this.label2.TabIndex = 91;

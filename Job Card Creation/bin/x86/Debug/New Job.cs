@@ -95,6 +95,7 @@ namespace Job_Card_Creation
                 AllJobInfo uc1 = new AllJobInfo();
                 metroTabControl1.TabPages[1].Controls.Add(uc1);
                 uc1.BackColor = this.BackColor;
+                metroTabPage1.BackColor = this.BackColor;
             }
             catch (Exception err)
             {

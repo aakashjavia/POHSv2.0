@@ -30,6 +30,7 @@
         {
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.paper_type = new System.Windows.Forms.TextBox();
             this.sr_no = new System.Windows.Forms.TextBox();
             this.JobSheetNo = new System.Windows.Forms.Label();
             this.StatusLabel = new System.Windows.Forms.Label();
@@ -57,7 +58,6 @@
             this.ProductLabel = new System.Windows.Forms.Label();
             this.PartyLabel = new System.Windows.Forms.Label();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
-            this.paper_type = new System.Windows.Forms.TextBox();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -66,10 +66,10 @@
             // 
             this.metroTabControl1.Controls.Add(this.metroTabPage1);
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
-            this.metroTabControl1.Location = new System.Drawing.Point(4, 19);
+            this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(766, 910);
+            this.metroTabControl1.Size = new System.Drawing.Size(773, 932);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
             // 
@@ -107,13 +107,23 @@
             this.metroTabPage1.HorizontalScrollbarSize = 10;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(758, 868);
+            this.metroTabPage1.Size = new System.Drawing.Size(765, 890);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "Product Details";
+            this.metroTabPage1.UseCustomBackColor = true;
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
             this.metroTabPage1.Click += new System.EventHandler(this.metroTabPage1_Click_1);
+            // 
+            // paper_type
+            // 
+            this.paper_type.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paper_type.Location = new System.Drawing.Point(220, 268);
+            this.paper_type.Name = "paper_type";
+            this.paper_type.Size = new System.Drawing.Size(517, 38);
+            this.paper_type.TabIndex = 232;
+            this.paper_type.TextChanged += new System.EventHandler(this.paper_type_TextChanged_1);
             // 
             // sr_no
             // 
@@ -139,7 +149,7 @@
             this.StatusLabel.AutoSize = true;
             this.StatusLabel.BackColor = System.Drawing.Color.Transparent;
             this.StatusLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(0, 840);
+            this.StatusLabel.Location = new System.Drawing.Point(0, 858);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(94, 32);
             this.StatusLabel.TabIndex = 229;
@@ -161,7 +171,7 @@
             // HorizontalBar4
             // 
             this.HorizontalBar4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.HorizontalBar4.Location = new System.Drawing.Point(0, 838);
+            this.HorizontalBar4.Location = new System.Drawing.Point(0, 856);
             this.HorizontalBar4.Name = "HorizontalBar4";
             this.HorizontalBar4.Size = new System.Drawing.Size(765, 2);
             this.HorizontalBar4.TabIndex = 227;
@@ -377,22 +387,13 @@
             this.metroTabPage2.HorizontalScrollbarSize = 10;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(758, 883);
+            this.metroTabPage2.Size = new System.Drawing.Size(758, 868);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "All Products";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
             this.metroTabPage2.Click += new System.EventHandler(this.metroTabPage2_Click_1);
-            // 
-            // paper_type
-            // 
-            this.paper_type.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.paper_type.Location = new System.Drawing.Point(220, 268);
-            this.paper_type.Name = "paper_type";
-            this.paper_type.Size = new System.Drawing.Size(517, 38);
-            this.paper_type.TabIndex = 232;
-            this.paper_type.TextChanged += new System.EventHandler(this.paper_type_TextChanged_1);
             // 
             // NewJob
             // 

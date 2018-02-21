@@ -27,8 +27,8 @@ namespace Job_Card_Creation
             // Sizes the tabs so that each row fills the entire width of tabControl1.
             this.metroTabControl1.SizeMode = TabSizeMode.Normal;
             Color backcolor = new Color();
-            backcolor = Color.Azure;
-
+            backcolor = Color.LightYellow;
+            this.BackColor = backcolor;
             NewJob uc1 = new NewJob();
             JobCard uc2 = new JobCard();
             OrderStatus uc3 = new OrderStatus();
