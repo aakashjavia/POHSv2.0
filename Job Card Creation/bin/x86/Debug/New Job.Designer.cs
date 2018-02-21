@@ -61,7 +61,7 @@
             // 
             this.paper_type.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.paper_type.FormattingEnabled = true;
-            this.paper_type.Location = new System.Drawing.Point(222, 295);
+            this.paper_type.Location = new System.Drawing.Point(222, 267);
             this.paper_type.Name = "paper_type";
             this.paper_type.Size = new System.Drawing.Size(517, 39);
             this.paper_type.TabIndex = 151;
@@ -77,7 +77,7 @@
             // JobSheetNo
             // 
             this.JobSheetNo.AutoSize = true;
-            this.JobSheetNo.BackColor = System.Drawing.Color.White;
+            this.JobSheetNo.BackColor = System.Drawing.Color.Transparent;
             this.JobSheetNo.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.JobSheetNo.Location = new System.Drawing.Point(3, 13);
             this.JobSheetNo.Name = "JobSheetNo";
@@ -88,9 +88,9 @@
             // StatusLabel
             // 
             this.StatusLabel.AutoSize = true;
-            this.StatusLabel.BackColor = System.Drawing.Color.White;
+            this.StatusLabel.BackColor = System.Drawing.Color.Transparent;
             this.StatusLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(3, 598);
+            this.StatusLabel.Location = new System.Drawing.Point(3, 891);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(94, 32);
             this.StatusLabel.TabIndex = 148;
@@ -112,15 +112,15 @@
             // HorizontalBar4
             // 
             this.HorizontalBar4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.HorizontalBar4.Location = new System.Drawing.Point(1, 586);
+            this.HorizontalBar4.Location = new System.Drawing.Point(3, 889);
             this.HorizontalBar4.Name = "HorizontalBar4";
-            this.HorizontalBar4.Size = new System.Drawing.Size(767, 2);
+            this.HorizontalBar4.Size = new System.Drawing.Size(765, 2);
             this.HorizontalBar4.TabIndex = 146;
             // 
             // varnish
             // 
             this.varnish.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.varnish.Location = new System.Drawing.Point(222, 496);
+            this.varnish.Location = new System.Drawing.Point(222, 488);
             this.varnish.Name = "varnish";
             this.varnish.Size = new System.Drawing.Size(517, 38);
             this.varnish.TabIndex = 145;
@@ -128,7 +128,7 @@
             // color_shades
             // 
             this.color_shades.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.color_shades.Location = new System.Drawing.Point(222, 456);
+            this.color_shades.Location = new System.Drawing.Point(222, 444);
             this.color_shades.Name = "color_shades";
             this.color_shades.Size = new System.Drawing.Size(517, 38);
             this.color_shades.TabIndex = 144;
@@ -136,9 +136,9 @@
             // VarnishLabel
             // 
             this.VarnishLabel.AutoSize = true;
-            this.VarnishLabel.BackColor = System.Drawing.Color.White;
+            this.VarnishLabel.BackColor = System.Drawing.Color.Transparent;
             this.VarnishLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VarnishLabel.Location = new System.Drawing.Point(5, 501);
+            this.VarnishLabel.Location = new System.Drawing.Point(5, 491);
             this.VarnishLabel.Name = "VarnishLabel";
             this.VarnishLabel.Size = new System.Drawing.Size(171, 32);
             this.VarnishLabel.TabIndex = 143;
@@ -147,9 +147,9 @@
             // Shade_Nos_Label
             // 
             this.Shade_Nos_Label.AutoSize = true;
-            this.Shade_Nos_Label.BackColor = System.Drawing.Color.White;
+            this.Shade_Nos_Label.BackColor = System.Drawing.Color.Transparent;
             this.Shade_Nos_Label.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Shade_Nos_Label.Location = new System.Drawing.Point(2, 458);
+            this.Shade_Nos_Label.Location = new System.Drawing.Point(2, 447);
             this.Shade_Nos_Label.Name = "Shade_Nos_Label";
             this.Shade_Nos_Label.Size = new System.Drawing.Size(155, 32);
             this.Shade_Nos_Label.TabIndex = 142;
@@ -158,7 +158,7 @@
             // num_of_colors
             // 
             this.num_of_colors.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num_of_colors.Location = new System.Drawing.Point(222, 416);
+            this.num_of_colors.Location = new System.Drawing.Point(222, 400);
             this.num_of_colors.Name = "num_of_colors";
             this.num_of_colors.Size = new System.Drawing.Size(517, 38);
             this.num_of_colors.TabIndex = 141;
@@ -166,9 +166,9 @@
             // ColorsLabel
             // 
             this.ColorsLabel.AutoSize = true;
-            this.ColorsLabel.BackColor = System.Drawing.Color.White;
+            this.ColorsLabel.BackColor = System.Drawing.Color.Transparent;
             this.ColorsLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.ColorsLabel.Location = new System.Drawing.Point(2, 418);
+            this.ColorsLabel.Location = new System.Drawing.Point(2, 403);
             this.ColorsLabel.Name = "ColorsLabel";
             this.ColorsLabel.Size = new System.Drawing.Size(82, 32);
             this.ColorsLabel.TabIndex = 140;
@@ -177,7 +177,7 @@
             // cutting_size
             // 
             this.cutting_size.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cutting_size.Location = new System.Drawing.Point(222, 376);
+            this.cutting_size.Location = new System.Drawing.Point(222, 356);
             this.cutting_size.Name = "cutting_size";
             this.cutting_size.Size = new System.Drawing.Size(517, 38);
             this.cutting_size.TabIndex = 139;
@@ -185,9 +185,9 @@
             // SheetCuttingLabel
             // 
             this.SheetCuttingLabel.AutoSize = true;
-            this.SheetCuttingLabel.BackColor = System.Drawing.Color.White;
+            this.SheetCuttingLabel.BackColor = System.Drawing.Color.Transparent;
             this.SheetCuttingLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SheetCuttingLabel.Location = new System.Drawing.Point(-2, 378);
+            this.SheetCuttingLabel.Location = new System.Drawing.Point(-2, 359);
             this.SheetCuttingLabel.Name = "SheetCuttingLabel";
             this.SheetCuttingLabel.Size = new System.Drawing.Size(212, 32);
             this.SheetCuttingLabel.TabIndex = 138;
@@ -196,18 +196,18 @@
             // PaperDetails
             // 
             this.PaperDetails.AutoSize = true;
-            this.PaperDetails.BackColor = System.Drawing.Color.White;
-            this.PaperDetails.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PaperDetails.Location = new System.Drawing.Point(10, 249);
+            this.PaperDetails.BackColor = System.Drawing.Color.Transparent;
+            this.PaperDetails.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PaperDetails.Location = new System.Drawing.Point(2, 240);
             this.PaperDetails.Name = "PaperDetails";
-            this.PaperDetails.Size = new System.Drawing.Size(153, 32);
+            this.PaperDetails.Size = new System.Drawing.Size(165, 32);
             this.PaperDetails.TabIndex = 137;
             this.PaperDetails.Text = "Paper Details";
             // 
             // sheet_size
             // 
             this.sheet_size.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sheet_size.Location = new System.Drawing.Point(222, 336);
+            this.sheet_size.Location = new System.Drawing.Point(222, 312);
             this.sheet_size.Name = "sheet_size";
             this.sheet_size.Size = new System.Drawing.Size(517, 38);
             this.sheet_size.TabIndex = 136;
@@ -215,9 +215,9 @@
             // SheetSizeLabel
             // 
             this.SheetSizeLabel.AutoSize = true;
-            this.SheetSizeLabel.BackColor = System.Drawing.Color.White;
+            this.SheetSizeLabel.BackColor = System.Drawing.Color.Transparent;
             this.SheetSizeLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SheetSizeLabel.Location = new System.Drawing.Point(3, 338);
+            this.SheetSizeLabel.Location = new System.Drawing.Point(3, 315);
             this.SheetSizeLabel.Name = "SheetSizeLabel";
             this.SheetSizeLabel.Size = new System.Drawing.Size(199, 32);
             this.SheetSizeLabel.TabIndex = 135;
@@ -226,9 +226,9 @@
             // PaperTypeLabel
             // 
             this.PaperTypeLabel.AutoSize = true;
-            this.PaperTypeLabel.BackColor = System.Drawing.Color.White;
+            this.PaperTypeLabel.BackColor = System.Drawing.Color.Transparent;
             this.PaperTypeLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PaperTypeLabel.Location = new System.Drawing.Point(3, 295);
+            this.PaperTypeLabel.Location = new System.Drawing.Point(3, 270);
             this.PaperTypeLabel.Name = "PaperTypeLabel";
             this.PaperTypeLabel.Size = new System.Drawing.Size(165, 32);
             this.PaperTypeLabel.TabIndex = 134;
@@ -236,16 +236,17 @@
             // 
             // HorizontalBar3
             // 
+            this.HorizontalBar3.BackColor = System.Drawing.Color.LightCyan;
             this.HorizontalBar3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.HorizontalBar3.Location = new System.Drawing.Point(8, 238);
+            this.HorizontalBar3.Location = new System.Drawing.Point(5, 238);
             this.HorizontalBar3.Name = "HorizontalBar3";
-            this.HorizontalBar3.Size = new System.Drawing.Size(767, 2);
+            this.HorizontalBar3.Size = new System.Drawing.Size(750, 2);
             this.HorizontalBar3.TabIndex = 133;
             // 
             // size
             // 
             this.size.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.size.Location = new System.Drawing.Point(223, 186);
+            this.size.Location = new System.Drawing.Point(222, 183);
             this.size.Name = "size";
             this.size.Size = new System.Drawing.Size(517, 34);
             this.size.TabIndex = 132;
@@ -253,7 +254,7 @@
             // item_code
             // 
             this.item_code.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.item_code.Location = new System.Drawing.Point(223, 144);
+            this.item_code.Location = new System.Drawing.Point(222, 143);
             this.item_code.Name = "item_code";
             this.item_code.Size = new System.Drawing.Size(517, 34);
             this.item_code.TabIndex = 131;
@@ -261,7 +262,7 @@
             // name
             // 
             this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.name.Location = new System.Drawing.Point(223, 104);
+            this.name.Location = new System.Drawing.Point(222, 103);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(517, 34);
             this.name.TabIndex = 130;
@@ -269,7 +270,7 @@
             // party_name
             // 
             this.party_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.party_name.Location = new System.Drawing.Point(223, 64);
+            this.party_name.Location = new System.Drawing.Point(222, 63);
             this.party_name.Name = "party_name";
             this.party_name.Size = new System.Drawing.Size(517, 34);
             this.party_name.TabIndex = 129;
@@ -277,9 +278,9 @@
             // BoxSizeLabel
             // 
             this.BoxSizeLabel.AutoSize = true;
-            this.BoxSizeLabel.BackColor = System.Drawing.Color.White;
+            this.BoxSizeLabel.BackColor = System.Drawing.Color.Transparent;
             this.BoxSizeLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxSizeLabel.Location = new System.Drawing.Point(3, 186);
+            this.BoxSizeLabel.Location = new System.Drawing.Point(3, 184);
             this.BoxSizeLabel.Name = "BoxSizeLabel";
             this.BoxSizeLabel.Size = new System.Drawing.Size(104, 32);
             this.BoxSizeLabel.TabIndex = 128;
@@ -288,7 +289,7 @@
             // JobLabel
             // 
             this.JobLabel.AutoSize = true;
-            this.JobLabel.BackColor = System.Drawing.Color.White;
+            this.JobLabel.BackColor = System.Drawing.Color.Transparent;
             this.JobLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.JobLabel.Location = new System.Drawing.Point(3, 144);
             this.JobLabel.Name = "JobLabel";
@@ -299,7 +300,7 @@
             // ProductLabel
             // 
             this.ProductLabel.AutoSize = true;
-            this.ProductLabel.BackColor = System.Drawing.Color.White;
+            this.ProductLabel.BackColor = System.Drawing.Color.Transparent;
             this.ProductLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductLabel.Location = new System.Drawing.Point(3, 104);
             this.ProductLabel.Name = "ProductLabel";
@@ -310,7 +311,7 @@
             // PartyLabel
             // 
             this.PartyLabel.AutoSize = true;
-            this.PartyLabel.BackColor = System.Drawing.Color.White;
+            this.PartyLabel.BackColor = System.Drawing.Color.Transparent;
             this.PartyLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PartyLabel.Location = new System.Drawing.Point(3, 64);
             this.PartyLabel.Name = "PartyLabel";
@@ -320,8 +321,9 @@
             // 
             // NewJob
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.Controls.Add(this.paper_type);
             this.Controls.Add(this.sr_no);
             this.Controls.Add(this.JobSheetNo);
@@ -351,7 +353,7 @@
             this.Controls.Add(this.PartyLabel);
             this.Location = new System.Drawing.Point(1, 1);
             this.Name = "NewJob";
-            this.Size = new System.Drawing.Size(760, 635);
+            this.Size = new System.Drawing.Size(773, 932);
             this.Load += new System.EventHandler(this.NewJob_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

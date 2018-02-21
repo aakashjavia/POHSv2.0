@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PaperTypeLabel = new System.Windows.Forms.Label();
             this.paper_type = new System.Windows.Forms.TextBox();
             this.lblPaperSize = new System.Windows.Forms.Label();
@@ -52,6 +53,7 @@
             // PaperTypeLabel
             // 
             this.PaperTypeLabel.AutoSize = true;
+            this.PaperTypeLabel.BackColor = System.Drawing.Color.Transparent;
             this.PaperTypeLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PaperTypeLabel.Location = new System.Drawing.Point(-2, 254);
             this.PaperTypeLabel.Name = "PaperTypeLabel";
@@ -71,6 +73,7 @@
             // lblPaperSize
             // 
             this.lblPaperSize.AutoSize = true;
+            this.lblPaperSize.BackColor = System.Drawing.Color.Transparent;
             this.lblPaperSize.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPaperSize.Location = new System.Drawing.Point(-2, 294);
             this.lblPaperSize.Name = "lblPaperSize";
@@ -81,6 +84,7 @@
             // lblPackets
             // 
             this.lblPackets.AutoSize = true;
+            this.lblPackets.BackColor = System.Drawing.Color.Transparent;
             this.lblPackets.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPackets.Location = new System.Drawing.Point(-2, 334);
             this.lblPackets.Name = "lblPackets";
@@ -91,6 +95,7 @@
             // lblSheets
             // 
             this.lblSheets.AutoSize = true;
+            this.lblSheets.BackColor = System.Drawing.Color.Transparent;
             this.lblSheets.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSheets.Location = new System.Drawing.Point(-2, 374);
             this.lblSheets.Name = "lblSheets";
@@ -125,6 +130,7 @@
             // lblSrNo
             // 
             this.lblSrNo.AutoSize = true;
+            this.lblSrNo.BackColor = System.Drawing.Color.Transparent;
             this.lblSrNo.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSrNo.Location = new System.Drawing.Point(-2, 214);
             this.lblSrNo.Name = "lblSrNo";
@@ -145,6 +151,7 @@
             // UpdateButton
             // 
             this.UpdateButton.AutoSize = true;
+            this.UpdateButton.BackColor = System.Drawing.Color.White;
             this.UpdateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdateButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateButton.Location = new System.Drawing.Point(393, 458);
@@ -152,7 +159,7 @@
             this.UpdateButton.Size = new System.Drawing.Size(183, 44);
             this.UpdateButton.TabIndex = 88;
             this.UpdateButton.Text = "Update";
-            this.UpdateButton.UseVisualStyleBackColor = true;
+            this.UpdateButton.UseVisualStyleBackColor = false;
             this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
             // dataGridView1
@@ -161,14 +168,24 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(521, 166);
+            this.dataGridView1.Size = new System.Drawing.Size(654, 166);
             this.dataGridView1.TabIndex = 89;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
@@ -176,8 +193,9 @@
             // StatusLabel
             // 
             this.StatusLabel.AutoSize = true;
+            this.StatusLabel.BackColor = System.Drawing.Color.Transparent;
             this.StatusLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(13, 518);
+            this.StatusLabel.Location = new System.Drawing.Point(3, 894);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(109, 32);
             this.StatusLabel.TabIndex = 92;
@@ -186,14 +204,15 @@
             // HorizontalBar4
             // 
             this.HorizontalBar4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.HorizontalBar4.Location = new System.Drawing.Point(18, 507);
+            this.HorizontalBar4.Location = new System.Drawing.Point(3, 892);
             this.HorizontalBar4.Name = "HorizontalBar4";
-            this.HorizontalBar4.Size = new System.Drawing.Size(734, 2);
+            this.HorizontalBar4.Size = new System.Drawing.Size(765, 2);
             this.HorizontalBar4.TabIndex = 91;
             // 
             // Info1
             // 
             this.Info1.AutoSize = true;
+            this.Info1.BackColor = System.Drawing.Color.Transparent;
             this.Info1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Info1.Location = new System.Drawing.Point(4, 172);
             this.Info1.Name = "Info1";
@@ -204,6 +223,7 @@
             // SubmitButton
             // 
             this.SubmitButton.AutoSize = true;
+            this.SubmitButton.BackColor = System.Drawing.Color.White;
             this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SubmitButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SubmitButton.Location = new System.Drawing.Point(184, 458);
@@ -211,7 +231,7 @@
             this.SubmitButton.Size = new System.Drawing.Size(183, 44);
             this.SubmitButton.TabIndex = 97;
             this.SubmitButton.Text = "Submit";
-            this.SubmitButton.UseVisualStyleBackColor = true;
+            this.SubmitButton.UseVisualStyleBackColor = false;
             this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
             // threshold
@@ -225,6 +245,7 @@
             // ThresholdLabel
             // 
             this.ThresholdLabel.AutoSize = true;
+            this.ThresholdLabel.BackColor = System.Drawing.Color.Transparent;
             this.ThresholdLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ThresholdLabel.Location = new System.Drawing.Point(-2, 414);
             this.ThresholdLabel.Name = "ThresholdLabel";
@@ -234,8 +255,9 @@
             // 
             // Inventory
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.BackColor = System.Drawing.Color.White;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.Controls.Add(this.threshold);
             this.Controls.Add(this.ThresholdLabel);
             this.Controls.Add(this.SubmitButton);
@@ -256,7 +278,7 @@
             this.Controls.Add(this.PaperTypeLabel);
             this.Location = new System.Drawing.Point(1, 1);
             this.Name = "Inventory";
-            this.Size = new System.Drawing.Size(760, 559);
+            this.Size = new System.Drawing.Size(773, 932);
             this.Load += new System.EventHandler(this.Inventory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -422,6 +422,7 @@
             // 
             // SubmitButton
             // 
+            this.SubmitButton.BackColor = System.Drawing.Color.White;
             this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SubmitButton.Font = new System.Drawing.Font("Segoe UI", 13.8F);
             this.SubmitButton.Location = new System.Drawing.Point(295, 845);
@@ -429,7 +430,7 @@
             this.SubmitButton.Size = new System.Drawing.Size(183, 44);
             this.SubmitButton.TabIndex = 59;
             this.SubmitButton.Text = "Submit Only";
-            this.SubmitButton.UseVisualStyleBackColor = true;
+            this.SubmitButton.UseVisualStyleBackColor = false;
             this.SubmitButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // DateLabel
@@ -455,7 +456,7 @@
             // 
             this.StatusLabel.AutoSize = true;
             this.StatusLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(3, 897);
+            this.StatusLabel.Location = new System.Drawing.Point(2, 894);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(94, 32);
             this.StatusLabel.TabIndex = 64;
@@ -512,9 +513,9 @@
             // label2
             // 
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(3, 895);
+            this.label2.Location = new System.Drawing.Point(3, 892);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(738, 2);
+            this.label2.Size = new System.Drawing.Size(765, 2);
             this.label2.TabIndex = 91;
             // 
             // label1
@@ -527,9 +528,10 @@
             // 
             // JobCard
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.White;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.HorizontalBar4);

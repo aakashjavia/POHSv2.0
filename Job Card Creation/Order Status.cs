@@ -29,6 +29,7 @@ namespace Job_Card_Creation
                 string s = today.ToString("dd MMMM yyyy", CultureInfo.InvariantCulture);
                 date.Text = s;
                 updatedata();
+                dataGridView1.BackgroundColor = this.BackColor;
         
             }
             catch (Exception err)
