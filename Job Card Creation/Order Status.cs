@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace Job_Card_Creation
 {
-    public partial class OrderStatus : Form
+    public partial class OrderStatus : UserControl
     {
         public OrderStatus()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.Manual;
+           
         }
 
         private void OrderStatus_Load(object sender, EventArgs e)
@@ -29,6 +29,7 @@ namespace Job_Card_Creation
                 string s = today.ToString("dd MMMM yyyy", CultureInfo.InvariantCulture);
                 date.Text = s;
                 updatedata();
+                dataGridView1.BackgroundColor = this.BackColor;
         
             }
             catch (Exception err)
@@ -49,6 +50,8 @@ namespace Job_Card_Creation
             sda.Fill(dt);
             con.Close();
             dataGridView1.DataSource = dt;
+            dataGridView1.Font = new Font("Seguo UI", 8F, GraphicsUnit.Point);
+
         }
         private void statusLabel_Click(object sender, EventArgs e)
         {
@@ -272,6 +275,11 @@ namespace Job_Card_Creation
         private void OrderLabel_Click(object sender, EventArgs e)
         {            
           
+        }
+
+        private void item_code_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

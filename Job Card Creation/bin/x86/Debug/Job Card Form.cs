@@ -10,7 +10,7 @@ using System.Data.SqlClient;
 
 namespace Job_Card_Creation
 {
-    public partial class JobCard : Form
+    public partial class JobCard : UserControl
     {
         private Button button2 = new Button();
   
@@ -18,7 +18,7 @@ namespace Job_Card_Creation
         public JobCard()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.Manual;
+           
           
         }      
         
@@ -53,8 +53,10 @@ namespace Job_Card_Creation
                         collection.Add(read["item_code"].ToString());
                     }
                 }
-                cmd.CommandText = "select * from job_card order by sr_no desc";
                 item_code.AutoCompleteCustomSource = collection;
+
+
+                cmd.CommandText = "select * from job_card order by sr_no desc";                
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {

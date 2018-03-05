@@ -10,12 +10,12 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace Job_Card_Creation
 {
-    public partial class NewJob : Form
+    public partial class NewJob : UserControl
     {
         public NewJob()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.Manual;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -60,57 +60,49 @@ namespace Job_Card_Creation
             {
                
                 fill_sr_no();
-                fillComboBox();
+
+                //For AutoComplete
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
+                SqlConnection con;
+                con = new SqlConnection(connectionString);
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandType = CommandType.Text;
+                paper_type.AutoCompleteMode = AutoCompleteMode.Suggest;
+                paper_type.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
+
+                // Retrieve all rows
+                cmd.CommandText = "SELECT * FROM Inventory";
+                cmd.Connection = con;
+                con.Open();
+
+                using (var read = cmd.ExecuteReader())
+                {
+                    while (read.Read())
+                    {
+                        collection.Add(read["paper_type"].ToString());
+                    }
+                }
+                paper_type.AutoCompleteCustomSource = collection;
+                con.Close();
+                this.metroTabControl1.SizeMode = TabSizeMode.Normal;
+                metroTabControl1.UseCustomBackColor = true;
+                this.metroTabControl1.Multiline = true;
+                this.metroTabControl1.Padding = new Point(15, 5);
+
+
+
+                AllJobInfo uc1 = new AllJobInfo();
+                metroTabControl1.TabPages[1].Controls.Add(uc1);
+                uc1.BackColor = this.BackColor;
+                metroTabPage1.BackColor = this.BackColor;
             }
             catch (Exception err)
             {
                 StatusLabel.Text = "STATUS:-" + err.Message;
             }
         }
-        //ComboBoxItem
-        public class ComboboxItem
-        {
-            public string Text { get; set; }
-            public object Value { get; set; }
-
-            public override string ToString()
-            {
-                return Text;
-            }
-        }
-        public void fillComboBox()
-        {
-            try
-            {
-                ComboboxItem item = new ComboboxItem();
-
-                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
-                SqlConnection con;
-                con = new SqlConnection(connectionString);
-                SqlCommand cmd = new SqlCommand();
-                cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "select * from Inventory";
-                cmd.Connection = con;
-                con.Open();
-                using (var read = cmd.ExecuteReader())
-                {
-                    int count = 0;
-                    while (read.Read())
-                    {
-                        count = count + 1;
-                        item.Text = read["paper_type"].ToString();
-                        item.Value = read["paper_type"].ToString();
-                        paper_type.Items.Add(item);
-                    }
-                    paper_type.SelectedIndex = 0;
-                }
-                con.Close();
-            }
-            catch (Exception err)
-            {
-                StatusLabel.Text = "STATUS: -" + err.Message;
-            }
-        }
+  
         public void fill_sr_no()
         {
             try
@@ -168,33 +160,43 @@ namespace Job_Card_Creation
       
         }
 
-        private void NewJob_Click(object sender, EventArgs e)
+
+        private void metroTabPage2_Click(object sender, EventArgs e)
         {
-          
+
         }
 
-        private void JobCardLabel_Click(object sender, EventArgs e)
+        private void metroTabPage1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            JobCard frm1 = new JobCard();
-            frm1.Show();
+
         }
 
-        private void InventoryLabel_Click(object sender, EventArgs e)
+        private void metroTabPage1_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            Inventory frm3 = new Inventory();
-            frm3.Show();
+
         }
 
-        private void OrderLabel_Click(object sender, EventArgs e)
+        private void metroTabPage2_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            OrderStatus frm4 = new OrderStatus();
-            frm4.Show();
+
         }
 
-        private void n(object sender, EventArgs e)
+        private void name_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void paper_type_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void paper_type_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void color_shades_TextChanged(object sender, EventArgs e)
         {
 
         }

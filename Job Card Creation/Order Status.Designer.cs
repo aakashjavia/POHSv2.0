@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.orderstatusBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database1DataSet = new Job_Card_Creation.Database1DataSet();
@@ -58,18 +60,14 @@
             this.StatusReceived = new System.Windows.Forms.RadioButton();
             this.CommentsLabel = new System.Windows.Forms.Label();
             this.Comments = new System.Windows.Forms.TextBox();
-            this.UpdateButton = new System.Windows.Forms.Button();
-            this.ClearButton = new System.Windows.Forms.Button();
             this.StatusLabel = new System.Windows.Forms.Label();
             this.var_priority = new System.Windows.Forms.Label();
             this.var_status = new System.Windows.Forms.Label();
             this.sr_no = new System.Windows.Forms.TextBox();
             this.SrNoLabel = new System.Windows.Forms.Label();
-            this.OrderLabel = new System.Windows.Forms.Label();
-            this.InventoryLabel = new System.Windows.Forms.Label();
-            this.JobCardLabel = new System.Windows.Forms.Label();
-            this.NewJobLabel = new System.Windows.Forms.Label();
             this.HorizontalBar4 = new System.Windows.Forms.Label();
+            this.UpdateButton = new System.Windows.Forms.Button();
+            this.ClearButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderstatusBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
@@ -83,14 +81,31 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 65);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1127, 192);
+            this.dataGridView1.Size = new System.Drawing.Size(736, 192);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
@@ -112,18 +127,19 @@
             // Info1
             // 
             this.Info1.AutoSize = true;
-            this.Info1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Info1.Location = new System.Drawing.Point(7, 260);
+            this.Info1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Info1.Location = new System.Drawing.Point(3, 197);
             this.Info1.Name = "Info1";
-            this.Info1.Size = new System.Drawing.Size(292, 25);
+            this.Info1.Size = new System.Drawing.Size(300, 28);
             this.Info1.TabIndex = 1;
             this.Info1.Text = "Click on a row in the table to Edit";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(787, 525);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(490, 581);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(170, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(229, 38);
             this.dateTimePicker1.TabIndex = 74;
             this.dateTimePicker1.Visible = false;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged_1);
@@ -131,7 +147,7 @@
             // date
             // 
             this.date.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date.Location = new System.Drawing.Point(787, 553);
+            this.date.Location = new System.Drawing.Point(243, 569);
             this.date.Name = "date";
             this.date.ReadOnly = true;
             this.date.Size = new System.Drawing.Size(230, 34);
@@ -141,10 +157,10 @@
             // DateLabel
             // 
             this.DateLabel.AutoSize = true;
-            this.DateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateLabel.Location = new System.Drawing.Point(553, 558);
+            this.DateLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateLabel.Location = new System.Drawing.Point(9, 574);
             this.DateLabel.Name = "DateLabel";
-            this.DateLabel.Size = new System.Drawing.Size(203, 25);
+            this.DateLabel.Size = new System.Drawing.Size(226, 32);
             this.DateLabel.TabIndex = 72;
             this.DateLabel.Text = "Date of Last Update";
             this.DateLabel.Click += new System.EventHandler(this.DateLabel_Click);
@@ -152,66 +168,67 @@
             // item_code
             // 
             this.item_code.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.item_code.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.item_code.Location = new System.Drawing.Point(225, 288);
+            this.item_code.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.item_code.Location = new System.Drawing.Point(226, 260);
             this.item_code.Name = "item_code";
-            this.item_code.Size = new System.Drawing.Size(545, 34);
+            this.item_code.Size = new System.Drawing.Size(523, 38);
             this.item_code.TabIndex = 71;
+            this.item_code.TextChanged += new System.EventHandler(this.item_code_TextChanged);
             // 
             // name
             // 
-            this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.name.Location = new System.Drawing.Point(225, 328);
+            this.name.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.name.Location = new System.Drawing.Point(226, 304);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(545, 34);
+            this.name.Size = new System.Drawing.Size(523, 38);
             this.name.TabIndex = 70;
             // 
             // party_name
             // 
-            this.party_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.party_name.Location = new System.Drawing.Point(225, 368);
+            this.party_name.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.party_name.Location = new System.Drawing.Point(226, 348);
             this.party_name.Name = "party_name";
-            this.party_name.Size = new System.Drawing.Size(545, 34);
+            this.party_name.Size = new System.Drawing.Size(523, 38);
             this.party_name.TabIndex = 69;
             // 
             // JobLabel
             // 
             this.JobLabel.AutoSize = true;
-            this.JobLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.JobLabel.Location = new System.Drawing.Point(15, 291);
+            this.JobLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JobLabel.Location = new System.Drawing.Point(16, 263);
             this.JobLabel.Name = "JobLabel";
-            this.JobLabel.Size = new System.Drawing.Size(126, 29);
+            this.JobLabel.Size = new System.Drawing.Size(115, 32);
             this.JobLabel.TabIndex = 68;
             this.JobLabel.Text = "Job Code";
             // 
             // ProductLabel
             // 
             this.ProductLabel.AutoSize = true;
-            this.ProductLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.ProductLabel.Location = new System.Drawing.Point(15, 331);
+            this.ProductLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductLabel.Location = new System.Drawing.Point(16, 307);
             this.ProductLabel.Name = "ProductLabel";
-            this.ProductLabel.Size = new System.Drawing.Size(179, 29);
+            this.ProductLabel.Size = new System.Drawing.Size(168, 32);
             this.ProductLabel.TabIndex = 67;
             this.ProductLabel.Text = "Product Name";
             // 
             // PartyLabel
             // 
             this.PartyLabel.AutoSize = true;
-            this.PartyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PartyLabel.Location = new System.Drawing.Point(15, 371);
+            this.PartyLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PartyLabel.Location = new System.Drawing.Point(16, 351);
             this.PartyLabel.Name = "PartyLabel";
-            this.PartyLabel.Size = new System.Drawing.Size(182, 29);
+            this.PartyLabel.Size = new System.Drawing.Size(171, 32);
             this.PartyLabel.TabIndex = 66;
             this.PartyLabel.Text = "Name Of Party";
             // 
             // PriorityHigh
             // 
             this.PriorityHigh.AutoSize = true;
-            this.PriorityHigh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriorityHigh.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PriorityHigh.Location = new System.Drawing.Point(9, 33);
             this.PriorityHigh.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.PriorityHigh.Name = "PriorityHigh";
-            this.PriorityHigh.Size = new System.Drawing.Size(65, 24);
+            this.PriorityHigh.Size = new System.Drawing.Size(67, 27);
             this.PriorityHigh.TabIndex = 78;
             this.PriorityHigh.TabStop = true;
             this.PriorityHigh.Text = "High";
@@ -220,11 +237,11 @@
             // PriorityLow
             // 
             this.PriorityLow.AutoSize = true;
-            this.PriorityLow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriorityLow.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PriorityLow.Location = new System.Drawing.Point(187, 33);
             this.PriorityLow.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.PriorityLow.Name = "PriorityLow";
-            this.PriorityLow.Size = new System.Drawing.Size(61, 24);
+            this.PriorityLow.Size = new System.Drawing.Size(61, 27);
             this.PriorityLow.TabIndex = 79;
             this.PriorityLow.TabStop = true;
             this.PriorityLow.Text = "Low";
@@ -233,11 +250,11 @@
             // PriorityMedium
             // 
             this.PriorityMedium.AutoSize = true;
-            this.PriorityMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriorityMedium.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PriorityMedium.Location = new System.Drawing.Point(86, 33);
             this.PriorityMedium.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.PriorityMedium.Name = "PriorityMedium";
-            this.PriorityMedium.Size = new System.Drawing.Size(89, 24);
+            this.PriorityMedium.Size = new System.Drawing.Size(94, 27);
             this.PriorityMedium.TabIndex = 80;
             this.PriorityMedium.TabStop = true;
             this.PriorityMedium.Text = "Medium";
@@ -246,11 +263,11 @@
             // PriorityImmediate
             // 
             this.PriorityImmediate.AutoSize = true;
-            this.PriorityImmediate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriorityImmediate.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PriorityImmediate.Location = new System.Drawing.Point(260, 33);
             this.PriorityImmediate.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.PriorityImmediate.Name = "PriorityImmediate";
-            this.PriorityImmediate.Size = new System.Drawing.Size(112, 24);
+            this.PriorityImmediate.Size = new System.Drawing.Size(118, 27);
             this.PriorityImmediate.TabIndex = 81;
             this.PriorityImmediate.TabStop = true;
             this.PriorityImmediate.Text = "Immediate!";
@@ -260,11 +277,11 @@
             // PriorityDelayed
             // 
             this.PriorityDelayed.AutoSize = true;
-            this.PriorityDelayed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriorityDelayed.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PriorityDelayed.Location = new System.Drawing.Point(384, 33);
             this.PriorityDelayed.Margin = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.PriorityDelayed.Name = "PriorityDelayed";
-            this.PriorityDelayed.Size = new System.Drawing.Size(91, 24);
+            this.PriorityDelayed.Size = new System.Drawing.Size(92, 27);
             this.PriorityDelayed.TabIndex = 82;
             this.PriorityDelayed.TabStop = true;
             this.PriorityDelayed.Text = "Delayed";
@@ -277,8 +294,8 @@
             this.PriorityGroup.Controls.Add(this.PriorityHigh);
             this.PriorityGroup.Controls.Add(this.PriorityLow);
             this.PriorityGroup.Controls.Add(this.PriorityMedium);
-            this.PriorityGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PriorityGroup.Location = new System.Drawing.Point(12, 500);
+            this.PriorityGroup.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriorityGroup.Location = new System.Drawing.Point(13, 480);
             this.PriorityGroup.Name = "PriorityGroup";
             this.PriorityGroup.Size = new System.Drawing.Size(489, 83);
             this.PriorityGroup.TabIndex = 83;
@@ -293,8 +310,8 @@
             this.StatusGroup.Controls.Add(this.StatusDispatched);
             this.StatusGroup.Controls.Add(this.StatusConfirmed);
             this.StatusGroup.Controls.Add(this.StatusReceived);
-            this.StatusGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusGroup.Location = new System.Drawing.Point(12, 408);
+            this.StatusGroup.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatusGroup.Location = new System.Drawing.Point(13, 388);
             this.StatusGroup.Name = "StatusGroup";
             this.StatusGroup.Size = new System.Drawing.Size(677, 86);
             this.StatusGroup.TabIndex = 84;
@@ -305,11 +322,11 @@
             // StatusDelayed
             // 
             this.StatusDelayed.AutoSize = true;
-            this.StatusDelayed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatusDelayed.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StatusDelayed.Location = new System.Drawing.Point(574, 33);
             this.StatusDelayed.Margin = new System.Windows.Forms.Padding(8, 3, 8, 3);
             this.StatusDelayed.Name = "StatusDelayed";
-            this.StatusDelayed.Size = new System.Drawing.Size(91, 24);
+            this.StatusDelayed.Size = new System.Drawing.Size(92, 27);
             this.StatusDelayed.TabIndex = 88;
             this.StatusDelayed.TabStop = true;
             this.StatusDelayed.Text = "Delayed";
@@ -318,11 +335,11 @@
             // StatusReady
             // 
             this.StatusReady.AutoSize = true;
-            this.StatusReady.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatusReady.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StatusReady.Location = new System.Drawing.Point(350, 33);
             this.StatusReady.Margin = new System.Windows.Forms.Padding(8, 3, 8, 3);
             this.StatusReady.Name = "StatusReady";
-            this.StatusReady.Size = new System.Drawing.Size(77, 24);
+            this.StatusReady.Size = new System.Drawing.Size(77, 27);
             this.StatusReady.TabIndex = 86;
             this.StatusReady.TabStop = true;
             this.StatusReady.Text = "Ready";
@@ -332,11 +349,11 @@
             // StatusPrinting
             // 
             this.StatusPrinting.AutoSize = true;
-            this.StatusPrinting.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatusPrinting.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StatusPrinting.Location = new System.Drawing.Point(247, 33);
             this.StatusPrinting.Margin = new System.Windows.Forms.Padding(8, 3, 8, 3);
             this.StatusPrinting.Name = "StatusPrinting";
-            this.StatusPrinting.Size = new System.Drawing.Size(87, 24);
+            this.StatusPrinting.Size = new System.Drawing.Size(91, 27);
             this.StatusPrinting.TabIndex = 84;
             this.StatusPrinting.TabStop = true;
             this.StatusPrinting.Text = "Printing";
@@ -346,11 +363,11 @@
             // StatusDispatched
             // 
             this.StatusDispatched.AutoSize = true;
-            this.StatusDispatched.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatusDispatched.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StatusDispatched.Location = new System.Drawing.Point(443, 33);
             this.StatusDispatched.Margin = new System.Windows.Forms.Padding(8, 3, 8, 3);
             this.StatusDispatched.Name = "StatusDispatched";
-            this.StatusDispatched.Size = new System.Drawing.Size(115, 24);
+            this.StatusDispatched.Size = new System.Drawing.Size(116, 27);
             this.StatusDispatched.TabIndex = 87;
             this.StatusDispatched.TabStop = true;
             this.StatusDispatched.Text = "Dispatched";
@@ -360,11 +377,11 @@
             // StatusConfirmed
             // 
             this.StatusConfirmed.AutoSize = true;
-            this.StatusConfirmed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatusConfirmed.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StatusConfirmed.Location = new System.Drawing.Point(124, 33);
             this.StatusConfirmed.Margin = new System.Windows.Forms.Padding(8, 3, 8, 3);
             this.StatusConfirmed.Name = "StatusConfirmed";
-            this.StatusConfirmed.Size = new System.Drawing.Size(107, 24);
+            this.StatusConfirmed.Size = new System.Drawing.Size(111, 27);
             this.StatusConfirmed.TabIndex = 85;
             this.StatusConfirmed.TabStop = true;
             this.StatusConfirmed.Text = "Confirmed";
@@ -374,11 +391,11 @@
             // StatusReceived
             // 
             this.StatusReceived.AutoSize = true;
-            this.StatusReceived.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatusReceived.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StatusReceived.Location = new System.Drawing.Point(9, 33);
             this.StatusReceived.Margin = new System.Windows.Forms.Padding(8, 3, 8, 3);
             this.StatusReceived.Name = "StatusReceived";
-            this.StatusReceived.Size = new System.Drawing.Size(99, 24);
+            this.StatusReceived.Size = new System.Drawing.Size(98, 27);
             this.StatusReceived.TabIndex = 83;
             this.StatusReceived.TabStop = true;
             this.StatusReceived.Text = "Received";
@@ -387,60 +404,36 @@
             // CommentsLabel
             // 
             this.CommentsLabel.AutoSize = true;
-            this.CommentsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CommentsLabel.Location = new System.Drawing.Point(12, 586);
+            this.CommentsLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CommentsLabel.Location = new System.Drawing.Point(13, 601);
             this.CommentsLabel.Name = "CommentsLabel";
-            this.CommentsLabel.Size = new System.Drawing.Size(137, 29);
+            this.CommentsLabel.Size = new System.Drawing.Size(131, 32);
             this.CommentsLabel.TabIndex = 86;
             this.CommentsLabel.Text = "Comments";
             this.CommentsLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // Comments
             // 
-            this.Comments.Location = new System.Drawing.Point(12, 619);
+            this.Comments.Location = new System.Drawing.Point(13, 634);
             this.Comments.Multiline = true;
             this.Comments.Name = "Comments";
-            this.Comments.Size = new System.Drawing.Size(786, 124);
+            this.Comments.Size = new System.Drawing.Size(736, 38);
             this.Comments.TabIndex = 87;
-            // 
-            // UpdateButton
-            // 
-            this.UpdateButton.AutoSize = true;
-            this.UpdateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.UpdateButton.Location = new System.Drawing.Point(12, 774);
-            this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(183, 35);
-            this.UpdateButton.TabIndex = 90;
-            this.UpdateButton.Text = "Update";
-            this.UpdateButton.UseVisualStyleBackColor = true;
-            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
-            // 
-            // ClearButton
-            // 
-            this.ClearButton.AutoSize = true;
-            this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.ClearButton.Location = new System.Drawing.Point(225, 774);
-            this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(183, 35);
-            this.ClearButton.TabIndex = 91;
-            this.ClearButton.Text = "Clear";
-            this.ClearButton.UseVisualStyleBackColor = true;
-            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // StatusLabel
             // 
             this.StatusLabel.AutoSize = true;
-            this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(7, 817);
+            this.StatusLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatusLabel.Location = new System.Drawing.Point(3, 891);
             this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(138, 29);
+            this.StatusLabel.Size = new System.Drawing.Size(116, 32);
             this.StatusLabel.TabIndex = 92;
             this.StatusLabel.Text = "STATUS: -";
             // 
             // var_priority
             // 
             this.var_priority.AutoSize = true;
-            this.var_priority.Location = new System.Drawing.Point(865, 385);
+            this.var_priority.Location = new System.Drawing.Point(306, 226);
             this.var_priority.Name = "var_priority";
             this.var_priority.Size = new System.Drawing.Size(79, 17);
             this.var_priority.TabIndex = 94;
@@ -451,7 +444,7 @@
             // var_status
             // 
             this.var_status.AutoSize = true;
-            this.var_status.Location = new System.Drawing.Point(865, 368);
+            this.var_status.Location = new System.Drawing.Point(306, 209);
             this.var_status.Name = "var_status";
             this.var_status.Size = new System.Drawing.Size(74, 17);
             this.var_status.TabIndex = 95;
@@ -462,7 +455,7 @@
             // 
             this.sr_no.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.sr_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.sr_no.Location = new System.Drawing.Point(880, 286);
+            this.sr_no.Location = new System.Drawing.Point(104, 226);
             this.sr_no.Name = "sr_no";
             this.sr_no.ReadOnly = true;
             this.sr_no.Size = new System.Drawing.Size(108, 34);
@@ -471,79 +464,56 @@
             // SrNoLabel
             // 
             this.SrNoLabel.AutoSize = true;
-            this.SrNoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.SrNoLabel.Location = new System.Drawing.Point(787, 289);
+            this.SrNoLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SrNoLabel.Location = new System.Drawing.Point(11, 229);
             this.SrNoLabel.Name = "SrNoLabel";
-            this.SrNoLabel.Size = new System.Drawing.Size(87, 29);
+            this.SrNoLabel.Size = new System.Drawing.Size(80, 32);
             this.SrNoLabel.TabIndex = 97;
             this.SrNoLabel.Text = "Sr. No";
-            // 
-            // OrderLabel
-            // 
-            this.OrderLabel.AutoSize = true;
-            this.OrderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.OrderLabel.Location = new System.Drawing.Point(499, 9);
-            this.OrderLabel.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.OrderLabel.Name = "OrderLabel";
-            this.OrderLabel.Size = new System.Drawing.Size(160, 29);
-            this.OrderLabel.TabIndex = 101;
-            this.OrderLabel.Text = "Order Status";
-            this.OrderLabel.Click += new System.EventHandler(this.OrderLabel_Click);
-            // 
-            // InventoryLabel
-            // 
-            this.InventoryLabel.AutoSize = true;
-            this.InventoryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.InventoryLabel.Location = new System.Drawing.Point(341, 9);
-            this.InventoryLabel.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.InventoryLabel.Name = "InventoryLabel";
-            this.InventoryLabel.Size = new System.Drawing.Size(118, 29);
-            this.InventoryLabel.TabIndex = 100;
-            this.InventoryLabel.Text = "Inventory";
-            this.InventoryLabel.Click += new System.EventHandler(this.InventoryLabel_Click);
-            // 
-            // JobCardLabel
-            // 
-            this.JobCardLabel.AutoSize = true;
-            this.JobCardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.JobCardLabel.Location = new System.Drawing.Point(169, 9);
-            this.JobCardLabel.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.JobCardLabel.Name = "JobCardLabel";
-            this.JobCardLabel.Size = new System.Drawing.Size(132, 29);
-            this.JobCardLabel.TabIndex = 99;
-            this.JobCardLabel.Text = "Job Cards";
-            this.JobCardLabel.Click += new System.EventHandler(this.JobCardLabel_Click);
-            // 
-            // NewJobLabel
-            // 
-            this.NewJobLabel.AutoSize = true;
-            this.NewJobLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.NewJobLabel.Location = new System.Drawing.Point(13, 9);
-            this.NewJobLabel.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.NewJobLabel.Name = "NewJobLabel";
-            this.NewJobLabel.Size = new System.Drawing.Size(116, 29);
-            this.NewJobLabel.TabIndex = 98;
-            this.NewJobLabel.Text = "New Job";
-            this.NewJobLabel.Click += new System.EventHandler(this.NewJob_Click);
             // 
             // HorizontalBar4
             // 
             this.HorizontalBar4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.HorizontalBar4.Location = new System.Drawing.Point(12, 815);
+            this.HorizontalBar4.Location = new System.Drawing.Point(4, 889);
             this.HorizontalBar4.Name = "HorizontalBar4";
-            this.HorizontalBar4.Size = new System.Drawing.Size(1132, 2);
+            this.HorizontalBar4.Size = new System.Drawing.Size(765, 2);
             this.HorizontalBar4.TabIndex = 102;
+            // 
+            // UpdateButton
+            // 
+            this.UpdateButton.AutoSize = true;
+            this.UpdateButton.BackColor = System.Drawing.Color.White;
+            this.UpdateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UpdateButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdateButton.Location = new System.Drawing.Point(179, 678);
+            this.UpdateButton.Name = "UpdateButton";
+            this.UpdateButton.Size = new System.Drawing.Size(183, 44);
+            this.UpdateButton.TabIndex = 90;
+            this.UpdateButton.Text = "Update";
+            this.UpdateButton.UseVisualStyleBackColor = false;
+            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
+            // 
+            // ClearButton
+            // 
+            this.ClearButton.AutoSize = true;
+            this.ClearButton.BackColor = System.Drawing.Color.White;
+            this.ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ClearButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClearButton.Location = new System.Drawing.Point(397, 678);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(183, 44);
+            this.ClearButton.TabIndex = 91;
+            this.ClearButton.Text = "Clear";
+            this.ClearButton.UseVisualStyleBackColor = false;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // OrderStatus
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 856);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.Controls.Add(this.HorizontalBar4);
-            this.Controls.Add(this.OrderLabel);
-            this.Controls.Add(this.InventoryLabel);
-            this.Controls.Add(this.JobCardLabel);
-            this.Controls.Add(this.NewJobLabel);
             this.Controls.Add(this.SrNoLabel);
             this.Controls.Add(this.sr_no);
             this.Controls.Add(this.var_status);
@@ -566,9 +536,9 @@
             this.Controls.Add(this.PartyLabel);
             this.Controls.Add(this.Info1);
             this.Controls.Add(this.dataGridView1);
-            this.Location = new System.Drawing.Point(30, 30);
+            this.Location = new System.Drawing.Point(1, 1);
             this.Name = "OrderStatus";
-            this.Text = "Order Status";
+            this.Size = new System.Drawing.Size(773, 932);
             this.Load += new System.EventHandler(this.OrderStatus_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderstatusBindingSource)).EndInit();
@@ -613,17 +583,13 @@
         private System.Windows.Forms.RadioButton StatusDelayed;
         private System.Windows.Forms.Label CommentsLabel;
         private System.Windows.Forms.TextBox Comments;
-        private System.Windows.Forms.Button UpdateButton;
-        private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.Label StatusLabel;
         private System.Windows.Forms.Label var_priority;
         private System.Windows.Forms.Label var_status;
         private System.Windows.Forms.TextBox sr_no;
         private System.Windows.Forms.Label SrNoLabel;
-        private System.Windows.Forms.Label OrderLabel;
-        private System.Windows.Forms.Label InventoryLabel;
-        private System.Windows.Forms.Label JobCardLabel;
-        private System.Windows.Forms.Label NewJobLabel;
         private System.Windows.Forms.Label HorizontalBar4;
+        private System.Windows.Forms.Button UpdateButton;
+        private System.Windows.Forms.Button ClearButton;
     }
 }

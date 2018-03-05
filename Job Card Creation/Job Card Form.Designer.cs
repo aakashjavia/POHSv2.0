@@ -78,103 +78,99 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.sr_no = new System.Windows.Forms.TextBox();
             this.JobSheetNo = new System.Windows.Forms.Label();
-            this.NewJobLabel = new System.Windows.Forms.Label();
-            this.JobCardLabel = new System.Windows.Forms.Label();
-            this.InventoryLabel = new System.Windows.Forms.Label();
-            this.OrderLabel = new System.Windows.Forms.Label();
             this.HorizontalBar4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // PartyLabel
             // 
             this.PartyLabel.AutoSize = true;
-            this.PartyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.PartyLabel.Location = new System.Drawing.Point(7, 156);
+            this.PartyLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PartyLabel.Location = new System.Drawing.Point(6, 115);
             this.PartyLabel.Name = "PartyLabel";
-            this.PartyLabel.Size = new System.Drawing.Size(182, 29);
+            this.PartyLabel.Size = new System.Drawing.Size(171, 32);
             this.PartyLabel.TabIndex = 3;
             this.PartyLabel.Text = "Name Of Party";
             // 
             // ProductLabel
             // 
             this.ProductLabel.AutoSize = true;
-            this.ProductLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.ProductLabel.Location = new System.Drawing.Point(7, 196);
+            this.ProductLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductLabel.Location = new System.Drawing.Point(7, 154);
             this.ProductLabel.Name = "ProductLabel";
-            this.ProductLabel.Size = new System.Drawing.Size(179, 29);
+            this.ProductLabel.Size = new System.Drawing.Size(168, 32);
             this.ProductLabel.TabIndex = 4;
             this.ProductLabel.Text = "Product Name";
             // 
             // JobLabel
             // 
             this.JobLabel.AutoSize = true;
-            this.JobLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.JobLabel.Location = new System.Drawing.Point(7, 236);
+            this.JobLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JobLabel.Location = new System.Drawing.Point(5, 197);
             this.JobLabel.Name = "JobLabel";
-            this.JobLabel.Size = new System.Drawing.Size(126, 29);
+            this.JobLabel.Size = new System.Drawing.Size(115, 32);
             this.JobLabel.TabIndex = 5;
             this.JobLabel.Text = "Job Code";
             // 
             // BoxSizeLabel
             // 
             this.BoxSizeLabel.AutoSize = true;
-            this.BoxSizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.BoxSizeLabel.Location = new System.Drawing.Point(7, 276);
+            this.BoxSizeLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxSizeLabel.Location = new System.Drawing.Point(5, 237);
             this.BoxSizeLabel.Name = "BoxSizeLabel";
-            this.BoxSizeLabel.Size = new System.Drawing.Size(115, 29);
+            this.BoxSizeLabel.Size = new System.Drawing.Size(104, 32);
             this.BoxSizeLabel.TabIndex = 6;
             this.BoxSizeLabel.Text = "Box Size";
             // 
             // party_name
             // 
             this.party_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.party_name.Location = new System.Drawing.Point(206, 153);
+            this.party_name.Location = new System.Drawing.Point(245, 114);
             this.party_name.Name = "party_name";
-            this.party_name.Size = new System.Drawing.Size(545, 34);
+            this.party_name.Size = new System.Drawing.Size(499, 34);
             this.party_name.TabIndex = 7;
             // 
             // name
             // 
             this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.name.Location = new System.Drawing.Point(206, 193);
+            this.name.Location = new System.Drawing.Point(245, 153);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(545, 34);
+            this.name.Size = new System.Drawing.Size(499, 34);
             this.name.TabIndex = 8;
             // 
             // item_code
             // 
             this.item_code.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.item_code.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.item_code.Location = new System.Drawing.Point(206, 233);
+            this.item_code.Location = new System.Drawing.Point(245, 196);
             this.item_code.Name = "item_code";
-            this.item_code.Size = new System.Drawing.Size(545, 34);
+            this.item_code.Size = new System.Drawing.Size(499, 34);
             this.item_code.TabIndex = 9;
             this.item_code.TextChanged += new System.EventHandler(this.JobCode_TextChanged);
             // 
             // size
             // 
             this.size.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.size.Location = new System.Drawing.Point(206, 273);
+            this.size.Location = new System.Drawing.Point(245, 236);
             this.size.Name = "size";
-            this.size.Size = new System.Drawing.Size(545, 34);
+            this.size.Size = new System.Drawing.Size(499, 34);
             this.size.TabIndex = 10;
             // 
             // JobDetails
             // 
             this.JobDetails.AutoSize = true;
-            this.JobDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JobDetails.Location = new System.Drawing.Point(20, 117);
+            this.JobDetails.Font = new System.Drawing.Font("Segoe UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JobDetails.Location = new System.Drawing.Point(4, 76);
             this.JobDetails.Name = "JobDetails";
-            this.JobDetails.Size = new System.Drawing.Size(173, 36);
+            this.JobDetails.Size = new System.Drawing.Size(173, 41);
             this.JobDetails.TabIndex = 14;
             this.JobDetails.Text = "Job Details";
             // 
             // printer_name
             // 
             this.printer_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.printer_name.Location = new System.Drawing.Point(249, 323);
+            this.printer_name.Location = new System.Drawing.Point(245, 288);
             this.printer_name.Name = "printer_name";
             this.printer_name.Size = new System.Drawing.Size(499, 34);
             this.printer_name.TabIndex = 17;
@@ -182,17 +178,17 @@
             // PrinterNameLabel
             // 
             this.PrinterNameLabel.AutoSize = true;
-            this.PrinterNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.PrinterNameLabel.Location = new System.Drawing.Point(7, 328);
+            this.PrinterNameLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrinterNameLabel.Location = new System.Drawing.Point(5, 289);
             this.PrinterNameLabel.Name = "PrinterNameLabel";
-            this.PrinterNameLabel.Size = new System.Drawing.Size(201, 29);
+            this.PrinterNameLabel.Size = new System.Drawing.Size(189, 32);
             this.PrinterNameLabel.TabIndex = 16;
             this.PrinterNameLabel.Text = "Name Of Printer";
             // 
             // sheet_size
             // 
             this.sheet_size.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.sheet_size.Location = new System.Drawing.Point(249, 403);
+            this.sheet_size.Location = new System.Drawing.Point(245, 368);
             this.sheet_size.Name = "sheet_size";
             this.sheet_size.Size = new System.Drawing.Size(499, 34);
             this.sheet_size.TabIndex = 24;
@@ -200,7 +196,7 @@
             // paper_type
             // 
             this.paper_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.paper_type.Location = new System.Drawing.Point(249, 363);
+            this.paper_type.Location = new System.Drawing.Point(245, 328);
             this.paper_type.Name = "paper_type";
             this.paper_type.Size = new System.Drawing.Size(499, 34);
             this.paper_type.TabIndex = 23;
@@ -208,47 +204,47 @@
             // SheetNosLabel
             // 
             this.SheetNosLabel.AutoSize = true;
-            this.SheetNosLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.SheetNosLabel.Location = new System.Drawing.Point(7, 488);
+            this.SheetNosLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SheetNosLabel.Location = new System.Drawing.Point(5, 449);
             this.SheetNosLabel.Name = "SheetNosLabel";
-            this.SheetNosLabel.Size = new System.Drawing.Size(176, 29);
+            this.SheetNosLabel.Size = new System.Drawing.Size(163, 32);
             this.SheetNosLabel.TabIndex = 22;
             this.SheetNosLabel.Text = "No. Of Sheets";
             // 
             // GrossLabel
             // 
             this.GrossLabel.AutoSize = true;
-            this.GrossLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.GrossLabel.Location = new System.Drawing.Point(7, 448);
+            this.GrossLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrossLabel.Location = new System.Drawing.Point(5, 409);
             this.GrossLabel.Name = "GrossLabel";
-            this.GrossLabel.Size = new System.Drawing.Size(187, 29);
+            this.GrossLabel.Size = new System.Drawing.Size(170, 32);
             this.GrossLabel.TabIndex = 21;
             this.GrossLabel.Text = "No. Of Packets";
             // 
             // SheetSizeLabel
             // 
             this.SheetSizeLabel.AutoSize = true;
-            this.SheetSizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.SheetSizeLabel.Location = new System.Drawing.Point(7, 408);
+            this.SheetSizeLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SheetSizeLabel.Location = new System.Drawing.Point(5, 369);
             this.SheetSizeLabel.Name = "SheetSizeLabel";
-            this.SheetSizeLabel.Size = new System.Drawing.Size(217, 29);
+            this.SheetSizeLabel.Size = new System.Drawing.Size(199, 32);
             this.SheetSizeLabel.TabIndex = 20;
             this.SheetSizeLabel.Text = "Actual Sheet Size";
             // 
             // PaperTypeLabel
             // 
             this.PaperTypeLabel.AutoSize = true;
-            this.PaperTypeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.PaperTypeLabel.Location = new System.Drawing.Point(7, 368);
+            this.PaperTypeLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PaperTypeLabel.Location = new System.Drawing.Point(5, 329);
             this.PaperTypeLabel.Name = "PaperTypeLabel";
-            this.PaperTypeLabel.Size = new System.Drawing.Size(183, 29);
+            this.PaperTypeLabel.Size = new System.Drawing.Size(165, 32);
             this.PaperTypeLabel.TabIndex = 19;
             this.PaperTypeLabel.Text = "Type Of Paper";
             // 
             // gross_packets
             // 
             this.gross_packets.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.gross_packets.Location = new System.Drawing.Point(249, 443);
+            this.gross_packets.Location = new System.Drawing.Point(245, 408);
             this.gross_packets.Name = "gross_packets";
             this.gross_packets.Size = new System.Drawing.Size(499, 34);
             this.gross_packets.TabIndex = 31;
@@ -256,7 +252,7 @@
             // no_of_sheets
             // 
             this.no_of_sheets.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.no_of_sheets.Location = new System.Drawing.Point(249, 483);
+            this.no_of_sheets.Location = new System.Drawing.Point(245, 448);
             this.no_of_sheets.Name = "no_of_sheets";
             this.no_of_sheets.Size = new System.Drawing.Size(499, 34);
             this.no_of_sheets.TabIndex = 36;
@@ -264,7 +260,7 @@
             // cutting_size
             // 
             this.cutting_size.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.cutting_size.Location = new System.Drawing.Point(249, 523);
+            this.cutting_size.Location = new System.Drawing.Point(245, 488);
             this.cutting_size.Name = "cutting_size";
             this.cutting_size.Size = new System.Drawing.Size(499, 34);
             this.cutting_size.TabIndex = 41;
@@ -272,100 +268,100 @@
             // SheetCuttingLabel
             // 
             this.SheetCuttingLabel.AutoSize = true;
-            this.SheetCuttingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.SheetCuttingLabel.Location = new System.Drawing.Point(7, 528);
+            this.SheetCuttingLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SheetCuttingLabel.Location = new System.Drawing.Point(5, 489);
             this.SheetCuttingLabel.Name = "SheetCuttingLabel";
-            this.SheetCuttingLabel.Size = new System.Drawing.Size(153, 29);
+            this.SheetCuttingLabel.Size = new System.Drawing.Size(144, 32);
             this.SheetCuttingLabel.TabIndex = 39;
             this.SheetCuttingLabel.Text = "Cutting Size";
             // 
             // ups_per_sheet
             // 
             this.ups_per_sheet.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.ups_per_sheet.Location = new System.Drawing.Point(249, 563);
+            this.ups_per_sheet.Location = new System.Drawing.Point(245, 528);
             this.ups_per_sheet.Name = "ups_per_sheet";
-            this.ups_per_sheet.Size = new System.Drawing.Size(219, 34);
+            this.ups_per_sheet.Size = new System.Drawing.Size(499, 34);
             this.ups_per_sheet.TabIndex = 43;
             // 
             // UpsLabel
             // 
             this.UpsLabel.AutoSize = true;
-            this.UpsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.UpsLabel.Location = new System.Drawing.Point(7, 568);
+            this.UpsLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpsLabel.Location = new System.Drawing.Point(5, 529);
             this.UpsLabel.Name = "UpsLabel";
-            this.UpsLabel.Size = new System.Drawing.Size(182, 29);
+            this.UpsLabel.Size = new System.Drawing.Size(163, 32);
             this.UpsLabel.TabIndex = 42;
             this.UpsLabel.Text = "Ups Per Sheet";
             // 
             // num_of_colors
             // 
             this.num_of_colors.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.num_of_colors.Location = new System.Drawing.Point(598, 687);
+            this.num_of_colors.Location = new System.Drawing.Point(245, 685);
             this.num_of_colors.Name = "num_of_colors";
-            this.num_of_colors.Size = new System.Drawing.Size(151, 34);
+            this.num_of_colors.Size = new System.Drawing.Size(499, 34);
             this.num_of_colors.TabIndex = 51;
             // 
             // ColorsLabel
             // 
             this.ColorsLabel.AutoSize = true;
-            this.ColorsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.ColorsLabel.Location = new System.Drawing.Point(502, 690);
+            this.ColorsLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ColorsLabel.Location = new System.Drawing.Point(5, 686);
             this.ColorsLabel.Name = "ColorsLabel";
-            this.ColorsLabel.Size = new System.Drawing.Size(90, 29);
+            this.ColorsLabel.Size = new System.Drawing.Size(82, 32);
             this.ColorsLabel.TabIndex = 50;
             this.ColorsLabel.Text = "Colors";
             // 
             // print_total
             // 
             this.print_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.print_total.Location = new System.Drawing.Point(249, 683);
+            this.print_total.Location = new System.Drawing.Point(245, 645);
             this.print_total.Name = "print_total";
-            this.print_total.Size = new System.Drawing.Size(219, 34);
+            this.print_total.Size = new System.Drawing.Size(499, 34);
             this.print_total.TabIndex = 49;
             // 
             // print_waste
             // 
             this.print_waste.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.print_waste.Location = new System.Drawing.Point(249, 643);
+            this.print_waste.Location = new System.Drawing.Point(245, 608);
             this.print_waste.Name = "print_waste";
-            this.print_waste.Size = new System.Drawing.Size(219, 34);
+            this.print_waste.Size = new System.Drawing.Size(499, 34);
             this.print_waste.TabIndex = 48;
             // 
             // print_front
             // 
             this.print_front.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.print_front.Location = new System.Drawing.Point(249, 603);
+            this.print_front.Location = new System.Drawing.Point(245, 568);
             this.print_front.Name = "print_front";
-            this.print_front.Size = new System.Drawing.Size(219, 34);
+            this.print_front.Size = new System.Drawing.Size(499, 34);
             this.print_front.TabIndex = 47;
             // 
             // TotalLabel
             // 
             this.TotalLabel.AutoSize = true;
-            this.TotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.TotalLabel.Location = new System.Drawing.Point(7, 688);
+            this.TotalLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalLabel.Location = new System.Drawing.Point(5, 646);
             this.TotalLabel.Name = "TotalLabel";
-            this.TotalLabel.Size = new System.Drawing.Size(173, 29);
+            this.TotalLabel.Size = new System.Drawing.Size(154, 32);
             this.TotalLabel.TabIndex = 46;
             this.TotalLabel.Text = "To Print Total";
             // 
             // WasteLabel
             // 
             this.WasteLabel.AutoSize = true;
-            this.WasteLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.WasteLabel.Location = new System.Drawing.Point(7, 648);
+            this.WasteLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WasteLabel.Location = new System.Drawing.Point(5, 609);
             this.WasteLabel.Name = "WasteLabel";
-            this.WasteLabel.Size = new System.Drawing.Size(186, 29);
+            this.WasteLabel.Size = new System.Drawing.Size(171, 32);
             this.WasteLabel.TabIndex = 45;
             this.WasteLabel.Text = "Waste Allowed";
             // 
             // FrontPrintLabel
             // 
             this.FrontPrintLabel.AutoSize = true;
-            this.FrontPrintLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.FrontPrintLabel.Location = new System.Drawing.Point(7, 608);
+            this.FrontPrintLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FrontPrintLabel.Location = new System.Drawing.Point(5, 569);
             this.FrontPrintLabel.Name = "FrontPrintLabel";
-            this.FrontPrintLabel.Size = new System.Drawing.Size(174, 29);
+            this.FrontPrintLabel.Size = new System.Drawing.Size(159, 32);
             this.FrontPrintLabel.TabIndex = 44;
             this.FrontPrintLabel.Text = "To Print Front";
             this.FrontPrintLabel.Click += new System.EventHandler(this.FrontPrintLabel_Click);
@@ -373,7 +369,7 @@
             // paper_from
             // 
             this.paper_from.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.paper_from.Location = new System.Drawing.Point(249, 803);
+            this.paper_from.Location = new System.Drawing.Point(245, 805);
             this.paper_from.Name = "paper_from";
             this.paper_from.Size = new System.Drawing.Size(499, 34);
             this.paper_from.TabIndex = 57;
@@ -381,17 +377,17 @@
             // PaperFromLabel
             // 
             this.PaperFromLabel.AutoSize = true;
-            this.PaperFromLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.PaperFromLabel.Location = new System.Drawing.Point(7, 808);
+            this.PaperFromLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PaperFromLabel.Location = new System.Drawing.Point(5, 806);
             this.PaperFromLabel.Name = "PaperFromLabel";
-            this.PaperFromLabel.Size = new System.Drawing.Size(189, 29);
+            this.PaperFromLabel.Size = new System.Drawing.Size(169, 32);
             this.PaperFromLabel.TabIndex = 56;
             this.PaperFromLabel.Text = "Paper Supplier";
             // 
             // varnish
             // 
             this.varnish.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.varnish.Location = new System.Drawing.Point(249, 763);
+            this.varnish.Location = new System.Drawing.Point(245, 765);
             this.varnish.Name = "varnish";
             this.varnish.Size = new System.Drawing.Size(499, 34);
             this.varnish.TabIndex = 55;
@@ -399,7 +395,7 @@
             // color_shades
             // 
             this.color_shades.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.color_shades.Location = new System.Drawing.Point(249, 723);
+            this.color_shades.Location = new System.Drawing.Point(245, 724);
             this.color_shades.Name = "color_shades";
             this.color_shades.Size = new System.Drawing.Size(499, 34);
             this.color_shades.TabIndex = 54;
@@ -407,41 +403,43 @@
             // VarnishLabel
             // 
             this.VarnishLabel.AutoSize = true;
-            this.VarnishLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.VarnishLabel.Location = new System.Drawing.Point(7, 768);
+            this.VarnishLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VarnishLabel.Location = new System.Drawing.Point(5, 766);
             this.VarnishLabel.Name = "VarnishLabel";
-            this.VarnishLabel.Size = new System.Drawing.Size(188, 29);
+            this.VarnishLabel.Size = new System.Drawing.Size(171, 32);
             this.VarnishLabel.TabIndex = 53;
             this.VarnishLabel.Text = "Varnish Details";
             // 
             // Shade_Nos_Label
             // 
             this.Shade_Nos_Label.AutoSize = true;
-            this.Shade_Nos_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.Shade_Nos_Label.Location = new System.Drawing.Point(7, 728);
+            this.Shade_Nos_Label.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Shade_Nos_Label.Location = new System.Drawing.Point(5, 725);
             this.Shade_Nos_Label.Name = "Shade_Nos_Label";
-            this.Shade_Nos_Label.Size = new System.Drawing.Size(172, 29);
+            this.Shade_Nos_Label.Size = new System.Drawing.Size(155, 32);
             this.Shade_Nos_Label.TabIndex = 52;
             this.Shade_Nos_Label.Text = "Color Shades";
             // 
             // SubmitButton
             // 
-            this.SubmitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.SubmitButton.Location = new System.Drawing.Point(567, 646);
+            this.SubmitButton.BackColor = System.Drawing.Color.White;
+            this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SubmitButton.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.SubmitButton.Location = new System.Drawing.Point(295, 845);
             this.SubmitButton.Name = "SubmitButton";
-            this.SubmitButton.Size = new System.Drawing.Size(183, 35);
+            this.SubmitButton.Size = new System.Drawing.Size(183, 44);
             this.SubmitButton.TabIndex = 59;
             this.SubmitButton.Text = "Submit Only";
-            this.SubmitButton.UseVisualStyleBackColor = true;
+            this.SubmitButton.UseVisualStyleBackColor = false;
             this.SubmitButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // DateLabel
             // 
             this.DateLabel.AutoSize = true;
-            this.DateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateLabel.Location = new System.Drawing.Point(431, 78);
+            this.DateLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateLabel.Location = new System.Drawing.Point(376, 33);
             this.DateLabel.Name = "DateLabel";
-            this.DateLabel.Size = new System.Drawing.Size(57, 25);
+            this.DateLabel.Size = new System.Drawing.Size(65, 32);
             this.DateLabel.TabIndex = 62;
             this.DateLabel.Text = "Date";
             this.DateLabel.Click += new System.EventHandler(this.DateLabel_Click);
@@ -449,7 +447,7 @@
             // date
             // 
             this.date.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date.Location = new System.Drawing.Point(493, 74);
+            this.date.Location = new System.Drawing.Point(458, 31);
             this.date.Name = "date";
             this.date.Size = new System.Drawing.Size(230, 34);
             this.date.TabIndex = 63;
@@ -457,17 +455,17 @@
             // StatusLabel
             // 
             this.StatusLabel.AutoSize = true;
-            this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(11, 842);
+            this.StatusLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatusLabel.Location = new System.Drawing.Point(3, 900);
             this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(101, 29);
+            this.StatusLabel.Size = new System.Drawing.Size(94, 32);
             this.StatusLabel.TabIndex = 64;
             this.StatusLabel.Text = "Status:-";
             this.StatusLabel.Click += new System.EventHandler(this.StatusLabel_Click);
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(553, 46);
+            this.dateTimePicker1.Location = new System.Drawing.Point(382, 8);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(170, 22);
             this.dateTimePicker1.TabIndex = 65;
@@ -481,7 +479,7 @@
             // printForm1
             // 
             this.printForm1.DocumentName = "document";
-            this.printForm1.Form = this;
+            this.printForm1.Form = null;
             this.printForm1.PrintAction = System.Drawing.Printing.PrintAction.PrintToPreview;
             this.printForm1.PrinterSettings = ((System.Drawing.Printing.PrinterSettings)(resources.GetObject("printForm1.PrinterSettings")));
             this.printForm1.PrintFileName = null;
@@ -489,7 +487,7 @@
             // sr_no
             // 
             this.sr_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sr_no.Location = new System.Drawing.Point(206, 78);
+            this.sr_no.Location = new System.Drawing.Point(186, 31);
             this.sr_no.Name = "sr_no";
             this.sr_no.Size = new System.Drawing.Size(173, 34);
             this.sr_no.TabIndex = 2;
@@ -497,100 +495,46 @@
             // JobSheetNo
             // 
             this.JobSheetNo.AutoSize = true;
-            this.JobSheetNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JobSheetNo.Location = new System.Drawing.Point(7, 81);
+            this.JobSheetNo.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JobSheetNo.Location = new System.Drawing.Point(5, 33);
             this.JobSheetNo.Name = "JobSheetNo";
-            this.JobSheetNo.Size = new System.Drawing.Size(179, 29);
+            this.JobSheetNo.Size = new System.Drawing.Size(164, 32);
             this.JobSheetNo.TabIndex = 1;
             this.JobSheetNo.Text = "Job Sheet No.";
-            // 
-            // NewJobLabel
-            // 
-            this.NewJobLabel.AutoSize = true;
-            this.NewJobLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.NewJobLabel.Location = new System.Drawing.Point(13, 9);
-            this.NewJobLabel.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.NewJobLabel.Name = "NewJobLabel";
-            this.NewJobLabel.Size = new System.Drawing.Size(116, 29);
-            this.NewJobLabel.TabIndex = 66;
-            this.NewJobLabel.Text = "New Job";
-            this.NewJobLabel.Click += new System.EventHandler(this.NewJob_Click);
-            // 
-            // JobCardLabel
-            // 
-            this.JobCardLabel.AutoSize = true;
-            this.JobCardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.JobCardLabel.Location = new System.Drawing.Point(169, 9);
-            this.JobCardLabel.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.JobCardLabel.Name = "JobCardLabel";
-            this.JobCardLabel.Size = new System.Drawing.Size(132, 29);
-            this.JobCardLabel.TabIndex = 67;
-            this.JobCardLabel.Text = "Job Cards";
-            this.JobCardLabel.Click += new System.EventHandler(this.JobCardLabel_Click);
-            // 
-            // InventoryLabel
-            // 
-            this.InventoryLabel.AutoSize = true;
-            this.InventoryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.InventoryLabel.Location = new System.Drawing.Point(341, 9);
-            this.InventoryLabel.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.InventoryLabel.Name = "InventoryLabel";
-            this.InventoryLabel.Size = new System.Drawing.Size(118, 29);
-            this.InventoryLabel.TabIndex = 68;
-            this.InventoryLabel.Text = "Inventory";
-            this.InventoryLabel.Click += new System.EventHandler(this.InventoryLabel_Click);
-            // 
-            // OrderLabel
-            // 
-            this.OrderLabel.AutoSize = true;
-            this.OrderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.OrderLabel.Location = new System.Drawing.Point(499, 9);
-            this.OrderLabel.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.OrderLabel.Name = "OrderLabel";
-            this.OrderLabel.Size = new System.Drawing.Size(160, 29);
-            this.OrderLabel.TabIndex = 69;
-            this.OrderLabel.Text = "Order Status";
-            this.OrderLabel.Click += new System.EventHandler(this.OrderLabel_Click);
             // 
             // HorizontalBar4
             // 
             this.HorizontalBar4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.HorizontalBar4.Location = new System.Drawing.Point(12, 310);
+            this.HorizontalBar4.Location = new System.Drawing.Point(11, 271);
             this.HorizontalBar4.Name = "HorizontalBar4";
             this.HorizontalBar4.Size = new System.Drawing.Size(735, 2);
             this.HorizontalBar4.TabIndex = 70;
             // 
+            // label2
+            // 
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label2.Location = new System.Drawing.Point(4, 898);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(765, 2);
+            this.label2.TabIndex = 91;
+            // 
             // label1
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(12, 117);
+            this.label1.Location = new System.Drawing.Point(11, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(735, 2);
             this.label1.TabIndex = 71;
             // 
-            // label2
-            // 
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(11, 840);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(738, 2);
-            this.label2.TabIndex = 91;
-            // 
             // JobCard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(760, 882);
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.HorizontalBar4);
-            this.Controls.Add(this.OrderLabel);
-            this.Controls.Add(this.InventoryLabel);
-            this.Controls.Add(this.JobCardLabel);
-            this.Controls.Add(this.NewJobLabel);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.StatusLabel);
             this.Controls.Add(this.date);
@@ -635,11 +579,9 @@
             this.Controls.Add(this.PartyLabel);
             this.Controls.Add(this.sr_no);
             this.Controls.Add(this.JobSheetNo);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Location = new System.Drawing.Point(30, 30);
+            this.Location = new System.Drawing.Point(1, 1);
             this.Name = "JobCard";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-            this.Text = "Job Card";
+            this.Size = new System.Drawing.Size(773, 932);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -695,13 +637,9 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.TextBox sr_no;
         private System.Windows.Forms.Label JobSheetNo;
-        private System.Windows.Forms.Label OrderLabel;
-        private System.Windows.Forms.Label InventoryLabel;
-        private System.Windows.Forms.Label JobCardLabel;
-        private System.Windows.Forms.Label NewJobLabel;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label HorizontalBar4;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

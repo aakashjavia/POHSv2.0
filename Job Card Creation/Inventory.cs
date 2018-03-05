@@ -12,19 +12,23 @@ using System.Data.SqlClient;
 
 namespace Job_Card_Creation
 {
-    public partial class Inventory : Form
+    public partial class Inventory : UserControl
     {
         public Inventory()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.Manual;
+            
         }
+        
+
+
         private void Inventory_Load(object sender, EventArgs e)
         {
             try
             {
                 updatedata();
                 inventoryCheck();
+                dataGridView1.BackgroundColor = this.BackColor;
             }
             catch (Exception err)
             {
@@ -44,6 +48,8 @@ namespace Job_Card_Creation
             sda.Fill(dt);
             con.Close();
             dataGridView1.DataSource = dt;
+            dataGridView1.Font = new Font("Seguo UI", 8F, GraphicsUnit.Point);
+
         }
         public void update_sr_no()
         {
@@ -219,6 +225,16 @@ namespace Job_Card_Creation
             this.Hide();
             OrderStatus frm4 = new OrderStatus();
             frm4.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
