@@ -27,8 +27,8 @@ namespace Job_Card_Creation
             // Sizes the tabs so that each row fills the entire width of tabControl1.
             this.metroTabControl1.SizeMode = TabSizeMode.Normal;
             Color backcolor = new Color();
-            backcolor = Color.LightYellow;
-            this.BackColor = backcolor;
+            
+            
             NewJob uc1 = new NewJob();
             JobCard uc2 = new JobCard();
             OrderStatus uc3 = new OrderStatus();
@@ -43,14 +43,21 @@ namespace Job_Card_Creation
             this.metroTabControl1.Padding = new Point(15, 5);
       
             metroTabControl1.TabPages[0].Controls.Add(uc1);
+            metroTabControl1.TabPages[0].Text = "Product Info";
             metroTabControl1.TabPages[1].Controls.Add(uc2);
+            metroTabControl1.TabPages[1].Text = "Job Cards";
             metroTabControl1.TabPages[2].Controls.Add(uc3);
+            metroTabControl1.TabPages[2].Text = "Order Status";
             metroTabControl1.TabPages[3].Controls.Add(uc4);
+            metroTabControl1.TabPages[3].Text = "Inventory";
 
-          //  this.metroTabControl1.Location = new Point(1, 1);
+            //  this.metroTabControl1.Location = new Point(1, 1);
             this.metroTabControl1.Size = new Size(740, 1080);
 
             //Coloring Block
+            
+            backcolor = Color.LightYellow;
+            this.BackColor = backcolor;
             metroTabControl1.SelectedTab.BackColor =backcolor;
             uc1.BackColor = backcolor;
             uc2.BackColor = backcolor;
@@ -78,6 +85,11 @@ namespace Job_Card_Creation
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void MetroApp_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
     }

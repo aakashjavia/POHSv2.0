@@ -41,7 +41,7 @@ namespace Job_Card_Creation
             string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
             SqlConnection con = new SqlConnection(connectionString);
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "select * from Inventory";
+            cmd.CommandText = "select * from Inventory where sr_no >0";
             cmd.Connection = con;
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();

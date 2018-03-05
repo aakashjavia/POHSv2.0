@@ -17,8 +17,8 @@ namespace Job_Card_Creation
             try { 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+         // Application.Run(new SplashStartup());
             Application.Run(new MetroApp());
-           // Application.Run(new Main_Page());
             }
 
             catch (Exception e)

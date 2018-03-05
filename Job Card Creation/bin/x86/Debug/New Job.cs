@@ -58,7 +58,7 @@ namespace Job_Card_Creation
            
             try
             {
-               
+
                 fill_sr_no();
 
                 //For AutoComplete
@@ -89,13 +89,21 @@ namespace Job_Card_Creation
                 metroTabControl1.UseCustomBackColor = true;
                 this.metroTabControl1.Multiline = true;
                 this.metroTabControl1.Padding = new Point(15, 5);
-
-
-
                 AllJobInfo uc1 = new AllJobInfo();
+                Color backcolor = new Color();
+                backcolor = Color.LightYellow;
+               // backcolor = this.BackColor;
+                uc1.BackColor = backcolor;
                 metroTabControl1.TabPages[1].Controls.Add(uc1);
-                uc1.BackColor = this.BackColor;
-                metroTabPage1.BackColor = this.BackColor;
+                
+                
+                metroTabControl1.TabPages[0].BackColor = backcolor;
+                
+
+
+
+
+
             }
             catch (Exception err)
             {
@@ -193,9 +201,29 @@ namespace Job_Card_Creation
 
         private void paper_type_TextChanged_1(object sender, EventArgs e)
         {
-
+            try
+            {
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
+                int sr;
+                SqlConnection con;
+                con = new SqlConnection(connectionString);
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandText = "select paper_size from inventory where paper_type = '" + paper_type.Text + "'";
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    sheet_size.Text = reader.GetString(0);
+                }
+                con.Close();
+            }
+            catch (Exception err)
+            {
+                StatusLabel.Text = "Status: - " + err.Message;
+            }
         }
-
         private void color_shades_TextChanged(object sender, EventArgs e)
         {
 

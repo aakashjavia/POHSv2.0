@@ -75,3 +75,4 @@ G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csprojResolveAssemblyReference.cache
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.MetroApp.resources
 G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.AllJobInfo.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.SplashStartup.resources
