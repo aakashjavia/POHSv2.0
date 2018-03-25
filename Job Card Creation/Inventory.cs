@@ -32,7 +32,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS" + err.Message;
+                StatusLabel.Text = "Status: -" + err.Message;
             }
         }
         public void updatedata()
@@ -106,7 +106,7 @@ namespace Job_Card_Creation
         {
             try
             {
-                StatusLabel.Text = "STATUS:- Clicked";
+                StatusLabel.Text = "Status: - Clicked";
                 foreach (DataGridViewRow row in dataGridView1.SelectedRows)
                 {
                     sr_no.Text = row.Cells[0].Value.ToString();
@@ -119,7 +119,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS:-" + err.Message;
+                StatusLabel.Text = "Status: -" + err.Message;
             }
         }
                 private void paper_type_TextChanged(object sender, EventArgs e)
@@ -155,13 +155,13 @@ namespace Job_Card_Creation
 
             con.Open();
             rows = cmd.ExecuteNonQuery();
-            StatusLabel.Text = "STATUS Rows Affected: -" + rows.ToString();
+            StatusLabel.Text = "Status: -Rows Affected: -" + rows.ToString();
             updatedata();
             inventoryCheck();
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS:-" + err.Message;
+                StatusLabel.Text = "Status: -" + err.Message;
             }
 
 
@@ -188,7 +188,7 @@ namespace Job_Card_Creation
 
                 con.Open();
               int rows = cmd.ExecuteNonQuery();
-              StatusLabel.Text = "STATUS Rows Affected: -" + rows.ToString();
+              StatusLabel.Text = "Status: -Rows Affected: -" + rows.ToString();
               con.Close();
               updatedata();
               inventoryCheck();
@@ -196,7 +196,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS:-" + err.Message;
+                StatusLabel.Text = "Status: -" + err.Message;
             }
 
         }

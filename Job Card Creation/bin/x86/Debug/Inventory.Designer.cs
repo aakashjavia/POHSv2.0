@@ -195,16 +195,16 @@
             this.StatusLabel.AutoSize = true;
             this.StatusLabel.BackColor = System.Drawing.Color.Transparent;
             this.StatusLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(3, 894);
+            this.StatusLabel.Location = new System.Drawing.Point(2, 891);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(109, 32);
             this.StatusLabel.TabIndex = 92;
-            this.StatusLabel.Text = "STATUS:-";
+            this.StatusLabel.Text = "Status: -";
             // 
             // HorizontalBar4
             // 
             this.HorizontalBar4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.HorizontalBar4.Location = new System.Drawing.Point(3, 892);
+            this.HorizontalBar4.Location = new System.Drawing.Point(4, 889);
             this.HorizontalBar4.Name = "HorizontalBar4";
             this.HorizontalBar4.Size = new System.Drawing.Size(765, 2);
             this.HorizontalBar4.TabIndex = 91;

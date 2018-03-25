@@ -45,14 +45,39 @@ namespace Job_Card_Creation
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
-                StatusLabel.Text = "STATUS:- Data Accepted";
+                StatusLabel1.Text = "Status: - Data Accepted";
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS:-" + err.Message;
+                StatusLabel1.Text = "Status: -" + err.Message;
             }
         }
+        public void updatedata()
+        {
+            try
+            {
 
+
+                SqlCommand cmd = new SqlCommand();
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
+                SqlConnection con = new SqlConnection(connectionString);
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandText = "select sr_no, item_code, name, party_name from job_info where sr_no >0";
+                cmd.Connection = con;
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                con.Close();
+                dataGridView1.DataSource = dt;
+                dataGridView1.Font = new Font("Seguo UI", 8F, GraphicsUnit.Point);
+                StatusLabel2.Text = "Status: - Data Filled";
+            }
+            catch (Exception err)
+            {
+                StatusLabel2.Text = "Status: -" + err.Message;
+            }
+
+        }
         private void NewJob_Load(object sender, EventArgs e)
         {
            
@@ -60,7 +85,7 @@ namespace Job_Card_Creation
             {
 
                 fill_sr_no();
-
+                updatedata();
                 //For AutoComplete
                 string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
                 SqlConnection con;
@@ -89,16 +114,13 @@ namespace Job_Card_Creation
                 metroTabControl1.UseCustomBackColor = true;
                 this.metroTabControl1.Multiline = true;
                 this.metroTabControl1.Padding = new Point(15, 5);
-                AllJobInfo uc1 = new AllJobInfo();
+               
                 Color backcolor = new Color();
                 backcolor = Color.LightYellow;
-               // backcolor = this.BackColor;
-                uc1.BackColor = backcolor;
-                metroTabControl1.TabPages[1].Controls.Add(uc1);
-                
-                
+               // backcolor = this.BackColor;           
+                                
                 metroTabControl1.TabPages[0].BackColor = backcolor;
-                
+                metroTabControl1.TabPages[1].BackColor = backcolor;
 
 
 
@@ -107,7 +129,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS:-" + err.Message;
+                StatusLabel1.Text = "Status: -" + err.Message;
             }
         }
   
@@ -129,12 +151,12 @@ namespace Job_Card_Creation
                 {
                     sr = reader.GetInt32(0) + 1;
                     sr_no.Text = sr.ToString();
-                    StatusLabel.Text = "STATUS:-Number Filled";
+                    StatusLabel1.Text = "Status: -Number Filled";
                 }
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS: -" + err.Message;
+                StatusLabel1.Text = "Status: -" + err.Message;
             }
 
         }
@@ -221,10 +243,15 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "Status: - " + err.Message;
+                StatusLabel1.Text = "Status: - " + err.Message;
             }
         }
         private void color_shades_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
