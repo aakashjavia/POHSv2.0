@@ -62,7 +62,7 @@ namespace Job_Card_Creation
                 {
                     sr = reader.GetInt32(0) + 1;
                     sr_no.Text = sr.ToString();
-                    StatusLabel.Text = "STATUS:-Number Filled";
+                    StatusLabel.Text = "Status: -Number Filled";
                 }
                 con.Close();
             }
@@ -70,7 +70,7 @@ namespace Job_Card_Creation
             
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS:-" + err.Message;
+                StatusLabel.Text = "Status: -" + err.Message;
             }
 
         }
@@ -144,11 +144,11 @@ namespace Job_Card_Creation
                 cmd.ExecuteNonQuery();
 
                 con.Close();
-                StatusLabel.Text = "STATUS:- Data Accepted (" +r_affected.ToString()+ ") ";
+                StatusLabel.Text = "Status: - Data Accepted (" + r_affected.ToString()+ ") ";
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS:-" + err.Message;
+                StatusLabel.Text = "Status: -" + err.Message;
             }
             
          
@@ -185,13 +185,13 @@ namespace Job_Card_Creation
                     this.num_of_colors.Text = reader.GetString(8);
                     this.color_shades.Text = reader.GetString(9);
                     this.varnish.Text = reader.GetString(10);
-                    StatusLabel.Text = "STATUS:- Data Filled";
+                    StatusLabel.Text = "Status: - Data Filled";
                 }
                 con.Close();
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS:-" + err.Message;
+                StatusLabel.Text = "Status: -" + err.Message;
             }
         }
       public void label2_Click_(object sender, EventArgs e)
@@ -212,6 +212,7 @@ namespace Job_Card_Creation
         {
             //Fills date time Manually
             date.Text = dateTimePicker1.Text;
+            dateTimePicker1.Visible = false;
         }
 
         private void navigationBar1_Load(object sender, EventArgs e)

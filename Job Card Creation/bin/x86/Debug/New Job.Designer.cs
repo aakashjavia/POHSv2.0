@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.paper_type = new System.Windows.Forms.TextBox();
             this.sr_no = new System.Windows.Forms.TextBox();
             this.JobSheetNo = new System.Windows.Forms.Label();
-            this.StatusLabel = new System.Windows.Forms.Label();
+            this.StatusLabel1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.HorizontalBar4 = new System.Windows.Forms.Label();
             this.varnish = new System.Windows.Forms.TextBox();
             this.color_shades = new System.Windows.Forms.TextBox();
             this.VarnishLabel = new System.Windows.Forms.Label();
@@ -58,8 +58,13 @@
             this.ProductLabel = new System.Windows.Forms.Label();
             this.PartyLabel = new System.Windows.Forms.Label();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.StatusLabel2 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
+            this.metroTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroTabControl1
@@ -80,9 +85,8 @@
             this.metroTabPage1.Controls.Add(this.paper_type);
             this.metroTabPage1.Controls.Add(this.sr_no);
             this.metroTabPage1.Controls.Add(this.JobSheetNo);
-            this.metroTabPage1.Controls.Add(this.StatusLabel);
+            this.metroTabPage1.Controls.Add(this.StatusLabel1);
             this.metroTabPage1.Controls.Add(this.button1);
-            this.metroTabPage1.Controls.Add(this.HorizontalBar4);
             this.metroTabPage1.Controls.Add(this.varnish);
             this.metroTabPage1.Controls.Add(this.color_shades);
             this.metroTabPage1.Controls.Add(this.VarnishLabel);
@@ -146,16 +150,16 @@
             this.JobSheetNo.TabIndex = 230;
             this.JobSheetNo.Text = "Job Sheet No.";
             // 
-            // StatusLabel
+            // StatusLabel1
             // 
-            this.StatusLabel.AutoSize = true;
-            this.StatusLabel.BackColor = System.Drawing.Color.Transparent;
-            this.StatusLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(0, 858);
-            this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(94, 32);
-            this.StatusLabel.TabIndex = 229;
-            this.StatusLabel.Text = "Status:-";
+            this.StatusLabel1.AutoSize = true;
+            this.StatusLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.StatusLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatusLabel1.Location = new System.Drawing.Point(-3, 851);
+            this.StatusLabel1.Name = "StatusLabel1";
+            this.StatusLabel1.Size = new System.Drawing.Size(101, 32);
+            this.StatusLabel1.TabIndex = 229;
+            this.StatusLabel1.Text = "Status: -";
             // 
             // button1
             // 
@@ -169,14 +173,6 @@
             this.button1.TabIndex = 228;
             this.button1.Text = "Submit Only";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // HorizontalBar4
-            // 
-            this.HorizontalBar4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.HorizontalBar4.Location = new System.Drawing.Point(0, 856);
-            this.HorizontalBar4.Name = "HorizontalBar4";
-            this.HorizontalBar4.Size = new System.Drawing.Size(765, 2);
-            this.HorizontalBar4.TabIndex = 227;
             // 
             // varnish
             // 
@@ -384,6 +380,8 @@
             // 
             // metroTabPage2
             // 
+            this.metroTabPage2.Controls.Add(this.dataGridView1);
+            this.metroTabPage2.Controls.Add(this.StatusLabel2);
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.HorizontalScrollbarSize = 10;
@@ -398,11 +396,56 @@
             this.metroTabPage2.VerticalScrollbarSize = 10;
             this.metroTabPage2.Click += new System.EventHandler(this.metroTabPage2_Click_1);
             // 
+            // label1
+            // 
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Location = new System.Drawing.Point(4, 889);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(765, 2);
+            this.label1.TabIndex = 103;
+            // 
+            // StatusLabel2
+            // 
+            this.StatusLabel2.AutoSize = true;
+            this.StatusLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.StatusLabel2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatusLabel2.Location = new System.Drawing.Point(-3, 851);
+            this.StatusLabel2.Name = "StatusLabel2";
+            this.StatusLabel2.Size = new System.Drawing.Size(101, 32);
+            this.StatusLabel2.TabIndex = 230;
+            this.StatusLabel2.Text = "Status: -";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(589, 168);
+            this.dataGridView1.TabIndex = 231;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // NewJob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.LightCyan;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.metroTabControl1);
             this.Location = new System.Drawing.Point(1, 1);
             this.Name = "NewJob";
@@ -411,6 +454,9 @@
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
+            this.metroTabPage2.ResumeLayout(false);
+            this.metroTabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -421,9 +467,8 @@
         private MetroFramework.Controls.MetroTabPage metroTabPage1;
         private System.Windows.Forms.TextBox sr_no;
         private System.Windows.Forms.Label JobSheetNo;
-        private System.Windows.Forms.Label StatusLabel;
+        private System.Windows.Forms.Label StatusLabel1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label HorizontalBar4;
         private System.Windows.Forms.TextBox varnish;
         private System.Windows.Forms.TextBox color_shades;
         private System.Windows.Forms.Label VarnishLabel;
@@ -447,5 +492,8 @@
         private System.Windows.Forms.Label PartyLabel;
         private MetroFramework.Controls.MetroTabPage metroTabPage2;
         private System.Windows.Forms.TextBox paper_type;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label StatusLabel2;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

@@ -424,11 +424,11 @@
             // 
             this.StatusLabel.AutoSize = true;
             this.StatusLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(3, 891);
+            this.StatusLabel.Location = new System.Drawing.Point(2, 891);
             this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(116, 32);
+            this.StatusLabel.Size = new System.Drawing.Size(101, 32);
             this.StatusLabel.TabIndex = 92;
-            this.StatusLabel.Text = "STATUS: -";
+            this.StatusLabel.Text = "Status: -";
             // 
             // var_priority
             // 
