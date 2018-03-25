@@ -425,7 +425,7 @@
             this.SubmitButton.BackColor = System.Drawing.Color.White;
             this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SubmitButton.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.SubmitButton.Location = new System.Drawing.Point(295, 845);
+            this.SubmitButton.Location = new System.Drawing.Point(295, 842);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(183, 44);
             this.SubmitButton.TabIndex = 59;
@@ -456,11 +456,11 @@
             // 
             this.StatusLabel.AutoSize = true;
             this.StatusLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(3, 900);
+            this.StatusLabel.Location = new System.Drawing.Point(2, 891);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(94, 32);
             this.StatusLabel.TabIndex = 64;
-            this.StatusLabel.Text = "Status:-";
+            this.StatusLabel.Text = "Status: -";
             this.StatusLabel.Click += new System.EventHandler(this.StatusLabel_Click);
             // 
             // dateTimePicker1
@@ -513,7 +513,7 @@
             // label2
             // 
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(4, 898);
+            this.label2.Location = new System.Drawing.Point(4, 889);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(765, 2);
             this.label2.TabIndex = 91;

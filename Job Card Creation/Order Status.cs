@@ -34,7 +34,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS:-" + err.Message;
+                StatusLabel.Text = "Status: -" + err.Message;
             }
         }
         public void updatedata()
@@ -130,12 +130,12 @@ namespace Job_Card_Creation
                             rdo.Checked = true;
                         }
                     }
-                    StatusLabel.Text = "STATUS:- Filled";
+                    StatusLabel.Text = "Status: - Filled";
                 }
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS:-" + err.Message;
+                StatusLabel.Text = "Status: -" + err.Message;
             }
         }
 
@@ -211,12 +211,12 @@ namespace Job_Card_Creation
 
                 con.Open();
                 rows = cmd.ExecuteNonQuery();
-                StatusLabel.Text = "STATUS: - Rows Affected (" + rows.ToString()+")";
+                StatusLabel.Text = "Status: - Rows Affected (" + rows.ToString()+")";
                 updatedata();
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "STATUS:-" + err.Message;
+                StatusLabel.Text = "Status: -" + err.Message;
             }
         }
 
