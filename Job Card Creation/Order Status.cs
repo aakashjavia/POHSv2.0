@@ -43,7 +43,7 @@ namespace Job_Card_Creation
             string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
             SqlConnection con = new SqlConnection(connectionString);
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "select * from order_status order by date desc";
+            cmd.CommandText = "select * from order_status where sr_no >0 order by date desc";
             cmd.Connection = con;
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();

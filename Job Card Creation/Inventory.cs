@@ -41,7 +41,7 @@ namespace Job_Card_Creation
             string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
             SqlConnection con = new SqlConnection(connectionString);
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "select * from Inventory";
+            cmd.CommandText = "select * from Inventory where sr_no >0";
             cmd.Connection = con;
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -69,27 +69,37 @@ namespace Job_Card_Creation
         }
         public void inventoryCheck()
         {
-            SqlCommand cmd = new SqlCommand();
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
-            SqlConnection con = new SqlConnection(connectionString);
-            cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "SELECT * FROM Inventory where sheets <= threshold";
-            string alertstring = null;
-            cmd.Connection = con;
-            con.Open();
-            using (var read = cmd.ExecuteReader())
+            try
             {
-                while (read.Read())
+                
+                SqlCommand cmd = new SqlCommand();
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
+                SqlConnection con = new SqlConnection(connectionString);
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandText = "SELECT * FROM Inventory where sheets <= threshold and sr_no > 0";
+               
+                string alertstring = null;
+                cmd.Connection = con;
+                con.Open();
+                using (var read = cmd.ExecuteReader())
                 {
-                    alertstring += "\n " + read.GetValue(1);                  
+                    while (read.Read())
+                    {
+                        alertstring += "\n " + read.GetValue(1);
+                    }
+                    if (alertstring != null)
+                    {
+                        MessageBox.Show("The following paper types are at or below critical levels: -" +
+                            "" + alertstring + "\n Please take necessary action");
+                    }
+                    con.Close();
                 }
-                if(alertstring!=null)
-                {
-                    MessageBox.Show("The following paper types are at or below critical levels: -" +
-                        "" +alertstring + "\n Please take necessary action");
-                }
-                con.Close();
             }
+            catch (Exception err)
+            {
+                StatusLabel.Text = "Status: - " + err.Message;
+            }
+            
         }
 
         private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -201,38 +211,18 @@ namespace Job_Card_Creation
 
         }
 
-        private void NewJob_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            NewJob frm2 = new NewJob();
-            frm2.Show();
-        }
-
-        private void JobCardLabel_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            JobCard frm1 = new JobCard();
-            frm1.Show();
-        }
-
-        private void InventoryLabel_Click(object sender, EventArgs e)
-        {
-      
-        }
-
-        private void OrderLabel_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            OrderStatus frm4 = new OrderStatus();
-            frm4.Show();
-        }
-
+        
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void threshold_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
+            this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,14 +42,14 @@
             // metroTabControl1
             // 
             this.metroTabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
-            this.metroTabControl1.Controls.Add(this.metroTabPage4);
-            this.metroTabControl1.Controls.Add(this.metroTabPage1);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
+            this.metroTabControl1.Controls.Add(this.metroTabPage1);
+            this.metroTabControl1.Controls.Add(this.metroTabPage4);
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Location = new System.Drawing.Point(0, 64);
             this.metroTabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 3;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(772, 1080);
             this.metroTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Blue;
@@ -57,48 +57,6 @@
             this.metroTabControl1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTabControl1.UseCustomBackColor = true;
             this.metroTabControl1.UseSelectable = true;
-            // 
-            // metroTabPage1
-            // 
-            this.metroTabPage1.AutoScroll = true;
-            this.metroTabPage1.BackColor = System.Drawing.Color.LightCyan;
-            this.metroTabPage1.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.metroTabPage1.HorizontalScrollbar = true;
-            this.metroTabPage1.HorizontalScrollbarBarColor = true;
-            this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.HorizontalScrollbarSize = 10;
-            this.metroTabPage1.Location = new System.Drawing.Point(4, 41);
-            this.metroTabPage1.Margin = new System.Windows.Forms.Padding(0);
-            this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(764, 1035);
-            this.metroTabPage1.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTabPage1.TabIndex = 0;
-            this.metroTabPage1.Text = "New Job";
-            this.metroTabPage1.UseCustomBackColor = true;
-            this.metroTabPage1.VerticalScrollbar = true;
-            this.metroTabPage1.VerticalScrollbarBarColor = true;
-            this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.VerticalScrollbarSize = 10;
-            this.metroTabPage1.Click += new System.EventHandler(this.metroTabPage1_Click);
-            // 
-            // metroTabPage4
-            // 
-            this.metroTabPage4.AutoScroll = true;
-            this.metroTabPage4.BackColor = System.Drawing.Color.LightCyan;
-            this.metroTabPage4.HorizontalScrollbar = true;
-            this.metroTabPage4.HorizontalScrollbarBarColor = true;
-            this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage4.HorizontalScrollbarSize = 10;
-            this.metroTabPage4.Location = new System.Drawing.Point(4, 41);
-            this.metroTabPage4.Name = "metroTabPage4";
-            this.metroTabPage4.Size = new System.Drawing.Size(764, 1035);
-            this.metroTabPage4.TabIndex = 3;
-            this.metroTabPage4.Text = "Job Cards";
-            this.metroTabPage4.UseCustomBackColor = true;
-            this.metroTabPage4.VerticalScrollbar = true;
-            this.metroTabPage4.VerticalScrollbarBarColor = true;
-            this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage4.VerticalScrollbarSize = 10;
             // 
             // metroTabPage3
             // 
@@ -118,6 +76,48 @@
             this.metroTabPage3.VerticalScrollbarBarColor = true;
             this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage3.VerticalScrollbarSize = 10;
+            // 
+            // metroTabPage1
+            // 
+            this.metroTabPage1.AutoScroll = true;
+            this.metroTabPage1.BackColor = System.Drawing.Color.LightCyan;
+            this.metroTabPage1.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.metroTabPage1.HorizontalScrollbar = true;
+            this.metroTabPage1.HorizontalScrollbarBarColor = true;
+            this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage1.HorizontalScrollbarSize = 10;
+            this.metroTabPage1.Location = new System.Drawing.Point(4, 41);
+            this.metroTabPage1.Margin = new System.Windows.Forms.Padding(0);
+            this.metroTabPage1.Name = "metroTabPage1";
+            this.metroTabPage1.Size = new System.Drawing.Size(764, 1035);
+            this.metroTabPage1.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTabPage1.TabIndex = 0;
+            this.metroTabPage1.Text = "Job Cards";
+            this.metroTabPage1.UseCustomBackColor = true;
+            this.metroTabPage1.VerticalScrollbar = true;
+            this.metroTabPage1.VerticalScrollbarBarColor = true;
+            this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage1.VerticalScrollbarSize = 10;
+            this.metroTabPage1.Click += new System.EventHandler(this.metroTabPage1_Click);
+            // 
+            // metroTabPage4
+            // 
+            this.metroTabPage4.AutoScroll = true;
+            this.metroTabPage4.BackColor = System.Drawing.Color.LightCyan;
+            this.metroTabPage4.HorizontalScrollbar = true;
+            this.metroTabPage4.HorizontalScrollbarBarColor = true;
+            this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage4.HorizontalScrollbarSize = 10;
+            this.metroTabPage4.Location = new System.Drawing.Point(4, 41);
+            this.metroTabPage4.Name = "metroTabPage4";
+            this.metroTabPage4.Size = new System.Drawing.Size(764, 1035);
+            this.metroTabPage4.TabIndex = 3;
+            this.metroTabPage4.Text = "New Job";
+            this.metroTabPage4.UseCustomBackColor = true;
+            this.metroTabPage4.VerticalScrollbar = true;
+            this.metroTabPage4.VerticalScrollbarBarColor = true;
+            this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage4.VerticalScrollbarSize = 10;
             // 
             // metroTabPage2
             // 
@@ -172,10 +172,11 @@
             this.Controls.Add(this.metroTabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximumSize = new System.Drawing.Size(800, 1082);
-            this.MinimumSize = new System.Drawing.Size(800, 1078);
+            this.MinimumSize = new System.Drawing.Size(18, 47);
             this.Name = "MetroApp";
             this.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.Text = "Product Order Handling System";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MetroApp_FormClosed);
             this.Load += new System.EventHandler(this.metroTest_Load);
             this.metroTabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
