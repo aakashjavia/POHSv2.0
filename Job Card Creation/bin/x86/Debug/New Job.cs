@@ -62,7 +62,8 @@ namespace Job_Card_Creation
                 string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
                 SqlConnection con = new SqlConnection(connectionString);
                 cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "select sr_no, item_code, name, party_name from job_info where sr_no >0";
+                //     cmd.CommandText = "select sr_no, item_code, name, party_name from job_info where sr_no >0";
+                cmd.CommandText = "select * from job_info where sr_no >0";
                 cmd.Connection = con;
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -70,11 +71,12 @@ namespace Job_Card_Creation
                 con.Close();
                 dataGridView1.DataSource = dt;
                 dataGridView1.Font = new Font("Seguo UI", 8F, GraphicsUnit.Point);
-                StatusLabel2.Text = "Status: - Data Filled";
+                StatusLabel1.Text = "Status: - Data Filled";
+                fill_sr_no();
             }
             catch (Exception err)
             {
-                StatusLabel2.Text = "Status: -" + err.Message;
+                StatusLabel1.Text = "Status: -" + err.Message;
             }
 
         }
@@ -110,19 +112,12 @@ namespace Job_Card_Creation
                 }
                 paper_type.AutoCompleteCustomSource = collection;
                 con.Close();
-                this.metroTabControl1.SizeMode = TabSizeMode.Normal;
-                metroTabControl1.UseCustomBackColor = true;
-                this.metroTabControl1.Multiline = true;
-                this.metroTabControl1.Padding = new Point(15, 5);
-               
+              
                 Color backcolor = new Color();
                 backcolor = Color.LightYellow;
                // backcolor = this.BackColor;           
                                 
-                metroTabControl1.TabPages[0].BackColor = backcolor;
-                metroTabControl1.TabPages[1].BackColor = backcolor;
-
-
+             
 
 
 
@@ -254,6 +249,115 @@ namespace Job_Card_Creation
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            try
+            {
+                foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+                {
+                    sr_no.Text = row.Cells[0].Value.ToString();
+                    item_code.Text = row.Cells[1].Value.ToString();
+                    name.Text = row.Cells[2].Value.ToString();
+                    party_name.Text = row.Cells[3].Value.ToString();
+                    size.Text = row.Cells[4].Value.ToString();
+                    paper_type.Text = row.Cells[5].Value.ToString();
+                    sheet_size.Text = row.Cells[6].Value.ToString();
+                    cutting_size.Text = row.Cells[7].Value.ToString();
+                    num_of_colors.Text = row.Cells[8].Value.ToString();
+                    color_shades.Text = row.Cells[9].Value.ToString();
+                    varnish.Text = row.Cells[10].Value.ToString();
+
+                }
+                StatusLabel1.Text = "Status: - Filled";
+            }
+            catch (Exception err)
+            {
+                StatusLabel1.Text = "Status: - " + err.Message;
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
+                SqlConnection con;
+                con = new SqlConnection(connectionString);
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandText = "INSERT INTO job_info VALUES ('"
+                       + sr_no.Text + "','"
+                       + item_code.Text + "','"
+                       + name.Text + "','"
+                       + party_name.Text + "','"
+                       + size.Text + "','"
+                       + paper_type.Text + "','"
+                       + sheet_size.Text + "','"
+                       + cutting_size.Text + "','"
+                       + num_of_colors.Text + "','"
+                       + color_shades.Text + "','"
+                       + varnish.Text + "')";
+                con.Open();
+                int r_affected = cmd.ExecuteNonQuery();
+                StatusLabel1.Text = "Status: - Rows Affected: -" + r_affected;
+                con.Close();
+                updatedata();
+                fill_sr_no();
+            }
+            catch (Exception err)
+            {
+                StatusLabel1.Text = "Status: - " + err.Message;
+            }
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
+                SqlConnection con = new SqlConnection(connectionString);
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.Connection = con;
+                int rows;
+                cmd.CommandText = "UPDATE job_info SET " +
+                "item_code = @item_code," +
+                "name = @name," +
+                "party_name = @party_name,"+
+                "size = @size," +
+                "paper_type = @paper_type," +
+                "sheet_size = @sheet_size," +
+                "cutting_size = @cutting_size," +
+                "num_of_colors = @num_of_colors," +
+                "color_shades = @color_shades," +
+                "varnish = @varnish "+
+                " where sr_no = @sr_no";
+                cmd.Parameters.AddWithValue("@item_code", item_code.Text);
+                cmd.Parameters.AddWithValue("@name", name.Text);
+                cmd.Parameters.AddWithValue("@party_name", party_name.Text);
+                cmd.Parameters.AddWithValue("@size", size.Text);
+                cmd.Parameters.AddWithValue("@paper_type", paper_type.Text);
+                cmd.Parameters.AddWithValue("@sheet_size", sheet_size.Text);
+                cmd.Parameters.AddWithValue("@cutting_size", cutting_size.Text);
+                cmd.Parameters.AddWithValue("@num_of_colors", num_of_colors.Text);
+                cmd.Parameters.AddWithValue("@color_shades", color_shades.Text);
+                cmd.Parameters.AddWithValue("@varnish", varnish.Text);
+                cmd.Parameters.AddWithValue("@sr_no", sr_no.Text);
+              
+
+                con.Open();
+                rows = cmd.ExecuteNonQuery();
+                StatusLabel1.Text = "Status: - Rows Affected (" + rows.ToString() + ")";
+                updatedata();
+                fill_sr_no();
+            }
+            catch (Exception err)
+            {
+                StatusLabel1.Text = "Status: -" + err.Message;
+            }
         }
     }
 }
