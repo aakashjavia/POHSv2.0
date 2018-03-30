@@ -71,6 +71,29 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Google.Apis, Version=1.32.2.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.32.2\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.32.2.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.32.2\lib\net45\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.32.2.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.32.2\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.32.2.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.32.2\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Drive.v3, Version=1.32.2.1170, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Drive.v3.1.32.2.1170\lib\net45\Google.Apis.Drive.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.32.2.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.32.2\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
@@ -86,12 +109,17 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.9.8\Assemblies\v4.5\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -103,10 +131,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AllJobInfo.cs">
+    <Compile Include="Database1DataSet.cs">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pages\AllJobInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AllJobInfo.Designer.cs">
+    <Compile Include="pages\AllJobInfo.Designer.cs">
       <DependentUpon>AllJobInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Database1DataSet.Designer.cs">
@@ -114,11 +145,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Inventory.cs">
+    <Compile Include="pages\Inventory.cs">
       <SubType>UserControl</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Inventory.Designer.cs">
+    <Compile Include="pages\Inventory.Designer.cs">
       <DependentUpon>Inventory.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
@@ -127,76 +158,91 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>InventoryDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Job Card Form.cs">
+    <Compile Include="pages\InventoryReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\InventoryReportView.Designer.cs">
+      <DependentUpon>InventoryReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Job Card Form.cs">
       <SubType>UserControl</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Job Card Form.Designer.cs">
+    <Compile Include="pages\Job Card Form.Designer.cs">
       <DependentUpon>Job Card Form.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Main Page.cs">
+    <Compile Include="pages\Main Page.cs">
       <SubType>Form</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Main Page.Designer.cs">
+    <Compile Include="pages\Main Page.Designer.cs">
       <DependentUpon>Main Page.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="MetroApp.cs">
+    <Compile Include="pages\MetroApp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MetroApp.Designer.cs">
+    <Compile Include="pages\MetroApp.Designer.cs">
       <DependentUpon>MetroApp.cs</DependentUpon>
     </Compile>
-    <Compile Include="New Job.cs">
+    <Compile Include="pages\New Job.cs">
       <SubType>UserControl</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="New Job.Designer.cs">
+    <Compile Include="pages\New Job.Designer.cs">
       <DependentUpon>New Job.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Order Status.cs">
+    <Compile Include="pages\Order Status.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Order Status.Designer.cs">
+    <Compile Include="pages\Order Status.Designer.cs">
       <DependentUpon>Order Status.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reports\InventoryReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventoryReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Settings.cs" />
-    <Compile Include="SplashStartup.cs">
+    <Compile Include="pages\SplashStartup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SplashStartup.Designer.cs">
+    <Compile Include="pages\SplashStartup.Designer.cs">
       <DependentUpon>SplashStartup.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AllJobInfo.resx">
+    <EmbeddedResource Include="pages\AllJobInfo.resx">
       <DependentUpon>AllJobInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inventory.resx">
+    <EmbeddedResource Include="pages\Inventory.resx">
       <DependentUpon>Inventory.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Job Card Form.resx">
+    <EmbeddedResource Include="pages\InventoryReportView.resx">
+      <DependentUpon>InventoryReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\Job Card Form.resx">
       <DependentUpon>Job Card Form.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main Page.resx">
+    <EmbeddedResource Include="pages\Main Page.resx">
       <DependentUpon>Main Page.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="MetroApp.resx">
+    <EmbeddedResource Include="pages\MetroApp.resx">
       <DependentUpon>MetroApp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="New Job.resx">
+    <EmbeddedResource Include="pages\New Job.resx">
       <DependentUpon>New Job.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Order Status.resx">
+    <EmbeddedResource Include="pages\Order Status.resx">
       <DependentUpon>Order Status.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -208,8 +254,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SplashStartup.resx">
+    <EmbeddedResource Include="pages\SplashStartup.resx">
       <DependentUpon>SplashStartup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\InventoryReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InventoryReport.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="Database1DataSet.xsc">
@@ -271,6 +321,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="saved_reports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
