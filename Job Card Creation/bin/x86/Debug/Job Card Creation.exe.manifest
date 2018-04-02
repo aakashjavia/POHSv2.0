@@ -323,14 +323,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Job Card Creation.exe" size="248320">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Job Card Creation.exe" size="265216">
       <assemblyIdentity name="Job Card Creation" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8TiMCDmEyjIRkHf9M1ns0V4QyVdTnHDAmw/bjNdLqSc=</dsig:DigestValue>
+        <dsig:DigestValue>YbBFKUvfNq5mSCSow483zXh1BQ6bK7/Q++nK2788Ufg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

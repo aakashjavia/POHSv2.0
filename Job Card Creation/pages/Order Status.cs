@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Job_Card_Creation.pages;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -280,6 +281,12 @@ namespace Job_Card_Creation
         private void item_code_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void OrderReportViewButton_Click(object sender, EventArgs e)
+        {
+            OrderReportView ordReport = new OrderReportView();
+            ordReport.Show();
         }
     }
 }

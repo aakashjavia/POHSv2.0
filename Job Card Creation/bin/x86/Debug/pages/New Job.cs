@@ -274,7 +274,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel1.Text = "Status: - " + err.Message;
+                MessageBox.Show("Error: - " + err.Message);
             }
         }
 

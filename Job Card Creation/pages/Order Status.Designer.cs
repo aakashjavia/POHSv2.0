@@ -68,6 +68,7 @@
             this.HorizontalBar4 = new System.Windows.Forms.Label();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
+            this.OrderReportViewButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderstatusBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
@@ -507,12 +508,27 @@
             this.ClearButton.UseVisualStyleBackColor = false;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
+            // OrderReportViewButton
+            // 
+            this.OrderReportViewButton.AutoSize = true;
+            this.OrderReportViewButton.BackColor = System.Drawing.Color.White;
+            this.OrderReportViewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OrderReportViewButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OrderReportViewButton.Location = new System.Drawing.Point(273, 728);
+            this.OrderReportViewButton.Name = "OrderReportViewButton";
+            this.OrderReportViewButton.Size = new System.Drawing.Size(183, 44);
+            this.OrderReportViewButton.TabIndex = 103;
+            this.OrderReportViewButton.Text = "Report";
+            this.OrderReportViewButton.UseVisualStyleBackColor = false;
+            this.OrderReportViewButton.Click += new System.EventHandler(this.OrderReportViewButton_Click);
+            // 
             // OrderStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightCyan;
+            this.Controls.Add(this.OrderReportViewButton);
             this.Controls.Add(this.HorizontalBar4);
             this.Controls.Add(this.SrNoLabel);
             this.Controls.Add(this.sr_no);
@@ -591,5 +607,6 @@
         private System.Windows.Forms.Label HorizontalBar4;
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.Button ClearButton;
+        private System.Windows.Forms.Button OrderReportViewButton;
     }
 }
