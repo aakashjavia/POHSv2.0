@@ -200,6 +200,12 @@
     <Compile Include="pages\Order Status.Designer.cs">
       <DependentUpon>Order Status.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\OrderReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\OrderReportView.Designer.cs">
+      <DependentUpon>OrderReportView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
@@ -208,6 +214,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>InventoryReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\OrderReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Settings.cs" />
@@ -245,6 +257,9 @@
     <EmbeddedResource Include="pages\Order Status.resx">
       <DependentUpon>Order Status.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pages\OrderReportView.resx">
+      <DependentUpon>OrderReportView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -260,6 +275,10 @@
     <EmbeddedResource Include="reports\InventoryReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>InventoryReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\OrderReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OrderReport.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="Database1DataSet.xsc">

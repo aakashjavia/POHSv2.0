@@ -32,9 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.orderstatusBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.database1DataSet = new Job_Card_Creation.Database1DataSet();
-            this.order_statusTableAdapter = new Job_Card_Creation.Database1DataSetTableAdapters.order_statusTableAdapter();
             this.Info1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.date = new System.Windows.Forms.TextBox();
@@ -68,11 +65,15 @@
             this.HorizontalBar4 = new System.Windows.Forms.Label();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
+            this.ReportViewButton = new System.Windows.Forms.Button();
+            this.orderstatusBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database1DataSet = new Job_Card_Creation.Database1DataSet();
+            this.order_statusTableAdapter = new Job_Card_Creation.Database1DataSetTableAdapters.order_statusTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.orderstatusBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             this.PriorityGroup.SuspendLayout();
             this.StatusGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.orderstatusBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -99,7 +100,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 21);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -109,20 +110,6 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
-            // 
-            // orderstatusBindingSource
-            // 
-            this.orderstatusBindingSource.DataMember = "order_status";
-            this.orderstatusBindingSource.DataSource = this.database1DataSet;
-            // 
-            // database1DataSet
-            // 
-            this.database1DataSet.DataSetName = "Database1DataSet";
-            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // order_statusTableAdapter
-            // 
-            this.order_statusTableAdapter.ClearBeforeFill = true;
             // 
             // Info1
             // 
@@ -507,12 +494,41 @@
             this.ClearButton.UseVisualStyleBackColor = false;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
+            // ReportViewButton
+            // 
+            this.ReportViewButton.AutoSize = true;
+            this.ReportViewButton.BackColor = System.Drawing.Color.White;
+            this.ReportViewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ReportViewButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReportViewButton.Location = new System.Drawing.Point(290, 761);
+            this.ReportViewButton.Name = "ReportViewButton";
+            this.ReportViewButton.Size = new System.Drawing.Size(183, 44);
+            this.ReportViewButton.TabIndex = 103;
+            this.ReportViewButton.Text = "Reports";
+            this.ReportViewButton.UseVisualStyleBackColor = false;
+            this.ReportViewButton.Click += new System.EventHandler(this.ReportViewButton_Click);
+            // 
+            // orderstatusBindingSource
+            // 
+            this.orderstatusBindingSource.DataMember = "order_status";
+            this.orderstatusBindingSource.DataSource = this.database1DataSet;
+            // 
+            // database1DataSet
+            // 
+            this.database1DataSet.DataSetName = "Database1DataSet";
+            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // order_statusTableAdapter
+            // 
+            this.order_statusTableAdapter.ClearBeforeFill = true;
+            // 
             // OrderStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightCyan;
+            this.Controls.Add(this.ReportViewButton);
             this.Controls.Add(this.HorizontalBar4);
             this.Controls.Add(this.SrNoLabel);
             this.Controls.Add(this.sr_no);
@@ -541,12 +557,12 @@
             this.Size = new System.Drawing.Size(773, 932);
             this.Load += new System.EventHandler(this.OrderStatus_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.orderstatusBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             this.PriorityGroup.ResumeLayout(false);
             this.PriorityGroup.PerformLayout();
             this.StatusGroup.ResumeLayout(false);
             this.StatusGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.orderstatusBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -591,5 +607,6 @@
         private System.Windows.Forms.Label HorizontalBar4;
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.Button ClearButton;
+        private System.Windows.Forms.Button ReportViewButton;
     }
 }

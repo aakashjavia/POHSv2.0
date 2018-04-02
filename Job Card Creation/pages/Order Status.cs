@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Job_Card_Creation.pages;
 
 namespace Job_Card_Creation
 {
@@ -144,8 +146,6 @@ namespace Job_Card_Creation
             
         }
 
-       
-
         private void date_TextChanged(object sender, EventArgs e)
         {
 
@@ -280,6 +280,20 @@ namespace Job_Card_Creation
         private void item_code_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void ReportViewButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OrderReportView page = new OrderReportView();
+                page.Show();
+
+            }
+            catch(Exception err)
+            {
+                MessageBox.Show("Error(ReportViewButton_Click): -" + err.Message);
+            }
         }
     }
 }

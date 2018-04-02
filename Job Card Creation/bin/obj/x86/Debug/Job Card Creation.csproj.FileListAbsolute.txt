@@ -1,0 +1,143 @@
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csprojResolveAssemblyReference.cache
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Inventory.resources
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.JobCard.resources
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Main_Page.resources
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.NewJob.resources
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Properties.Resources.resources
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csproj.GenerateResource.Cache
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.exe
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.pdb
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Program.cs
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\App.config
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.exe.config
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.exe.manifest
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.application
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.exe
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.pdb
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Microsoft.VisualBasic.PowerPacks.xml
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csproj.CoreCompileInputs.cache
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.exe.manifest
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.application
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.OrderStatus.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Program.cs
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\App.config
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.exe.config
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.exe.manifest
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.application
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.exe
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Job Card Creation.pdb
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\MetroFramework.Design.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\MetroFramework.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\MetroFramework.Fonts.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Microsoft.VisualBasic.PowerPacks.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Microsoft.VisualBasic.PowerPacks.xml
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Inventory.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.JobCard.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Main_Page.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.NewJob.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.OrderStatus.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.Properties.Resources.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csproj.GenerateResource.Cache
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csproj.CoreCompileInputs.cache
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.exe.manifest
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.application
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.exe
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.pdb
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.MetroApp.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.AllJobInfo.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.SplashStartup.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job Card Creation.csprojResolveAssemblyReference.cache
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\Inventory.resx
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\Job Card Form.resx
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\Main Page.resx
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\New Job.resx
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\Inventory.cs
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\Inventory.Designer.cs
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\Job Card Form.cs
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\Job Card Form.Designer.cs
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\Main Page.cs
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\Main Page.Designer.cs
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\New Job.cs
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\New Job.Designer.cs
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.CrystalReports.Engine.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportSource.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.Shared.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.Windows.Forms.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\FlashControlV71.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\ShockwaveFlashObjects.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\stdole.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.pages.InventoryReportView.resources
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.Auth.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.Auth.PlatformServices.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.Core.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.Drive.v3.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.PlatformServices.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Newtonsoft.Json.dll
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.xml
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.Auth.xml
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.Core.xml
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.Drive.v3.xml
+G:\RPNP Databases\VISUAL STUDIO\Repositories\POHSv2.0\Job Card Creation\bin\x86\Debug\Newtonsoft.Json.xml
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\Inventory.resx
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\Job Card Form.resx
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\Main Page.resx
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\New Job.resx
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\Inventory.cs
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\Inventory.Designer.cs
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\Job Card Form.cs
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\Job Card Form.Designer.cs
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\Main Page.cs
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\Main Page.Designer.cs
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\New Job.cs
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\pages\New Job.Designer.cs
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.CrystalReports.Engine.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportSource.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.Shared.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.Windows.Forms.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\FlashControlV71.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.Auth.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.Auth.PlatformServices.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.Core.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.Drive.v3.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.PlatformServices.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\MetroFramework.Design.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\MetroFramework.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\MetroFramework.Fonts.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Newtonsoft.Json.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\ShockwaveFlashObjects.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\stdole.dll
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.xml
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.Auth.xml
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.Core.xml
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Google.Apis.Drive.v3.xml
+F:\archie\POHSv2.0\Job Card Creation\bin\x86\Debug\Newtonsoft.Json.xml
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.AllJobInfo.resources
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.pages.InventoryReportView.resources
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.MetroApp.resources
+F:\archie\POHSv2.0\Job Card Creation\obj\x86\Debug\Job_Card_Creation.SplashStartup.resources
