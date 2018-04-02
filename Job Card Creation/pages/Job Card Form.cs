@@ -70,7 +70,7 @@ namespace Job_Card_Creation
             
             catch (Exception err)
             {
-                StatusLabel.Text = "Status: -" + err.Message;
+                MessageBox.Show("Error: - " + err.Message);
             }
 
         }
@@ -148,7 +148,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "Status: -" + err.Message;
+                MessageBox.Show("Error: -" + err.Message);
             }
             
          
@@ -191,7 +191,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "Status: -" + err.Message;
+                MessageBox.Show("Error: -" + err.Message);
             }
         }
       public void label2_Click_(object sender, EventArgs e)

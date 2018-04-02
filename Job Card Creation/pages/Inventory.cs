@@ -39,7 +39,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "Status: -" + err.Message;
+                MessageBox.Show("Error: -" + err.Message);
             }
         }
         public void updatedata()
@@ -104,7 +104,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "Status: - " + err.Message;
+                MessageBox.Show("Error: -" + err.Message);
             }
             
         }
@@ -126,7 +126,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "Status: -" + err.Message;
+                MessageBox.Show("Error: -" + err.Message);
             }
         }
                 private void paper_type_TextChanged(object sender, EventArgs e)
@@ -168,7 +168,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "Status: -" + err.Message;
+                MessageBox.Show("Error: -" + err.Message);
             }
 
 
@@ -203,7 +203,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel.Text = "Status: -" + err.Message;
+                MessageBox.Show("Error: -" + err.Message);
             }
 
         }
@@ -243,9 +243,35 @@ namespace Job_Card_Creation
 
         private void UploadButton_Click(object sender, EventArgs e)
         {
-        
- 
-           
+            
+        }
+
+        private void UsageButton_Click(object sender, EventArgs e)
+        {
+            try
+            {            
+                SqlCommand cmd = new SqlCommand();
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
+                SqlConnection con = new SqlConnection(connectionString);
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandText = "select paper_type, SUM(no_of_sheets) AS total from job_card GROUP BY paper_type";
+                cmd.Connection = con;
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                con.Close();
+                dataGridView1.DataSource = dt;
+                dataGridView1.Font = new Font("Seguo UI", 8F, GraphicsUnit.Point);
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Error: -" + err.Message);
+            }
+        }
+
+        private void InventoryButton_Click(object sender, EventArgs e)
+        {
+            updatedata();
         }
     }
 }

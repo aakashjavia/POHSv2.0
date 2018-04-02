@@ -33,6 +33,9 @@
             this.FieldListBox1 = new System.Windows.Forms.CheckedListBox();
             this.StatusLabel1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.ZoomOutButton = new System.Windows.Forms.Button();
+            this.ZoomInButton = new System.Windows.Forms.Button();
+            this.zoom_var = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -70,10 +73,10 @@
             "Sr No",
             "Paper Size",
             "Packets"});
-            this.FieldListBox1.Location = new System.Drawing.Point(252, 882);
+            this.FieldListBox1.Location = new System.Drawing.Point(201, 882);
             this.FieldListBox1.MultiColumn = true;
             this.FieldListBox1.Name = "FieldListBox1";
-            this.FieldListBox1.Size = new System.Drawing.Size(388, 108);
+            this.FieldListBox1.Size = new System.Drawing.Size(192, 108);
             this.FieldListBox1.TabIndex = 103;
             this.FieldListBox1.SelectedIndexChanged += new System.EventHandler(this.FieldListBox1_SelectedIndexChanged);
             // 
@@ -87,6 +90,7 @@
             this.StatusLabel1.Size = new System.Drawing.Size(101, 32);
             this.StatusLabel1.TabIndex = 258;
             this.StatusLabel1.Text = "Status: -";
+            this.StatusLabel1.Click += new System.EventHandler(this.StatusLabel1_Click);
             // 
             // label1
             // 
@@ -96,11 +100,56 @@
             this.label1.Size = new System.Drawing.Size(2000, 2);
             this.label1.TabIndex = 257;
             // 
+            // ZoomOutButton
+            // 
+            this.ZoomOutButton.AutoSize = true;
+            this.ZoomOutButton.BackColor = System.Drawing.Color.White;
+            this.ZoomOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ZoomOutButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ZoomOutButton.Location = new System.Drawing.Point(119, 932);
+            this.ZoomOutButton.Name = "ZoomOutButton";
+            this.ZoomOutButton.Size = new System.Drawing.Size(45, 45);
+            this.ZoomOutButton.TabIndex = 259;
+            this.ZoomOutButton.Text = "-";
+            this.ZoomOutButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ZoomOutButton.UseVisualStyleBackColor = false;
+            this.ZoomOutButton.Click += new System.EventHandler(this.ZoomOutButton_Click);
+            // 
+            // ZoomInButton
+            // 
+            this.ZoomInButton.AutoSize = true;
+            this.ZoomInButton.BackColor = System.Drawing.Color.White;
+            this.ZoomInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ZoomInButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ZoomInButton.Location = new System.Drawing.Point(43, 932);
+            this.ZoomInButton.Name = "ZoomInButton";
+            this.ZoomInButton.Size = new System.Drawing.Size(45, 45);
+            this.ZoomInButton.TabIndex = 260;
+            this.ZoomInButton.Text = "+";
+            this.ZoomInButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ZoomInButton.UseVisualStyleBackColor = false;
+            this.ZoomInButton.Click += new System.EventHandler(this.ZoomInButton_Click);
+            // 
+            // zoom_var
+            // 
+            this.zoom_var.AutoSize = true;
+            this.zoom_var.BackColor = System.Drawing.Color.Transparent;
+            this.zoom_var.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zoom_var.Location = new System.Drawing.Point(489, 917);
+            this.zoom_var.Name = "zoom_var";
+            this.zoom_var.Size = new System.Drawing.Size(117, 32);
+            this.zoom_var.TabIndex = 261;
+            this.zoom_var.Text = "zoom_var";
+            this.zoom_var.Visible = false;
+            // 
             // InventoryReportView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(857, 1033);
+            this.Controls.Add(this.zoom_var);
+            this.Controls.Add(this.ZoomInButton);
+            this.Controls.Add(this.ZoomOutButton);
             this.Controls.Add(this.StatusLabel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.FieldListBox1);
@@ -122,5 +171,8 @@
         private System.Windows.Forms.CheckedListBox FieldListBox1;
         private System.Windows.Forms.Label StatusLabel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button ZoomOutButton;
+        private System.Windows.Forms.Button ZoomInButton;
+        private System.Windows.Forms.Label zoom_var;
     }
 }

@@ -49,7 +49,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel1.Text = "Status: -" + err.Message;
+                MessageBox.Show("Error: -" + err.Message);
             }
         }
         public void updatedata()
@@ -76,7 +76,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel1.Text = "Status: -" + err.Message;
+                MessageBox.Show("Error: - " + err.Message);
             }
 
         }
@@ -124,7 +124,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel1.Text = "Status: -" + err.Message;
+                MessageBox.Show("Error: - " + err.Message);
             }
         }
   
@@ -151,7 +151,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel1.Text = "Status: -" + err.Message;
+                MessageBox.Show("Error: - " + err.Message);
             }
 
         }
@@ -238,7 +238,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel1.Text = "Status: - " + err.Message;
+                MessageBox.Show("Error: - " + err.Message);
             }
         }
         private void color_shades_TextChanged(object sender, EventArgs e)
@@ -309,7 +309,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel1.Text = "Status: - " + err.Message;
+                MessageBox.Show("Error: - " + err.Message);
             }
         }
 
@@ -356,7 +356,7 @@ namespace Job_Card_Creation
             }
             catch (Exception err)
             {
-                StatusLabel1.Text = "Status: -" + err.Message;
+                MessageBox.Show("Error: - " + err.Message);
             }
         }
     }

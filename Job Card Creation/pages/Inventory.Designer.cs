@@ -48,6 +48,8 @@
             this.threshold = new System.Windows.Forms.TextBox();
             this.ThresholdLabel = new System.Windows.Forms.Label();
             this.BasicReportButton = new System.Windows.Forms.Button();
+            this.InventoryButton = new System.Windows.Forms.Button();
+            this.UsageButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -261,7 +263,7 @@
             this.BasicReportButton.BackColor = System.Drawing.Color.White;
             this.BasicReportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BasicReportButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BasicReportButton.Location = new System.Drawing.Point(297, 559);
+            this.BasicReportButton.Location = new System.Drawing.Point(295, 559);
             this.BasicReportButton.Name = "BasicReportButton";
             this.BasicReportButton.Size = new System.Drawing.Size(183, 44);
             this.BasicReportButton.TabIndex = 100;
@@ -269,11 +271,41 @@
             this.BasicReportButton.UseVisualStyleBackColor = false;
             this.BasicReportButton.Click += new System.EventHandler(this.BasicReportButton_Click);
             // 
+            // InventoryButton
+            // 
+            this.InventoryButton.AutoSize = true;
+            this.InventoryButton.BackColor = System.Drawing.Color.White;
+            this.InventoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.InventoryButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InventoryButton.Location = new System.Drawing.Point(90, 559);
+            this.InventoryButton.Name = "InventoryButton";
+            this.InventoryButton.Size = new System.Drawing.Size(183, 44);
+            this.InventoryButton.TabIndex = 101;
+            this.InventoryButton.Text = "Inventory";
+            this.InventoryButton.UseVisualStyleBackColor = false;
+            this.InventoryButton.Click += new System.EventHandler(this.InventoryButton_Click);
+            // 
+            // UsageButton
+            // 
+            this.UsageButton.AutoSize = true;
+            this.UsageButton.BackColor = System.Drawing.Color.White;
+            this.UsageButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UsageButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsageButton.Location = new System.Drawing.Point(500, 559);
+            this.UsageButton.Name = "UsageButton";
+            this.UsageButton.Size = new System.Drawing.Size(183, 44);
+            this.UsageButton.TabIndex = 102;
+            this.UsageButton.Text = "Usage";
+            this.UsageButton.UseVisualStyleBackColor = false;
+            this.UsageButton.Click += new System.EventHandler(this.UsageButton_Click);
+            // 
             // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.LightCyan;
+            this.Controls.Add(this.UsageButton);
+            this.Controls.Add(this.InventoryButton);
             this.Controls.Add(this.BasicReportButton);
             this.Controls.Add(this.threshold);
             this.Controls.Add(this.ThresholdLabel);
@@ -324,5 +356,7 @@
         private System.Windows.Forms.TextBox threshold;
         private System.Windows.Forms.Label ThresholdLabel;
         private System.Windows.Forms.Button BasicReportButton;
+        private System.Windows.Forms.Button InventoryButton;
+        private System.Windows.Forms.Button UsageButton;
     }
 }

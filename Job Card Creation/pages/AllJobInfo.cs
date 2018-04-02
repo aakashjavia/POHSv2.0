@@ -43,7 +43,7 @@ namespace Job_Card_Creation
             }
             catch(Exception err)
             {
-                StatusLabel.Text = "Status: - " + err.Message;
+               MessageBox.Show("Error: -" + err.Message);
             }
         }
 
