@@ -237,8 +237,7 @@ namespace Job_Card_Creation
         private void BasicReportButton_Click(object sender, EventArgs e)
         {
             InventoryReportView invRep = new InventoryReportView();
-            invRep.Show();
-           
+            invRep.Show();       
 
         }
 
