@@ -47,6 +47,7 @@ namespace Job_Card_Creation.pages
                    viewfile.WindowStyle = ProcessWindowStyle.Minimized;
                    viewfile.Arguments = @"";
                    Process.Start(viewfile);*/
+                zoom_var.Text = "75";
             }
             catch (Exception err)
             {
@@ -119,6 +120,55 @@ namespace Job_Card_Creation.pages
             crystalReportViewer1.ReportSource = ordReport;
             crystalReportViewer1.Refresh();
             crystalReportViewer1.Zoom(75);
+        }
+
+        private void ZoomInButton_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+
+                int zoom = Convert.ToInt32(zoom_var.Text);
+                if (zoom < 400)
+                {
+                    zoom = zoom + 25;
+                    zoom_var.Text = zoom.ToString();
+                    crystalReportViewer1.Zoom(zoom);
+                }
+                else
+                {
+                    zoom = 400;
+                    zoom_var.Text = zoom.ToString();
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Error(ZoomInButton_Click): -" + err.Message);
+            }
+        }
+
+        private void ZoomOutButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                int zoom = Convert.ToInt32(zoom_var.Text);
+                if (zoom > 25)
+                {
+                    zoom = zoom - 25;
+                    zoom_var.Text = zoom.ToString();
+                    crystalReportViewer1.Zoom(zoom);
+                }
+                else
+                {
+                    zoom = 25;
+                    zoom_var.Text = zoom.ToString();
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Error(ZoomOutButton_Click): -" + err.Message);
+            }
         }
     }
 }

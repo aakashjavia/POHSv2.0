@@ -285,8 +285,15 @@ namespace Job_Card_Creation
 
         private void OrderReportViewButton_Click(object sender, EventArgs e)
         {
-            OrderReportView ordReport = new OrderReportView();
-            ordReport.Show();
+            try
+            {
+                OrderReportView ordReport = new OrderReportView();
+                ordReport.Show();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Error: -" + err.Message);
+            }
         }
     }
 }

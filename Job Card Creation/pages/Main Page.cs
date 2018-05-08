@@ -50,8 +50,7 @@ namespace Job_Card_Creation
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AllJobInfo form1 = new AllJobInfo();
-            form1.Show();
+
         }
     }
 }

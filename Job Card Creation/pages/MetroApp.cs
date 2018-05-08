@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Job_Card_Creation.pages;
 using MetroFramework.Forms;
 
 namespace Job_Card_Creation
@@ -33,6 +34,7 @@ namespace Job_Card_Creation
             JobCard uc2 = new JobCard();
             OrderStatus uc3 = new OrderStatus();
             Inventory uc4 = new Inventory();
+            GoogleDrivePage uc5 = new GoogleDrivePage();
 
            
 
@@ -50,6 +52,8 @@ namespace Job_Card_Creation
             metroTabControl1.TabPages[2].Text = "Order Status";
             metroTabControl1.TabPages[3].Controls.Add(uc4);
             metroTabControl1.TabPages[3].Text = "Inventory";
+            metroTabControl1.TabPages[4].Controls.Add(uc5);
+            metroTabControl1.TabPages[4].Text = "Google Drive";
 
             //  this.metroTabControl1.Location = new Point(1, 1);
             this.metroTabControl1.Size = new Size(740, 1080);
@@ -67,7 +71,10 @@ namespace Job_Card_Creation
             metroTabControl1.TabPages[1].BackColor =backcolor;
             metroTabControl1.TabPages[2].BackColor =backcolor;
             metroTabControl1.TabPages[3].BackColor =backcolor;
-           
+            metroTabControl1.TabPages[4].BackColor = backcolor;
+
+            
+
             //    this.Size = new Size(300, 300);
             this.Controls.Add(metroTabControl1);
         }

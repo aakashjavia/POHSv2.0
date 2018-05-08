@@ -141,6 +141,7 @@
             this.zoom_var.TabIndex = 261;
             this.zoom_var.Text = "zoom_var";
             this.zoom_var.Visible = false;
+            this.zoom_var.Click += new System.EventHandler(this.zoom_var_Click);
             // 
             // InventoryReportView
             // 
