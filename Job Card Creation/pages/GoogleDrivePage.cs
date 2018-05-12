@@ -196,5 +196,55 @@ namespace Job_Card_Creation.pages
         {
 
         }
+
+        private void LogInOutButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (LogInOutButton.Text=="Log Out")
+                {
+                    string[] filePaths = Directory.GetFiles(@"C:\Users\PHOENIX II\Documents\.credentials\drive-dotnet-quickstart.json");
+                    foreach (string filePath in filePaths)
+                        System.IO.File.Delete(filePath);
+                    LogInOutLabel1.Text = "You have been logged out successfully.";
+                    LogInOutButton.Text = "Log In";
+                }
+                else if(LogInOutButton.Text == "Log In")
+                {
+                    UserCredential credential;
+
+                    using (var stream =
+                        new FileStream("client_secret.json", FileMode.Open, FileAccess.Read))
+                    {
+                        string credPath = System.Environment.GetFolderPath(
+                            System.Environment.SpecialFolder.Personal);
+                        credPath = Path.Combine(credPath, ".credentials/drive-dotnet-quickstart.json");
+
+                        credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
+                            GoogleClientSecrets.Load(stream).Secrets,
+                            Scopes,
+                            "user",
+                            CancellationToken.None,
+                            new FileDataStore(credPath, true)).Result;
+                        Console.WriteLine("Credential file saved to: " + credPath);
+                        ConsoleLabel.Text = "Credential file saved to: " + credPath + "\n";
+                    }
+
+                    // Create Drive API service.
+                    var service = new DriveService(new BaseClientService.Initializer()
+                    {
+                        HttpClientInitializer = credential,
+                        ApplicationName = ApplicationName,
+                    });
+
+                    LogInOutButton.Text = "Log Out";
+                    LogInOutLabel1.Text= "This will log you out without asking for further confirmation.";
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Error: -" + err.Message);
+            }
+        }
     }
 }
