@@ -170,5 +170,10 @@ namespace Job_Card_Creation.pages
                 MessageBox.Show("Error(FieldSelectButton_Click): -" + err.Message);
             }
         }
+
+        private void zoom_var_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

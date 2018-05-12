@@ -221,7 +221,7 @@ namespace Job_Card_Creation
             try
             {
                 string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
-                int sr;
+                
                 SqlConnection con;
                 con = new SqlConnection(connectionString);
                 SqlCommand cmd = new SqlCommand();

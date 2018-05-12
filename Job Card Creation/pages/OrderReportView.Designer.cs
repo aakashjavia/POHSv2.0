@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.FieldSelectButton = new System.Windows.Forms.Button();
-            this.FieldSelectButton1 = new System.Windows.Forms.Button();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.StatusReportButton = new System.Windows.Forms.Button();
             this.PriorityReportButton = new System.Windows.Forms.Button();
@@ -47,35 +45,12 @@
             this.PriorityHigh = new System.Windows.Forms.RadioButton();
             this.PriorityLow = new System.Windows.Forms.RadioButton();
             this.PriorityMedium = new System.Windows.Forms.RadioButton();
+            this.zoom_var = new System.Windows.Forms.Label();
+            this.ZoomInButton = new System.Windows.Forms.Button();
+            this.ZoomOutButton = new System.Windows.Forms.Button();
             this.StatusGroup.SuspendLayout();
             this.PriorityGroup.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // FieldSelectButton
-            // 
-            this.FieldSelectButton.AutoSize = true;
-            this.FieldSelectButton.BackColor = System.Drawing.Color.White;
-            this.FieldSelectButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FieldSelectButton.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.FieldSelectButton.Location = new System.Drawing.Point(12, 882);
-            this.FieldSelectButton.Name = "FieldSelectButton";
-            this.FieldSelectButton.Size = new System.Drawing.Size(183, 44);
-            this.FieldSelectButton.TabIndex = 102;
-            this.FieldSelectButton.Text = "Choose Fields";
-            this.FieldSelectButton.UseVisualStyleBackColor = false;
-            // 
-            // FieldSelectButton1
-            // 
-            this.FieldSelectButton1.AutoSize = true;
-            this.FieldSelectButton1.BackColor = System.Drawing.Color.White;
-            this.FieldSelectButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FieldSelectButton1.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.FieldSelectButton1.Location = new System.Drawing.Point(12, 882);
-            this.FieldSelectButton1.Name = "FieldSelectButton1";
-            this.FieldSelectButton1.Size = new System.Drawing.Size(183, 44);
-            this.FieldSelectButton1.TabIndex = 103;
-            this.FieldSelectButton1.Text = "Choose Fields";
-            this.FieldSelectButton1.UseVisualStyleBackColor = false;
             // 
             // crystalReportViewer1
             // 
@@ -85,7 +60,7 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Top;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(927, 527);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(927, 693);
             this.crystalReportViewer1.TabIndex = 0;
             // 
             // StatusReportButton
@@ -94,7 +69,7 @@
             this.StatusReportButton.BackColor = System.Drawing.Color.White;
             this.StatusReportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.StatusReportButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusReportButton.Location = new System.Drawing.Point(12, 545);
+            this.StatusReportButton.Location = new System.Drawing.Point(12, 711);
             this.StatusReportButton.Name = "StatusReportButton";
             this.StatusReportButton.Size = new System.Drawing.Size(183, 44);
             this.StatusReportButton.TabIndex = 104;
@@ -108,7 +83,7 @@
             this.PriorityReportButton.BackColor = System.Drawing.Color.White;
             this.PriorityReportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PriorityReportButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PriorityReportButton.Location = new System.Drawing.Point(12, 618);
+            this.PriorityReportButton.Location = new System.Drawing.Point(12, 784);
             this.PriorityReportButton.Name = "PriorityReportButton";
             this.PriorityReportButton.Size = new System.Drawing.Size(183, 44);
             this.PriorityReportButton.TabIndex = 105;
@@ -121,7 +96,7 @@
             this.StatusLabel1.AutoSize = true;
             this.StatusLabel1.BackColor = System.Drawing.Color.Transparent;
             this.StatusLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel1.Location = new System.Drawing.Point(6, 665);
+            this.StatusLabel1.Location = new System.Drawing.Point(6, 914);
             this.StatusLabel1.Name = "StatusLabel1";
             this.StatusLabel1.Size = new System.Drawing.Size(101, 32);
             this.StatusLabel1.TabIndex = 259;
@@ -136,7 +111,7 @@
             this.StatusGroup.Controls.Add(this.StatusConfirmed);
             this.StatusGroup.Controls.Add(this.StatusReceived);
             this.StatusGroup.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusGroup.Location = new System.Drawing.Point(241, 533);
+            this.StatusGroup.Location = new System.Drawing.Point(241, 699);
             this.StatusGroup.Name = "StatusGroup";
             this.StatusGroup.Size = new System.Drawing.Size(571, 70);
             this.StatusGroup.TabIndex = 260;
@@ -228,7 +203,7 @@
             this.PriorityGroup.Controls.Add(this.PriorityLow);
             this.PriorityGroup.Controls.Add(this.PriorityMedium);
             this.PriorityGroup.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PriorityGroup.Location = new System.Drawing.Point(241, 609);
+            this.PriorityGroup.Location = new System.Drawing.Point(241, 775);
             this.PriorityGroup.Name = "PriorityGroup";
             this.PriorityGroup.Size = new System.Drawing.Size(571, 62);
             this.PriorityGroup.TabIndex = 261;
@@ -299,18 +274,61 @@
             this.PriorityMedium.Text = "Medium";
             this.PriorityMedium.UseVisualStyleBackColor = true;
             // 
+            // zoom_var
+            // 
+            this.zoom_var.AutoSize = true;
+            this.zoom_var.BackColor = System.Drawing.Color.Transparent;
+            this.zoom_var.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zoom_var.Location = new System.Drawing.Point(458, 851);
+            this.zoom_var.Name = "zoom_var";
+            this.zoom_var.Size = new System.Drawing.Size(117, 32);
+            this.zoom_var.TabIndex = 264;
+            this.zoom_var.Text = "zoom_var";
+            this.zoom_var.Visible = false;
+            // 
+            // ZoomInButton
+            // 
+            this.ZoomInButton.AutoSize = true;
+            this.ZoomInButton.BackColor = System.Drawing.Color.White;
+            this.ZoomInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ZoomInButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ZoomInButton.Location = new System.Drawing.Point(12, 866);
+            this.ZoomInButton.Name = "ZoomInButton";
+            this.ZoomInButton.Size = new System.Drawing.Size(45, 45);
+            this.ZoomInButton.TabIndex = 263;
+            this.ZoomInButton.Text = "+";
+            this.ZoomInButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ZoomInButton.UseVisualStyleBackColor = false;
+            this.ZoomInButton.Click += new System.EventHandler(this.ZoomInButton_Click);
+            // 
+            // ZoomOutButton
+            // 
+            this.ZoomOutButton.AutoSize = true;
+            this.ZoomOutButton.BackColor = System.Drawing.Color.White;
+            this.ZoomOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ZoomOutButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ZoomOutButton.Location = new System.Drawing.Point(88, 866);
+            this.ZoomOutButton.Name = "ZoomOutButton";
+            this.ZoomOutButton.Size = new System.Drawing.Size(45, 45);
+            this.ZoomOutButton.TabIndex = 262;
+            this.ZoomOutButton.Text = "-";
+            this.ZoomOutButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ZoomOutButton.UseVisualStyleBackColor = false;
+            this.ZoomOutButton.Click += new System.EventHandler(this.ZoomOutButton_Click);
+            // 
             // OrderReportView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(927, 955);
+            this.Controls.Add(this.zoom_var);
+            this.Controls.Add(this.ZoomInButton);
+            this.Controls.Add(this.ZoomOutButton);
             this.Controls.Add(this.PriorityGroup);
             this.Controls.Add(this.StatusGroup);
             this.Controls.Add(this.StatusLabel1);
             this.Controls.Add(this.PriorityReportButton);
             this.Controls.Add(this.StatusReportButton);
-            this.Controls.Add(this.FieldSelectButton1);
-            this.Controls.Add(this.FieldSelectButton);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "OrderReportView";
             this.Text = "OrderReportView";
@@ -325,8 +343,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button FieldSelectButton;
-        private System.Windows.Forms.Button FieldSelectButton1;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private System.Windows.Forms.Button StatusReportButton;
         private System.Windows.Forms.Button PriorityReportButton;
@@ -344,5 +360,8 @@
         private System.Windows.Forms.RadioButton PriorityHigh;
         private System.Windows.Forms.RadioButton PriorityLow;
         private System.Windows.Forms.RadioButton PriorityMedium;
+        private System.Windows.Forms.Label zoom_var;
+        private System.Windows.Forms.Button ZoomInButton;
+        private System.Windows.Forms.Button ZoomOutButton;
     }
 }

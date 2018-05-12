@@ -1,19 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using CrystalDecisions.CrystalReports.Engine;
-
 using Job_Card_Creation.pages;
-using Google.Apis.Drive.v3;
-using Google.Apis.Drive.v3.Data;
-using Google.Apis.Util;
 
 
 namespace Job_Card_Creation
@@ -236,9 +226,15 @@ namespace Job_Card_Creation
 
         private void BasicReportButton_Click(object sender, EventArgs e)
         {
+            try
+            {            
             InventoryReportView invRep = new InventoryReportView();
-            invRep.Show();       
-
+            invRep.Show();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Error: -" + err.Message);
+            }
         }
 
         private void UploadButton_Click(object sender, EventArgs e)
@@ -249,9 +245,7 @@ namespace Job_Card_Creation
         private void UsageButton_Click(object sender, EventArgs e)
         {
             try
-            {
-
-            
+            {            
                 SqlCommand cmd = new SqlCommand();
                 string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True";
                 SqlConnection con = new SqlConnection(connectionString);

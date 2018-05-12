@@ -24,7 +24,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <PublisherName>Aakash Javia</PublisherName>
     <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>2.3.0.%2a</ApplicationVersion>
+    <ApplicationVersion>2.4.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -105,10 +105,6 @@
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.9.8\Assemblies\v4.5\MySql.Data.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -134,16 +130,16 @@
     <Compile Include="Database1DataSet.cs">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="pages\AllJobInfo.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="pages\AllJobInfo.Designer.cs">
-      <DependentUpon>AllJobInfo.cs</DependentUpon>
-    </Compile>
     <Compile Include="Database1DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pages\GoogleDrivePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pages\GoogleDrivePage.Designer.cs">
+      <DependentUpon>GoogleDrivePage.cs</DependentUpon>
     </Compile>
     <Compile Include="pages\Inventory.cs">
       <SubType>UserControl</SubType>
@@ -229,8 +225,8 @@
     <Compile Include="pages\SplashStartup.Designer.cs">
       <DependentUpon>SplashStartup.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="pages\AllJobInfo.resx">
-      <DependentUpon>AllJobInfo.cs</DependentUpon>
+    <EmbeddedResource Include="pages\GoogleDrivePage.resx">
+      <DependentUpon>GoogleDrivePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\Inventory.resx">
       <DependentUpon>Inventory.cs</DependentUpon>
@@ -268,6 +264,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="pages\SplashStartup.resx">
       <DependentUpon>SplashStartup.cs</DependentUpon>
@@ -292,6 +289,9 @@
     <None Include="Database1DataSet.xss">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </None>
+    <EmbeddedResource Include="google\client_secret.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <None Include="InventoryDataSet.xsc">
       <DependentUpon>InventoryDataSet.xsd</DependentUpon>
     </None>
@@ -325,6 +325,12 @@
     <Content Include="Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Google Drive Lockup2.png" />
+    <None Include="Resources\Google Drive Lockup1.png" />
+    <None Include="Resources\Works with Google Drive2.png" />
+    <None Include="Resources\Works with Google Drive1.png" />
+    <None Include="Resources\Works with Google Drive.png" />
+    <None Include="Resources\Google Drive Lockup.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
