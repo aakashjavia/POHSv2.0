@@ -39,6 +39,7 @@
             this.Name = "SplashStartup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashStartup";
+            this.Load += new System.EventHandler(this.SplashStartup_Load);
             this.Shown += new System.EventHandler(this.SplashStartup_Shown);
             this.ResumeLayout(false);
 

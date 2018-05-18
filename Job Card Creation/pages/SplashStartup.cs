@@ -39,7 +39,10 @@ namespace Job_Card_Creation
             metro.WindowState = FormWindowState.Maximized;
          //   metro.Visible = true;
             this.Hide();
+        }
 
+        private void SplashStartup_Load(object sender, EventArgs e)
+        {
 
         }
     }

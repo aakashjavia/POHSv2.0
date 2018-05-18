@@ -26,7 +26,7 @@ namespace Job_Card_Creation
 
             this.WindowState = FormWindowState.Maximized;
             // Sizes the tabs so that each row fills the entire width of tabControl1.
-            this.metroTabControl1.SizeMode = TabSizeMode.Normal;
+            this.metroTabControl1.SizeMode = TabSizeMode.Fixed;
             Color backcolor = new Color();
             
             

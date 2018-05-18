@@ -118,11 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Google Drive Lockup1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Google Drive Lockup1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image - Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Works with Google Drive1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Works with Google Drive1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Works with Google Drive2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Works with Google Drive2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Google Drive Lockup2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Google Drive Lockup2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Google Drive Lockup1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Google Drive Lockup1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Google Drive Lockup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Google Drive Lockup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,10 +142,7 @@
   <data name="Works with Google Drive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Works with Google Drive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Works with Google Drive2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Works with Google Drive2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Google Drive Lockup2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Google Drive Lockup2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image - Copy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image - Copy1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
