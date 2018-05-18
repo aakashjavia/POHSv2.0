@@ -168,6 +168,12 @@
       <DependentUpon>Job Card Form.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="pages\LogInPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\LogInPage.Designer.cs">
+      <DependentUpon>LogInPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\Main Page.cs">
       <SubType>Form</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -238,6 +244,9 @@
     <EmbeddedResource Include="pages\Job Card Form.resx">
       <DependentUpon>Job Card Form.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\LogInPage.resx">
+      <DependentUpon>LogInPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\Main Page.resx">
       <DependentUpon>Main Page.cs</DependentUpon>
@@ -325,6 +334,9 @@
     <Content Include="Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\image - Copy1.png" />
+    <None Include="Resources\image - Copy.png" />
+    <None Include="Resources\image.png" />
     <None Include="Resources\Google Drive Lockup2.png" />
     <None Include="Resources\Google Drive Lockup1.png" />
     <None Include="Resources\Works with Google Drive2.png" />

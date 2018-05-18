@@ -209,14 +209,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Job Card Creation.exe" size="375296">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Job Card Creation.exe" size="403456">
       <assemblyIdentity name="Job Card Creation" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ong7MRO9M4Jwg397cqSxcD8AyHg+rQbXzQ1u1pR7d4U=</dsig:DigestValue>
+        <dsig:DigestValue>rZ4hzNJXoMYQTJ+yIurRBXkqIsBq+cN39Z8okuCzNb0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -298,7 +298,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ludVj/jy7NUFQrSRNySU87bIdN9L90KSxHFnM/IGrHs=</dsig:DigestValue>
+      <dsig:DigestValue>jT2PtE0W3esIFcJ0QeWMQied+s8D4n3nOHfkZs042yQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Database1_log.ldf" size="8388608" writeableType="applicationData">
@@ -307,7 +307,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>8VT0kUp00mQ0RrY0PeQ/LsjVewMar9Aupng6GnvxeM8=</dsig:DigestValue>
+      <dsig:DigestValue>kd6X4cvYN6Sb5hKgmlak274lDiFh384HLj99rjFGl20=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Job Card Creation.exe.config" size="1417">

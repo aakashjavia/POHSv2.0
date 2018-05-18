@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Job_Card_Creation.pages;
+using System;
 using System.Windows.Forms;
 
 namespace Job_Card_Creation
@@ -14,11 +12,12 @@ namespace Job_Card_Creation
         [STAThread]
         static void Main()
         {
-            try { 
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-         // Application.Run(new SplashStartup());
-            Application.Run(new MetroApp());
+            try
+            { 
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                //Application.Run(new SplashStartup());
+                Application.Run(new LogInPage());
             }
 
             catch (Exception e)
